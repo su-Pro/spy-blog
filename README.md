@@ -5,5 +5,7 @@
 ## js
 
 ### es5部分
+
 [JavaScript：数据类型](https://github.com/sup-fiveyear/Notes/issues/2)
+
 [javascript: 原型原型链和继承](https://github.com/sup-fiveyear/Notes/issues/3)
