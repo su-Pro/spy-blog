@@ -42,7 +42,7 @@
 
 ## 文章索引
 
-[index](https://github.com/sup-fiveyear/Notes/blob/master/images/index.png)
+[index](https://raw.githubusercontent.com/sup-fiveyear/Notes/master/images/indexnew.png)
 
 ### css
 [盒模型汇总](https://github.com/sup-fiveyear/Notes/issues/4)
@@ -56,3 +56,21 @@ es5部分
 [JavaScript：数据类型](https://github.com/sup-fiveyear/Notes/issues/2)
 
 [javascript: 原型原型链和继承](https://github.com/sup-fiveyear/Notes/issues/3)
+
+[javascript: 作用域、闭包、this](https://github.com/sup-fiveyear/Notes/issues/6)
+
+### 浏览器
+- [] [浏览器：输入URL后的调度](https://github.com/sup-fiveyear/Notes/issues/7)
+
+[浏览器：DOM篇](https://github.com/sup-fiveyear/Notes/issues/8)
+
+[浏览器：V8垃圾回收机制](https://github.com/sup-fiveyear/Notes/issues/9)
+
+- [浏览器：XMLHttpRequest 和 跨域方案]
+
+- [浏览器：XMLHttpRequest 和 跨域方案]
+
+- [浏览器：V8执行JavaScript的顺序]
+
+
+
