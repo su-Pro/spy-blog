@@ -60,7 +60,7 @@ es5部分
 [javascript: 作用域、闭包、this](https://github.com/sup-fiveyear/Notes/issues/6)
 
 ### 浏览器
-[] [浏览器：输入URL后的调度](https://github.com/sup-fiveyear/Notes/issues/7)
+[浏览器：输入URL后的调度](https://github.com/sup-fiveyear/Notes/issues/7)
 
 [浏览器：DOM篇](https://github.com/sup-fiveyear/Notes/issues/8)
 
