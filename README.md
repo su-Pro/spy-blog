@@ -60,17 +60,17 @@ es5部分
 [javascript: 作用域、闭包、this](https://github.com/sup-fiveyear/Notes/issues/6)
 
 ### 浏览器
-- [] [浏览器：输入URL后的调度](https://github.com/sup-fiveyear/Notes/issues/7)
+[] [浏览器：输入URL后的调度](https://github.com/sup-fiveyear/Notes/issues/7)
 
 [浏览器：DOM篇](https://github.com/sup-fiveyear/Notes/issues/8)
 
 [浏览器：V8垃圾回收机制](https://github.com/sup-fiveyear/Notes/issues/9)
 
-- [浏览器：XMLHttpRequest 和 跨域方案]
+[浏览器：消息队列与事件循环机制](https://github.com/sup-fiveyear/Notes/issues/12)
 
-- [浏览器：XMLHttpRequest 和 跨域方案]
+[浏览器：AJAX和浏览器会话技术](https://github.com/sup-fiveyear/Notes/issues/11)
 
-- [浏览器：V8执行JavaScript的顺序]
+[浏览器：V8执行JavaScript的顺序]
 
 
 
