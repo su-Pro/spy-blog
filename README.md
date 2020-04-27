@@ -62,15 +62,16 @@ es5部分
 ### 浏览器
 [浏览器：输入URL后的调度](https://github.com/sup-fiveyear/Notes/issues/7)
 
-[浏览器：DOM篇](https://github.com/sup-fiveyear/Notes/issues/8)
+[浏览器：消息队列与事件循环机制](https://github.com/sup-fiveyear/Notes/issues/12)
 
 [浏览器：V8垃圾回收机制](https://github.com/sup-fiveyear/Notes/issues/9)
 
-[浏览器：消息队列与事件循环机制](https://github.com/sup-fiveyear/Notes/issues/12)
+[浏览器：V8执行js脚本流程（编译器和解释器)](https://github.com/sup-fiveyear/Notes/issues/13)
+
+[浏览器：DOM篇](https://github.com/sup-fiveyear/Notes/issues/8)
 
 [浏览器：AJAX和浏览器会话技术](https://github.com/sup-fiveyear/Notes/issues/11)
 
-[浏览器： V8执行js脚本流程（编译器和解释器(https://github.com/sup-fiveyear/Notes/issues/13)
 
 
 
