@@ -70,7 +70,7 @@ es5部分
 
 [浏览器：AJAX和浏览器会话技术](https://github.com/sup-fiveyear/Notes/issues/11)
 
-[浏览器：V8执行JavaScript的顺序]
+[浏览器： V8执行js脚本流程（编译器和解释器(https://github.com/sup-fiveyear/Notes/issues/13)
 
 
 
