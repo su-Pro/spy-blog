@@ -49,6 +49,9 @@
 
 [BFC & IFC](https://github.com/sup-fiveyear/Notes/issues/5)
 
+[CSS：选择器分类以及权重计算](https://github.com/sup-fiveyear/Notes/issues/14)
+
+
 ### js
 
 es5部分
