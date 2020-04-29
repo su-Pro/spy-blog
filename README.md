@@ -66,7 +66,7 @@ es5部分
 
 1. 了解浏览器吗？请简单描述一下浏览器的架构？[浏览器架构](https://github.com/sup-fiveyear/Notes/issues/15)
 
-2. 输入URL后，都发生了什么？请从浏览器的视角分析进行分析？ [浏览器导航](https://github.com/sup-fiveyear/Notes/issues/7)
+2. 输入URL后，都发生了什么？请从浏览器的视角分析进行分析？ [浏览器导航](https://github.com/sup-fiveyear/Notes/issues/16)
 
 3. 那具体分析一下浏览器在渲染这个环节做了那些事情？[渲染流程](https://github.com/sup-fiveyear/Notes/issues/7)
 
