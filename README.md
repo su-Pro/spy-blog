@@ -63,13 +63,20 @@ es5部分
 [javascript: 作用域、闭包、this](https://github.com/sup-fiveyear/Notes/issues/6)
 
 ### 浏览器
-[浏览器：输入URL后的调度](https://github.com/sup-fiveyear/Notes/issues/7)
 
-[浏览器：消息队列与事件循环机制](https://github.com/sup-fiveyear/Notes/issues/12)
+1. 了解浏览器吗？请简单描述一下浏览器的架构？[浏览器架构](https://github.com/sup-fiveyear/Notes/issues/15)
 
-[浏览器：V8垃圾回收机制](https://github.com/sup-fiveyear/Notes/issues/9)
+2. 输入URL后，都发生了什么？请从浏览器的视角分析进行分析？ [浏览器导航](https://github.com/sup-fiveyear/Notes/issues/7)
 
-[浏览器：V8执行js脚本流程（编译器和解释器)](https://github.com/sup-fiveyear/Notes/issues/13)
+3. 那具体分析一下浏览器在渲染这个环节做了那些事情？[渲染流程](https://github.com/sup-fiveyear/Notes/issues/7)
+
+4. 了解浏览器是如何执行js脚本的吗？其大体流程是怎样的？[v8执行流程](https://github.com/sup-fiveyear/Notes/issues/13)
+
+5. 单线程的JavaScript，是如何处理复杂的web交互的？[消息队列与事件循环机制](https://github.com/sup-fiveyear/Notes/issues/12)
+
+6. V8 的GC过程有了解吗？说说你的理解 [browser GC](https://github.com/sup-fiveyear/Notes/issues/9)
+
+
 
 [浏览器：DOM篇](https://github.com/sup-fiveyear/Notes/issues/8)
 
