@@ -68,7 +68,7 @@ es5部分
 
 2. 输入URL后，都发生了什么？请从浏览器的视角分析进行分析？ [浏览器导航](https://github.com/sup-fiveyear/Notes/issues/16)
 
-3. 那具体分析一下浏览器在渲染这个环节做了那些事情？[渲染流程](https://github.com/sup-fiveyear/Notes/issues/7)
+3. 那具体分析一下浏览器在渲染这个环节做了那些事情？[渲染流程](https://github.com/sup-fiveyear/Notes/issues/111117)
 
 4. 了解浏览器是如何执行js脚本的吗？其大体流程是怎样的？[v8执行流程](https://github.com/sup-fiveyear/Notes/issues/13)
 
