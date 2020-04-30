@@ -31,6 +31,9 @@
 [index](https://raw.githubusercontent.com/sup-fiveyear/Notes/master/images/indexnew.png)
 
 ### css
+请你描述一下flex布局？
+> [flex](https://github.com/sup-fiveyear/Notes/issues/19)
+
 [盒模型汇总](https://github.com/sup-fiveyear/Notes/issues/4)
 
 [BFC & IFC](https://github.com/sup-fiveyear/Notes/issues/5)
