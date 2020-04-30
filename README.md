@@ -49,8 +49,9 @@
 3. new 实现的原理？instanceof实现的原理？create 实现的原理？
 4. 常见继承方案有哪些？
 5. ES6 - class原理有了解吗？ 以及extends关键字原理？
-[原型部分](https://github.com/sup-fiveyear/Notes/issues/3)
-[class语法基础语法解析](https://github.com/sup-fiveyear/Notes/issues/18)
+
+> [原型部分](https://github.com/sup-fiveyear/Notes/issues/3)
+> [class语法基础语法解析](https://github.com/sup-fiveyear/Notes/issues/18)
 
 
 [javascript: 作用域、闭包、this](https://github.com/sup-fiveyear/Notes/issues/6)
