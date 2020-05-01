@@ -55,7 +55,7 @@
 > [原型、继承](https://github.com/sup-fiveyear/Notes/issues/3)
 5. ES6 - class原理有了解吗？ 以及extends关键字原理？
 
-> [class语法基础语法解析](https://github.com/sup-fiveyear/Notes/issues/18) > [extends](https://github.com/sup-fiveyear/Notes/issues/20)
+> [class语法基础语法解析](https://github.com/sup-fiveyear/Notes/issues/18)    [extends](https://github.com/sup-fiveyear/Notes/issues/20)
 
 
 [javascript: 作用域、闭包、this](https://github.com/sup-fiveyear/Notes/issues/6)
