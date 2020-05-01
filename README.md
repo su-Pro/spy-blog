@@ -51,10 +51,11 @@
 2. 你知道的拓展原型链的方法有哪些？他们的区别是什么？
 3. new 实现的原理？instanceof实现的原理？create 实现的原理？
 4. 常见继承方案有哪些？
+
+> [原型、继承](https://github.com/sup-fiveyear/Notes/issues/3)
 5. ES6 - class原理有了解吗？ 以及extends关键字原理？
 
-> [原型部分](https://github.com/sup-fiveyear/Notes/issues/3)
-> [class语法基础语法解析](https://github.com/sup-fiveyear/Notes/issues/18)
+> [class语法基础语法解析](https://github.com/sup-fiveyear/Notes/issues/18)[extends](https://github.com/sup-fiveyear/Notes/issues/20)
 
 
 [javascript: 作用域、闭包、this](https://github.com/sup-fiveyear/Notes/issues/6)
