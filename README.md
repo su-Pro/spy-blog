@@ -34,9 +34,9 @@
 
 [请你描述一下flex布局](https://github.com/sup-fiveyear/Notes/issues/19)
 
-[Grid布局有了解吗？说说](https://github.com/sup-fiveyear/Notes/issues/20)
+[Grid布局有了解吗？说说](https://github.com/sup-fiveyear/Notes/issues/22)
 
-[层叠规则知道吗？](https://github.com/sup-fiveyear/Notes/issues/21)
+[层叠规则知道吗？](https://github.com/sup-fiveyear/Notes/issues/23)
 
 [盒模型汇总](https://github.com/sup-fiveyear/Notes/issues/4)
 
