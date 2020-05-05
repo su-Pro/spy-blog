@@ -22,7 +22,7 @@
 
 由于我也是个初级前端 + 学生党，知识的积累十分欠缺，笔记总结的一定会存在**各种瑕疵**，希望各位多多提issues（非常希望得到指导，待鞭策型）
 
-准备校招的朋友可以私信我，搭伙过日子准备面试！一起刷题！一起看源码！
+准备校招的朋友可以私信我，一起准备面试！一起刷题！一起看源码！
 
 最后预祝各位兄弟，**飞！ 黄！ 腾！ 达！ 召！唤！神！龙！**
 
@@ -31,8 +31,12 @@
 [index](https://raw.githubusercontent.com/sup-fiveyear/Notes/master/images/indexnew.png)
 
 ### css
-请你描述一下flex布局？
-> [flex](https://github.com/sup-fiveyear/Notes/issues/19)
+
+[请你描述一下flex布局](https://github.com/sup-fiveyear/Notes/issues/19)
+
+[Grid布局有了解吗？说说](https://github.com/sup-fiveyear/Notes/issues/20)
+
+[层叠规则知道吗？](https://github.com/sup-fiveyear/Notes/issues/21)
 
 [盒模型汇总](https://github.com/sup-fiveyear/Notes/issues/4)
 
