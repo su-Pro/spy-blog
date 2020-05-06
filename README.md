@@ -28,8 +28,6 @@
 
 ## 文章索引
 
-[index](https://user-images.githubusercontent.com/53052047/80615647-84f86e80-8a72-11ea-83ef-0fc9dfe80c02.png)
-
 ### css
 
 [请你描述一下flex布局](https://github.com/sup-fiveyear/Notes/issues/19)
