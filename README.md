@@ -30,9 +30,9 @@
 
 [1. 了解浏览器吗？请简单描述一下浏览器的架构？](https://github.com/sup-fiveyear/Notes/issues/15)
 
-[2. 输入URL后，都发生了什么？请从浏览器的视角分析进行分析？ ](https://github.com/sup-fiveyear/Notes/issues/17)
+[2. 输入URL后，都发生了什么？请从浏览器的视角分析进行分析？ ](https://github.com/sup-fiveyear/Notes/issues/16)
 
-[3. 那具体分析一下浏览器在渲染这个环节做了那些事情？](https://github.com/sup-fiveyear/Notes/issues/7)
+[3. 那具体分析一下浏览器在渲染这个环节做了那些事情？](https://github.com/sup-fiveyear/Notes/issues/17)
 
 [4. 了解浏览器是如何执行js脚本的吗？其大体流程是怎样的？](https://github.com/sup-fiveyear/Notes/issues/13)
 
