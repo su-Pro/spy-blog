@@ -104,7 +104,7 @@ css 和 js 阻塞页面渲染？你怎么理解？
 |                                                              |        |      |
 |                                                              |        |      |
 
-| [树 解题汇总](https://github.com/sup-fiveyear/interview-code/tree/master/%E7%AE%97%E6%B3%95%2B%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E9%93%BE%E8%A1%A8) | 重要性 | AC?  |
+| [树 解题汇总](https://github.com/sup-fiveyear/interview-code/tree/master/%E7%AE%97%E6%B3%95%2B%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91) | 重要性 | AC?  |
 | :----------------------------------------------------------: | :----: | :--: |
 | [二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal),后序,前序 |  🌝🌝🌝   |  💯   |
 | [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/) |  🌝🌝🌝   |  💯   |
