@@ -1,0 +1,9 @@
+.trans{
+  width: 0;
+  height: 0;
+  background-color: #fff;
+  border-right: 100px solid rgb(34, 230, 220);
+  border-left: 100px solid rgb(202, 146, 25);
+  border-top: 100px solid rgb(29, 156, 194);
+  border-bottom: 100px solid rgb(16, 204, 101);
+}

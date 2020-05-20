@@ -1,0 +1,27 @@
+.grid{
+	/* 定义网格布局 */
+	display: grid;
+	grid-template-columns: repeat(6,140px);
+	grid-template-rows: repeat(3,140px);
+	/* 表示间距，注意是间距 */
+	grid-gap: 20px; 
+}
+.item{
+	background-color: #e2e2ee;
+}
+
+.item:nth-child(2){
+	grid-area: 1 / 3 / 3 /5 ;
+}
+
+.item:nth-child(1),
+.item:nth-child(5) {
+	grid-column: 1 / 3;
+}
+.item:nth-child(7) {
+	grid-column: 6;
+	grid-row: 2 / 4;
+}
+.item:nth-child(9){
+	grid-column: 2 / 4;
+}

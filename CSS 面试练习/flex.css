@@ -1,0 +1,22 @@
+.container{
+  width: 530px;
+  height: 100px;
+  display: flex;
+  background: #e2e2ee;
+
+}
+.item{
+  width: 200px;
+  margin: 5px;
+  background: dodgerblue;
+}
+.item:nth-of-type(3) {
+  /*flex-shrink: 2;*/
+}
+
+/*需要挤压的空间： （+flex item） - flex container 的宽度*/
+
+/*实际宽度 = 初始宽度 - 分配的缩放空间（）*/
+/*630 - 530 = 100*/
+/*200 - x = 175*/
+/*x = 25 * 4 => 100*/

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 简单版跨域请求 -->
+</body>
+<script>
+
+  const JSONP = ({url,params}) => {
+    return new Promise((resolve,reject) => {
+      // 用于处理params 成字符串格式 a:1,b:2 => a=1&b=2
+      const helper = (params) => {
+        const keys = Object.keys(params);
+        // 用于判断是否加&，在队尾元素不需要&
+        const _len = keys.length - 1;
+      //  合并成一个字符串
+        return keys.reduce((prev,cur,index) =>{
+          const value = params[cur];
+          const _flag = index === _len ? '' : '&';
+          return `${prev}${cur}=${value}${_flag}`
+        },'')
+      }
+      const _script = document.createElement('script');
+      const cbFunc = data => {
+        console.log(`data is ${data}`)
+        resolve(data);
+      //  Mark:链接then？？？
+      //  手动删除window属性
+      //  手动删除js脚本
+        delete window.cb;
+        document.body.removeChild(_script);
+      }
+      window.cb = cbFunc;
+      _script.src = `url?${helper(params)}&cb=cbFunc`;
+      document.body.appendChild(_script);
+    });
+  }
+  // 最后形如xxx?name=spy&age=24
+  JSONP({
+    url: xxx,
+    params: {
+      name : 'spy',
+      age : '24'
+    }
+  })
+//  后端只需要将body写入如下内容
+//  `${约定的回调函数}(成功获取的数据）`
+</script>
+</html>

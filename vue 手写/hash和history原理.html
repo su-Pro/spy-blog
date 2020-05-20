@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button id="hash">切换路由hash</button>
+  <hr>
+  <button id="history">切换路由history</button>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // console.log('hash:', location.hash);
+      console.log('load:',location.pathname)
+    })
+    // 检测哈希值发生变化
+    window.onhashchange = (event) => {
+      // console.log('old url:', event.oldURL);
+      // console.log('new url:', event.newURL);
+      console.log('current hash:', location.hash);
+    }
+    window.onpopstate = (event) => {
+      console.log('onpopstate:',event.state,location.pathname);
+    }
+    // document.getElementById('history').addEventListener('click', () => {
+    //   location.href = '#/user'
+    // })
+    document.getElementById('history').addEventListener('click', () => {
+      // 可以理解为标识当前路由页面
+      const state = {name: 'page1'}
+      console.log('路由切换到state:',state.name)
+      history.pushState(state,'page1已经push完毕');
+    })
+    // h5 history 方法
+  </script>
+</body>
+
+</html>

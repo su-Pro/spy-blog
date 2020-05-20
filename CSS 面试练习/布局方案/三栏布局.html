@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <style>
+    .fl{
+      position:relative;
+      float:left;
+    }
+    .wrapper{
+      /* !bfc  */
+      overflow:hidden;
+      /* 预留位置 */
+      padding:0 320px;
+      height: 400px;
+    }
+    .main{
+      width: 100%;
+      height: 100%;
+      background-color: cyan;
+    }
+    .left{
+      width: 320px;
+      height: 100%;
+      margin-left:-100%; /*此时已重叠*/
+      left:-320px; 
+      background-color: darkgoldenrod;
+    }
+    .right{
+      width: 320px;
+      height: 100%;
+      margin-left:-320px; 
+      right:-320px; 
+      background-color: red;
+    }
+  </style> -->
+  <!-- <style>
+    .fl{
+      float: left;
+    }
+    .wrapper{
+      overflow: hidden;
+    }
+    .main{
+      width: 100%;
+    }
+    .main .inner{
+      background-color: orange;
+      height: 300px;     
+      margin: 0 300px; 
+      /* 由于推开后，main的宽度继承父级宽度 */
+      /* 注意：块级容器会继承width height属性，行块不会继承，浮动，定位元素也不会继承  */
+      /* 浮动元素不设置width时，呈现包裹性，其宽度受内容区影响 */
+      
+    }
+    .left{
+      width: 300px;
+      height: 300px;
+      background-color:#e2e2e2;
+      margin-left: -100%;
+    }
+    .right{
+      width: 300px;
+      height: 300px;
+      margin-left: -300px;
+      background-color:burlywood;
+    }
+  </style> -->
+
+  <!-- flex布局 -->
+  <!-- <style>
+    .wrapper{
+      display:flex;
+      width: 100%;  
+      height: 500px;
+    }
+    .main{
+      background-color: royalblue;
+      width: 300px;
+      flex-grow: 1;
+    }
+    .left{
+      width: 300px;
+      order: -1;
+      background-color: chartreuse;
+    }
+    .right{
+      width: 300px;
+      background-color: red;
+    }
+  </style> -->
+  <style>
+    .wrapper{
+      display: grid;
+      grid-template-columns: 300px 1fr 300px;
+      height: 500px;
+      grid-gap: 10px;
+    }
+    .main{
+      background: red;
+    }
+    .left{
+      background: rosybrown;
+      order: -1;
+    }
+    .right{
+      background: sandybrown;
+    }
+  </style>
+</head>
+<body>
+  <section class="wrapper">
+    <section class="main">main</section>
+    <section class="left">left</section>
+    <section class="right">right</section>
+  </section>
+</body>
+</html>
