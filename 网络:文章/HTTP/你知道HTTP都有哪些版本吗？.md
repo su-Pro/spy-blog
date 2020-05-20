@@ -49,4 +49,9 @@ Google推出了新的协议：SPDY并利用自家的生态系统，“挟用户�
 这一次还是 Google，而且它要“革自己的命”。同样的套路，最终在 2018 年,互联网标准化组织 IETF 提议将“HTTP over QUIC”更名为“HTTP/3”并获得批准,HTTP/3 正式进入了标准化制订阶段,也许两三年后就会正式发布,到时候我们很可能会跳过 HTTP/2 直接进入 HTTP/3。
 
 
-* [ ] HTTP1.1 通道？？？
+* [ ] HTTP1.1 通道
+* [ ] HTTP2.0 新特性
+* [ ] HTTP3.0 新特性
+
+https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/232
+
