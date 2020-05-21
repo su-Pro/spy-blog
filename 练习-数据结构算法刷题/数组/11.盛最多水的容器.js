@@ -26,11 +26,9 @@ var maxArea = function (height) {
 		// 循环处理
 		if (height[i] > height[j]) {
 			// 因为水只能向矮的一侧进行堆积
-			cur = height[j] * (j - i)
-			j--
+			cur = height[j--] * (j - i)
 		} else {
-			cur = height[i] * (j - i)
-			i++
+			cur = height[i++] * (j - i)
 		}
 		area = Math.max(area, cur)
 	}
@@ -43,5 +41,23 @@ var maxArea = function (height) {
 
 
 
+
+
+
+
+
+function _ (arr) {
+  var i = 0,j = arr.length - 1,maxArea = 0,curMax = 0;
+  while(i <= j - 1) {
+    // debug 相等时的case
+    if(arr[i] < arr[j]){
+      curMax = arr[i++] * (j -i);
+    }else {
+      curMax = arr[j--] * (j -i);
+    }
+    maxArea = Math.max(maxArea,curMax)
+  }
+  return maxArea;
+}
 };
 // @lc code=end

@@ -22,8 +22,8 @@ var twoSum = function(nums, target) {
 			var num1 = nums[i];
 			if(map.get(num1) === undefined) map.set(target - num1,i);
 			else return [map.get(num1),i]
-		}
-		
+		}		
 };
+
 // @lc code=end
 
