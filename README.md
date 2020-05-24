@@ -270,19 +270,17 @@ css 和 js 阻塞页面渲染？你怎么理解？
 
 [你是如何理解HTTP的？特点有哪些？](/notes-网络/HTTP/你是如何理解HTTP的？特点有哪些？.md)
 
-
 [描述一下HTTP报文结构?](/notes-网络/HTTP/描述一下HTTP报文结构.md)
 
 [了解HTTP长连接吧？那队头阻塞呢？](/notes-网络/HTTP/了解HTTP长连接吧？那队头阻塞呢？.md)
 
 [说一下HTTP 和HTTPS 的区别](/notes-网络/HTTP/说一下HTTP%20和%20HTTPS%20的区别.md)
 
-* [ ] 对称加密和非对称加密？
-* [ ] 摘要算法和数据签名？
+[HTTP缓存策略说一下](https://github.com/sup-fiveyear/Notes/issues/25)
 
 [说一下TLS握手](/notes-网络/HTTP/说一下TLS%20建立连接过程.md)
 
-* [ ] HTTP缓存策略说一下
+* [ ] HTTP 2/3 有了解吗？
 
-* [ ] TLS1.3 和 HTTP 2/3 有了解吗？
-
+* [ ] 对称加密和非对称加密？
+* [ ] 摘要算法和数据签名？
