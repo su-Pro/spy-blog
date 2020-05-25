@@ -205,21 +205,21 @@
 
 ### 浏览器
 
-[1. 了解浏览器吗？请简单描述一下浏览器的架构？](https://github.com/sup-fiveyear/Notes/issues/15)
+[了解浏览器吗？请简单描述一下浏览器的架构？](https://github.com/sup-fiveyear/Notes/issues/15)
 
-[2. 输入URL后，都发生了什么？请从浏览器的视角分析进行分析？ ](https://github.com/sup-fiveyear/Notes/issues/16)
+[输入URL后，都发生了什么？请从浏览器的视角分析进行分析?](https://github.com/sup-fiveyear/Notes/issues/16)
 
-[3. 那具体分析一下浏览器在渲染这个环节做了那些事情？](https://github.com/sup-fiveyear/Notes/issues/17)
+[那具体分析一下浏览器在渲染这个环节做了那些事情？](https://github.com/sup-fiveyear/Notes/issues/17)
 
-[4. 了解浏览器是如何执行js脚本的吗？其大体流程是怎样的？](https://github.com/sup-fiveyear/Notes/issues/13)
+[了解浏览器是如何执行js脚本的吗？其大体流程是怎样的？](https://github.com/sup-fiveyear/Notes/issues/13)
 
-[5. 单线程的JavaScript，是如何处理复杂的web交互的？](https://github.com/sup-fiveyear/Notes/issues/12)
+[单线程的JavaScript，是如何处理复杂的web交互的？](https://github.com/sup-fiveyear/Notes/issues/12)
 
-[6. V8 的GC过程有了解吗？说说你的理解 ](https://github.com/sup-fiveyear/Notes/issues/9)
+[V8 的GC过程有了解吗？说说你的理解](https://github.com/sup-fiveyear/Notes/issues/9)
 
-[浏览器：DOM篇](https://github.com/sup-fiveyear/Notes/issues/8)
+[DOM篇](https://github.com/sup-fiveyear/Notes/issues/8)
 
-[浏览器：AJAX和浏览器会话技术](https://github.com/sup-fiveyear/Notes/issues/11)
+[说一下AJAX和跨域吧？](./notes-浏览器/说一下AJAX和跨域.md)
 
 ### 性能优化
 
