@@ -10,48 +10,29 @@
 
 ## 索引
 
-点击即可跳转
+#### [基础：数据结构和算法](#数据结构算法)
+#### [基础：网络](#网络)
+#### [基础：Linux](#linux)
+<br/>
 
-#### [前端编码练习](#前端编码练习)
-#### [基本功：数据结构和算法](#数据结构算法)
-#### [H5/C3](#h5c3-索引)
-#### [ECMA-script](#es-索引)
-#### [浏览器原理](#浏览器-索引)
-#### [网络](#网络-索引)
-#### [性能优化](#性能优化-索引)
-#### [vue](#vue-索引)
-#### [React](#react-索引)
-#### [Node.js](#nodejs-索引)
-### 前端编码练习 [🖕](#索引)
-#### 功能函数手写
+#### [前端：H5/C3](#html--css)
+#### [前端：浏览器原理](#浏览器-索引)
+#### [前端：ECMA-script](#es)
+#### [前端：编码练习](#编码练习)
+<br/>
 
-| <div style="width: 300pt"> [汇总](./练习-JavaScript部分/功能函数汇总/index.md) |<div style="width: 300pt"> Hint | <div style="width: 50pt">练习次数 |
-| :----------: | :----------: | :----------: |
-|                     解析url参数                     |      |          |
-|                      数组平拍                       |      |          |
-|                      数组去重                       |      |          |
-|           编写parse函数，实现对象值的访问           |      |          |
-|                      防抖节流                       |      |          |
-|                    多级函数curry                    |      |          |
-|                     图片懒加载                      |      |          |
-|                    深对象冻结？                     |      |          |
-|             Object.assign？ 和 深拷贝?              |      |          |
-|               实现指定数量的并发限制                |      |          |
-|                    手写深比较？                     |      |          |
-|                                               
+#### [前端框架：vue](#vue)
+#### [前端框架：React](#react)
+<br/>
 
-#### web原理模拟
-
-- 封装AJAX
-- Nodejs-事件系统 
-
-
-#### 封装组件
+#### [前端工程：Webpack](#webpack)
+#### [前端工程：Node.js](#nodejs)
+#### [前端工程：性能优化](#性能优化)
+---
 
 
 ### 数据结构算法
-
-点击回到目录[🖕](#索引)
+[🛫飞回索引！](#索引)
 #### 数组
 
 |                             <div style="width: 300pt">汇总                             |              <div style="width: 300pt">Hint              |<div style="width: 50pt"> 练习次数 |
@@ -164,9 +145,32 @@
 #### DP-3
 
 ####  
+### 网络 
+[🛫飞回索引！](#索引)
+#### HTTP + s
+[你知道HTTP都有哪些版本吗？](/notes-网络/HTTP/你知道HTTP都有哪些版本吗？.md)
 
-### HTML + CSS [🖕](#索引)
+[你是如何理解HTTP的？特点有哪些？](/notes-网络/HTTP/你是如何理解HTTP的？特点有哪些？.md)
 
+[描述一下HTTP报文结构?](/notes-网络/HTTP/描述一下HTTP报文结构.md)
+
+[了解HTTP长连接吧？那队头阻塞呢？](/notes-网络/HTTP/了解HTTP长连接吧？那队头阻塞呢？.md)
+
+[说一下HTTP 和HTTPS 的区别](/notes-网络/HTTP/说一下HTTP%20和%20HTTPS%20的区别.md)
+
+[HTTP缓存策略说一下](https://github.com/sup-fiveyear/Notes/issues/25)
+
+[说一下TLS握手](/notes-网络/HTTP/说一下TLS%20建立连接过程.md)
+
+[HTTP 2/3 有了解吗？](/notes-网络/HTTP/说说HTTP2%20和HTTP3.md)
+
+* [ ] 输入一个url会发生什么？
+
+#### TCP
+### Linux  
+[🛫飞回索引！](#索引)
+### HTML + CSS 
+[🛫飞回索引！](#索引)
 - [ ] HTML5汇总
 
 - [ ] WebSocket基础和聊天室实现
@@ -198,9 +202,27 @@
 
 
 
+### 浏览器 
+[🛫飞回索引！](#索引)
+[了解浏览器吗？请简单描述一下浏览器的架构？](https://github.com/sup-fiveyear/Notes/issues/15)
 
-### ES [🖕](#索引)
+[输入URL后，都发生了什么？请从浏览器的视角分析进行分析?](https://github.com/sup-fiveyear/Notes/issues/16)
 
+[那具体分析一下浏览器在渲染这个环节做了那些事情？](https://github.com/sup-fiveyear/Notes/issues/17)
+
+[了解浏览器是如何执行js脚本的吗？其大体流程是怎样的？](https://github.com/sup-fiveyear/Notes/issues/13)
+
+[单线程的JavaScript，是如何处理复杂的web交互的？](https://github.com/sup-fiveyear/Notes/issues/12)
+
+[V8 的GC过程有了解吗？说说你的理解](https://github.com/sup-fiveyear/Notes/issues/9)
+
+[DOM篇](https://github.com/sup-fiveyear/Notes/issues/8)
+
+[说一下AJAX和跨域吧？](./notes-浏览器/说一下AJAX和跨域.md)
+
+
+### ES 
+[🛫飞回索引！](#索引)
 [JavaScript：数据类型](https://github.com/sup-fiveyear/Notes/issues/2)
 
 #### 原型部分
@@ -221,48 +243,64 @@
 * [ ] this指向问题？
 
 
-### 浏览器 [🖕](#索引)
-
-[了解浏览器吗？请简单描述一下浏览器的架构？](https://github.com/sup-fiveyear/Notes/issues/15)
-
-[输入URL后，都发生了什么？请从浏览器的视角分析进行分析?](https://github.com/sup-fiveyear/Notes/issues/16)
-
-[那具体分析一下浏览器在渲染这个环节做了那些事情？](https://github.com/sup-fiveyear/Notes/issues/17)
-
-[了解浏览器是如何执行js脚本的吗？其大体流程是怎样的？](https://github.com/sup-fiveyear/Notes/issues/13)
-
-[单线程的JavaScript，是如何处理复杂的web交互的？](https://github.com/sup-fiveyear/Notes/issues/12)
-
-[V8 的GC过程有了解吗？说说你的理解](https://github.com/sup-fiveyear/Notes/issues/9)
-
-[DOM篇](https://github.com/sup-fiveyear/Notes/issues/8)
-
-[说一下AJAX和跨域吧？](./notes-浏览器/说一下AJAX和跨域.md)
-
-### 网络 [🖕](#索引)
-
-#### HTTP + s
-[你知道HTTP都有哪些版本吗？](/notes-网络/HTTP/你知道HTTP都有哪些版本吗？.md)
-
-[你是如何理解HTTP的？特点有哪些？](/notes-网络/HTTP/你是如何理解HTTP的？特点有哪些？.md)
-
-[描述一下HTTP报文结构?](/notes-网络/HTTP/描述一下HTTP报文结构.md)
-
-[了解HTTP长连接吧？那队头阻塞呢？](/notes-网络/HTTP/了解HTTP长连接吧？那队头阻塞呢？.md)
-
-[说一下HTTP 和HTTPS 的区别](/notes-网络/HTTP/说一下HTTP%20和%20HTTPS%20的区别.md)
-
-[HTTP缓存策略说一下](https://github.com/sup-fiveyear/Notes/issues/25)
-
-[说一下TLS握手](/notes-网络/HTTP/说一下TLS%20建立连接过程.md)
-
-[HTTP 2/3 有了解吗？](/notes-网络/HTTP/说说HTTP2%20和HTTP3.md)
-
-* [ ] 输入一个url会发生什么？
 
 
-### 性能优化 [🖕](#索引)
+### 编码练习
+[🛫飞回索引！](#索引)
+#### 功能函数手写
 
+| <div style="width: 300pt"> [汇总](./练习-JavaScript部分/功能函数汇总/index.md) |<div style="width: 300pt"> Hint | <div style="width: 50pt">练习次数 |
+| :----------: | :----------: | :----------: |
+|                      数组平拍                       |      |          |
+|                      数组去重                       |      |          |
+|           编写parse函数，实现对象值的访问           |      |          |
+|                      防抖节流                       |      |          |
+|                    多级函数curry                    |      |          |
+|                     图片懒加载                      |      |          |
+|                    深对象冻结？                     |      |          |
+|             Object.assign？ 和 深拷贝?              |      |          |
+|               实现指定数量的并发限制                |      |          |
+|                    手写深比较？                     |      |          |
+|                                               
+
+#### web原理模拟
+
+- 封装AJAX
+- Nodejs-事件系统 
+
+
+#### 封装组件
+
+### vue 
+
+[🛫飞回索引！](#索引)
+
+[吐血自问自答vue.js面试题](notes-vue/面试题.md)
+
+[vuex原理总结](notes-vue/vuex.md)
+
+* [ ] vue-router原理总结
+
+[如何实现vue数据侦测？](note-vue/../notes-vue/响应式原理.md)
+
+* [ ] $wtach 和 computed 实现原理？
+
+* [ ] 渲染详细流程说一下？
+
+#### 详细说说虚拟DOM？
+
+#### 模板编译，你能说多少说多少！
+
+#### vue-router 源码解读、模仿实现以及难点分析！
+
+### react 
+[🛫飞回索引！](#索引)
+### webpack
+[🛫飞回索引！](#索引)
+### nodeJS 
+[🛫飞回索引！](#索引)
+### 性能优化 
+[🛫飞回索引！](#索引)
 #### 网络层面
 
 [常见的图片格式有哪些？他们的区别是什么？](https://github.com/sup-fiveyear/Notes/issues/24)
@@ -281,21 +319,3 @@ css 和 js 阻塞页面渲染？你怎么理解？
 
 * [ ] SSR项目技术沉淀
 
-
-### vue [🖕](#索引)
-
-#### [吐血自问自答vue面试题](notes-vue/面试题.md)
-
-#### 写一下vue数据侦测？
-
-#### 详细说说虚拟DOM？
-
-#### 模板编译，你能说多少说多少！
-
-#### vuex 源码解读、模仿实现以及难点分析！
-
-#### vue-router 源码解读、模仿实现以及难点分析！
-
-### react [🖕](#索引)
-
-### nodeJS [🖕](#索引)
