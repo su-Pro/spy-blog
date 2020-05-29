@@ -29,7 +29,7 @@
 
 action 提交的是 mutation而不是直接进行状态修改，它可以包含任意异步操作
 
-> 可以理解为redux中间件？
+> 可以理解为redux里的中间件
 
 ### 如何区分 vuex 和 props 的界限？
 
@@ -92,9 +92,6 @@ export default function (Vue) {
       _init.call(this, options)
     }
   }
-  /**
-   * Vuex init hook, injected into each instances init hooks list.
-   */
   //  NOTE: 根实例、 组件实例挂载$store
   function vuexInit() {
     const options = this.$options
@@ -140,6 +137,7 @@ function resetStoreVM (store, state, hot) {
   ...  
 }
 ```
+
 ### vuex 中的getter是如何实现的？
 
 和store响应式处理异曲同工，借助`Vue.js`中的计算属性来实现。但是在实现时，需要注意两个小问题：
@@ -168,6 +166,8 @@ this._vm = new Vue({
 ```
 1. 遍历getter中的键值对，将每个对应的key 挂载到computed对象上，值就是对应的函数执行后返回的属性。并将computed对象挂到`Vue.js`中，通过他的计算属性进行管理。
 2. 对getters 进行一层代理，做一个存取器。这样就可以通过$store.getters直接获取`Vue.js`管理的计算属性。
+
+
 ### vuex：commit 和 mutations 是如何建立联系的？
 
 本质上是通过**发布订阅模式**来实现的，vuex具体的实现过程稍微复杂，我将他抽象成极简的代码，说明意图：
@@ -204,8 +204,73 @@ this._vm = new Vue({
  }
 ```
 
+### vuex 模块的特点
 
+> 默认情况下，模块内部的 action、mutation 和 getter 是注册在全局命名空间的——这样使得多个模块能够对同一 mutation 或 action 作出响应。
 
-### 模块是如何安装的？
+### 模块是如何构建层级关系的？
 
-###
+对用户输入的内容进行处理，转化成一颗树形结构，并进行模块收集安装操作。
+
+在初始化store时就会进行模块收集操作，如下：
+
+```js
+    constructor(options) {        
+        // 1.格式化用户传入的参数,转换成树形结构
+        this._modules = new ModuleCollection(options);
+        ...
+    }
+```
+
+ModuleCollection 方法会对options进行转化处理，便于后续的处理。（可以对比理解AST）
+
+格式化成这样的数据结构
+```js
+this.root = {
+    _raw:xxx,
+    _children:{
+        a:{
+            _raw:xxx,
+            state:a.state
+        },
+        b:{
+            _raw:xxx,
+            _children:{
+
+            },
+            state:b.state
+        }，
+    },
+    state:xxx.state
+}
+```
+通过register方法对模块进行递归安装构建：
+
+```js
+export default class ModuleCollection {
+    constructor(options) {
+        // 注册模块  递归注册 根模块  
+        this.register([], options);
+    }
+    register(path, rootModule) { 
+        let newModule = new Module(rootModule);        
+        // 找到根模块
+        if (path.length == 0) {
+            this.root = newModule;
+        } else { 
+          // 通过reduce 方法找到对应的父级
+            let parent = path.slice(0, -1).reduce((memo, current) => {
+                return memo.getChild(current);
+            }, this.root);
+            // 找到父级后，需要将当前模块添加到父级身上
+            parent.addChild(path[path.length - 1], newModule);
+        }
+        // 有子模块的情况下，需要将path进行拼接后，以当前module进行模块注册
+        if (rootModule.modules) {
+            forEach(rootModule.modules, (module, moduleName) => {
+                this.register([...path, moduleName], module);
+            });
+        }
+    }
+}
+```

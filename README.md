@@ -297,11 +297,11 @@
 
 [vuex原理总结](notes-vue/vuex.md)
 
-* [ ] vue-router原理总结
+[vue-router原理总结](notes-vue/vue-router.md)
 
 [如何实现vue数据侦测？](note-vue/../notes-vue/响应式原理.md)
 
-* [ ] $wtach 和 computed 实现原理？
+[$wtach 和 computed 实现原理？](notes-vue/$watch和computed.md)
 
 * [ ] 渲染详细流程说一下？
 
