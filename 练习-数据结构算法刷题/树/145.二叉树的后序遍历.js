@@ -42,35 +42,30 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
-var postorderTraversal = function(root,arr = []) {
-    if(!root){
-        return arr;
+var postorderTraversal = function (root) {
+  let res = [], stack = [];
+  while (root || stack.length > 0) {
+    if (root.left) {
+      // 一路压下去
+      stack.push(root);
+      root = root.left;
+    } else if (root.right) {
+      // 压下去
+      stack.push(root);
+      root = root.right;
+    } else {
+      // 到🍃节点层，将当前节点放入res后，需要回到当前root
+      res.push(root.val);
+      root = stack.pop();
+      // 将已经处理过的节点剪掉
+      if (root && root.left) {
+        root.left = null
+      } else if (root && root.right) {
+        root.right = null;
+      }
     }
-    postorderTraversal(root.left,arr);
-    postorderTraversal(root.right,arr);
-    arr.push(root.val)
-    return arr;
+  }
+  return res;
 };
+// @lc code=end
 
-
-function _postOrder = function () {
-	let _stack = [];
-	while(root || _stack.length > 0){
-		if(root.left) {
-			_stack.push(root);
-			root = root.left;
-		}else if(root.right) {
-			_stack.push(root);
-			root = root.right;
-		}else {
-			console.log(root.value);
-			root = _stack.pop();
-			// 此时的root是叶子节点的root
-			if(root.left) {
-				root.left = null
-			}else if(root.right){
-				root.right = null
-			}
-		}
-	}
-}

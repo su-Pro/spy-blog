@@ -1,3 +1,3 @@
-var pathSum = function(root, sum) {
+var pathSum = function (root, sum) {
 
 };
