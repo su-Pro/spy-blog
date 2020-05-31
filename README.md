@@ -156,24 +156,33 @@
 |                                          |                                          |
 | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
 
-### Recursion
+### Recursion + DFS
 
 |                                                                出处                                                                |                                        Hint + 解：                                         |
 | :--------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
 |                                  [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)                                   |                                                                                            |
 |                               [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/)                               | [递归穷举后，添加限制条件（括号正确性判断）](./练习-数据结构算法刷题/递归/22.括号生成.js)  |
-|                                    [46. 全排列](https://leetcode-cn.com/problems/permutations/)                                    |                                                                                            |
-|                                 [47. 全排列 II](https://leetcode-cn.com/problems/permutations-ii/)                                 |                                                                                            |
-|                                     [77. 组合](https://leetcode-cn.com/problems/combinations/)                                     |                                                                                            |
-| [105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) |                                                                                            |
-|               [236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)               |                                                                                            |
 |                                     [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)                                      | [快速幂求值（注意数学边界），缩小问题规模（递归](练习-数据结构算法刷题/递归/50.pow-x-n.js) |
 |                                       [78. 子集](https://leetcode-cn.com/problems/subsets/)                                        |        [01 问题，加或者不加，注意引用值问题](练习-数据结构算法刷题/递归/78.子集.js)        |
-|                 [17. 电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/)                  |                                                                                            |
-|                              [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)                               |                                                                                            |
+|                                      [51. N 皇后](https://leetcode-cn.com/problems/n-queens/)                                      |                                                                                            |
+|                                   [322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)                                   |                                                                                            |
+|               [236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)               |                                                                                            |
+| [105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) |                                                                                            |
+|                                                                                                                                    |                                                                                            |
+|                                                                                                                                    |                                                                                            |
+|                                                                                                                                    |                                                                                            |
+|                                                                                                                                    |                                                                                            |
+|                                                                                                                                    |                                                                                            |
+|                                                                                                                                    |                                                                                            |
+|                                                                                                                                    |                                                                                            |
 |                                              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                                              |                          〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                          |
 
-### BFS + DFS
+- [ ] [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
+- [ ]
+- [ ] [46. 全排列](https://leetcode-cn.com/problems/permutations/) [47. 全排列 II](https://leetcode-cn.com/problems/permutations-ii/)
+- [ ] [17. 电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/) [77. 组合](https://leetcode-cn.com/problems/combinations/)
+
+### BFS
 
 |                                                                    出处                                                                     |               Hint + 解：                |
 | :-----------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------: |
@@ -182,10 +191,10 @@
 |                                    [200. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands/)                                     |                                          |
 |                                       [127. 单词接龙](https://leetcode-cn.com/problems/word-ladder/)                                        |                                          |
 |                                    [126. 单词接龙 II](https://leetcode-cn.com/problems/word-ladder-ii/)                                     |                                          |
-|                                       [322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)                                        |                                          |
+|                                                                                                                                             |                                          |
 |                                       [529. 扫雷游戏](https://leetcode-cn.com/problems/minesweeper/)                                        |                                          |
 |                     [515. 在每个树行中找最大值](https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row/)                      |                                          |
-|                                          [51. N 皇后](https://leetcode-cn.com/problems/n-queens/)                                           |                                          |
+|                                                                                                                                             |                                          |
 |                                                  〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                                                   | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
 
 ### DP
@@ -376,6 +385,12 @@
 
 [🛫 飞回索引！](#索引)
 
+[NodeJs 有哪些特点？应用场景又有哪些？](notes-nodeJs/NodeJs有哪些特点？应用场景又有哪些？.md)
+
+[V8、libuv 和 Nodejs 之间的关系是怎样的？](notes-nodeJs/V8%20libuv%20和%20Nodejs之间的关系？.md)
+
+[说一下 Liubv 的事件循环机制？](notes-nodeJs/说一下Liubv的事件循环机制.md)
+
 ### 性能优化
 
 [🛫 飞回索引！](#索引)
@@ -397,3 +412,7 @@ css 和 js 阻塞页面渲染？你怎么理解？
 有了解同构应用吗（SSR）？
 
 - [ ] SSR 项目技术沉淀
+
+#### 实际开发
+
+[如何高性能渲染十万条数据？](../Notes/练习-实际开发/虚拟列表/README.md)

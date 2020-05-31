@@ -1,0 +1,58 @@
+## V8 libuv 和 Nodejs 之间的关系？
+
+Nodejs 更像是 “站在了巨人的肩膀” 进行了一系列的拼凑... 因此他的高效离不开很多厉害的第三方类库和程序。
+
+![](../img/NodeJs/NodeJs架构.jpg)
+
+### V8 和 Nodejs
+
+Node 是构建在 V8 引擎之上的，V8 是通过 C 或者 C++编写的 JavaScript 引擎。将 JavaScript 代码转化成底层的 C 或者 C++代码后再执行。以这种形式降低了偏底层的编程语言的学习成本。
+
+#### V8 的特点
+
+1. 高效：JIT 编译、垃圾回收、内敛缓存、隐藏类
+2. 遵循 ECMAScript
+3. 和 NodeJs 相互扶持...
+
+JIT 编译：Just-in-Time 编译，说白了就是即时编译。它编译出来的结果是机器码，而不是最终运行的字节码。以“空时间换空间”的思想，提高了 V8 在高效执行 js 代码的同时，对内存消耗尽量小。其流程如下所示：
+
+![](../img/浏览器/JIT.jpg)
+
+TODO: 关于执行 js 代码的细节可以参考这篇笔记：
+XXX: 垃圾回收机制？隐藏类？（重新学浏览器时进行准备）
+
+### libuv 和 Nodejs
+
+NodeJs 每个函数都是同步的，但 I/O 操作是异步的。所有 JavaScript 编写的异步 I/O 操作最终都会通过 libuv 库提供的事件循环来处理，简化了并发编程模型。
+
+> libuv 是 一个专注于异步 I/O 的跨平台类库，最初专门为 Nodejs 而开发。
+
+XXX: 解决刚需后，学习一下 C++ 和 libuv
+
+### http-parser 和 NodeJs
+
+C 实现的 HTTP 消息解析器，主要用于解析 HTTP 协议的请求数据和返回数据。主要特点如下：
+
+- 持久化链接的流式处理（keep-alive）
+- 分段信息解码（chunks）
+
+能够解析 HTTP 消息中的：
+
+- 消息头键值对（Header）
+- 内容长度（Content-length）
+- 请求方法
+- 状态码
+- 传输编码（transfer-encoding）
+- HTTP 版本
+- 请求 URL
+- 消息体
+
+### OpenSSL 和 NodeJs
+
+OpenSSL 是大名鼎鼎的安全套接字层协议库，主要是通过 C 语言编写而成。实现了基本加密功能：SSL 与 TLS 协议。
+
+NodeJs 在安全方面就是基于 OpenSSL 的一层封装，例如对 HTTPS 协议的支持。
+
+### zlib 和 NodeJs
+
+在 NodeJs 中免不了对数据进行解压、压缩处理，大多数情况是使用 zlib 的一个封装而实现的。

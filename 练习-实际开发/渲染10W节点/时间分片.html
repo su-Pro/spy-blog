@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container"></div>
+    <script>
+      let totalData = 100000;
+      let sTime = Date.now(); // 用于标识开始时间
+      let spanTime = null; // 标识结束时间
+      let container = document.getElementsByClassName("container")[0];
+      let DataSums = 0; // 标识当前已经渲染多少元素
+      let stamp = 50; // 用于标识每次渲染的数量
+      function _append() {
+        // base case;
+        if (DataSums < totalData) {
+          requestAnimationFrame(() => {
+            for (let i = 0; i < stamp; i++, DataSums++) {
+              // 每次只循环创建stamp的数量
+              let li = document.createElement("li");
+              li.innerHTML = `当前是第${DataSums}条数据`;
+              container.appendChild(li);
+            }
+            _append();
+          });
+        }
+      }
+      _append();
+      setTimeout(() => {
+        spanTime = Date.now() - sTime;
+        console.log(`js计算和页面渲染一共花费了${spanTime}毫秒`);
+      }, 0);
+    </script>
+  </body>
+</html>
