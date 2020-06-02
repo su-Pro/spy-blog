@@ -30,9 +30,9 @@ TODO: 全面复习
 
 done: nodeJS 的特点，以及应用
 done: Liubv 和 V8 在 nodeJs 的架构中
-TODO: 剖析 Liubv 的事件循环
-TODO: 异步回调 + 珠峰 + 阮一峰 （重点）
+done: 剖析 Liubv 的事件循环
 TODO: 模块化 + ES6 模块化复习 + 珠峰 + 阮一峰（重点）
+TODO: 异步回调 + 珠峰 + 阮一峰 （重点）
 
 ## css
 
