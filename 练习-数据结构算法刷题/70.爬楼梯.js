@@ -43,9 +43,28 @@
 /**
  * @param {number} n
  * @return {number}
+ * 经典一维线性DP
  */
 var climbStairs = function (n) {
-
+  const dp = new Array(n + 1).fill(0); // 因为需要遍历到第n个元素，并且我们初始化了第0个台阶，所以是n + 1 长度
+  dp[0] = 1;
+  dp[1] = 1;
+  for (let i = 2; i < dp.length; i++) { // 将所有数据填入表格
+    dp[i] = dp[i - 1] + dp[i - 2]; // 状态转移方程
+  }
+  return dp[n];
 };
+
+// 优化 由于我们只需要保存前两个节点即可，可以使用两个指针，将空间降为o(1)
+var climbStairs = function (n) {
+  let prev = cur = 1;
+  let temp = undefined;
+  for (let i = 2; i < n + 1; i++) { // 从第二阶开始：0 和 1 都有了
+    temp = cur;
+    cur = prev + cur; // 向前移动 cur 和 prev
+    prev = temp;
+  }
+  return cur;
+}
 // @lc code=end
 
