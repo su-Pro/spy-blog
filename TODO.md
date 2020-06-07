@@ -8,7 +8,8 @@
 
 TODO: 流量控制
 TODO: 拥塞策略
-TODO: HTTP 自己总结的回顾
+done: HTTP 自己总结的回顾
+TODO: 晚上过一遍，将老哥提示的点进行补充，图片准备完成，草稿编辑完毕，github 更新网络部分.
 
 ## vue
 
@@ -39,4 +40,6 @@ TODO: 回顾 demo 已准备的 node 面试题
 
 ## css
 
-TODO: [关于 opacity:0、visibility:hidden、display:none 三个属性的比较以及拓展](https://blog.csdn.net/weixin_38080573/article/details/79435869?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase)
+TODO: [关于 opacity:0、visibility:hidden、display:none 三个属性的比较以及拓展](https://blog.csdn.net/eixin_38080573/article/details/79435869?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase)
+
+TODO: 实现单例模式
