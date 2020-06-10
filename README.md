@@ -94,7 +94,7 @@
 
 [你说一下你对原型的认识](https://github.com/sup-fiveyear/Notes/issues/3)
 
-- [ ] 继承方案都有哪些？
+[说一下继承方案](./notes-JavaScript/说说继承.md)
 
 [ES6 - class 原理有了解吗？](https://github.com/sup-fiveyear/Notes/issues/18)
 
@@ -120,7 +120,11 @@
 
 [实现极简发布订阅模式](/notes-JavaScript/实现极简发布订阅.md)
 
-#### web 原理模拟
+[Promise - 如何实现PromiseA+ 规范中的Promise类？](/notes-JavaScript/实现PromiseA+.md)
+
+[Promise - 在Nodejs中，如何将一个异步函数promisify?](/notes-JavaScript/promisify.md)
+
+[Promise - 场景题汇总](./notes-JavaScript/promise练习.md)
 
 - [ ] 封装 AJAX
 - [ ] Nodejs-事件系统
@@ -143,7 +147,7 @@
 
 [说说你对\$mount 和模板编译的理解？](notes-vue/$mount和模板编译原理.md)
 
-[说一下nextTick?](notes-vue/说一下nextTick?.md)
+[说一下nextTick?](notes-vue/说一下你对$nextTick的理解.md)
 
 - [ ] 详细说说虚拟 DOM？
 
@@ -434,19 +438,25 @@ css 和 js 阻塞页面渲染？你怎么理解？
 
 [说说你是如何理解 TCP 的？](./notes-网络/TCP/说说你是如何理解TCP的？.md)
 
-[简述一下 TCP 报文结构](./notes-网络/TCP/简述一下TCP报文结构.md)
+[简述一下 TCP 报文结构?](./notes-网络/TCP/简述一下TCP报文结构.md)
 
-[TCP 建立连接？](./notes-网络/TCP/TCP建立连接？.md)
+[描述一下你理解的TCP握手过程](./notes-网络/TCP/TCP建立连接？.md)
 
-[说说 TCP 挥手过程](./notes-网络/TCP/说说TCP挥手过程.md)
+[说一下你对MSS和数据传输的理解？](./notes-网络/TCP/说说你对MSS的理解.md)
 
-- [ ] 快速打开?
+[说一下你对超时重传的理解？](./notes-网络/TCP/说说你对超时重传的理解.md)
 
-- [ ] 流量控制？
+[说说你对滑动窗口的理解？](./notes-网络/TCP/说说你对滑动窗口的理解.md)
 
-- [ ] Nagle 算法？
+[说说如何减少网络过程中的小报文？](./notes-网络/TCP/说说如何减少网络过程中的小报文？.md)
 
-- [ ] keepalive？
+[知道慢启动、拥塞避免、快速重传和快速恢复吗？](./notes-网络/TCP/知道慢启动、拥塞避免、快速重传和快速恢复吗.md)
+ 
+[那你知道选择性重传算法吗？（SACK）](./notes-网络/TCP/那你知道SACK和选择性重传算法吗.md)
+
+[说说 TCP 断开的过程](./notes-网络/TCP/说说TCP挥手过程.md)
+
+[知道TCP的keepalive机制吗？](./notes-网络/TCP/知道TCP的keepalive机制吗.md)
 
 #### UDP
 
@@ -454,7 +464,12 @@ css 和 js 阻塞页面渲染？你怎么理解？
 
 - [ ] 为什么DNS使用UDP协议？
 
+#### IP
 
-### Linux
+
+### Linux 
+
+> 现在只局限于 terminal常见指令的使用，没有做系统的整理和学习不过请给我点时间！！！
 
 [🛫 飞回索引！](#索引)
+

@@ -1,10 +1,10 @@
 
-function myCall (context = window) {
-//  挂载到对象上
+function myCall(context = window) {
+  //  挂载到对象上
   context.fn = this;
   // 收集参数
   var args = [];
-  for(var i = 1,len = arguments.length;i < len;i++) {
+  for (var i = 1, len = arguments.length; i < len; i++) {
     // 能够通过作用域链访问到变量
     args.push(`arguments(${i})`);
   }
@@ -13,15 +13,15 @@ function myCall (context = window) {
   delete context.fn;
 }
 
-function myApply(context,arr) {
+function myApply(context, arr) {
   var context = Object(context) || window;
   context.fn = this;
   var result;
-  if(!arr) {
+  if (!arr) {
     result = context.fn();
-  }else {
+  } else {
     var args = [];
-    for (var i = 0,len = arr.length;i < len;i++){
+    for (var i = 0, len = arr.length; i < len; i++) {
       args.push(`arguments(${i})`)
     }
     result = eval(`context.fn(${args})`)
@@ -31,12 +31,12 @@ function myApply(context,arr) {
 }
 
 // 返回一个函数,修改this
-  function myBind(context) {
-    var fn = this;
-    return function () {
-      fn.apply(context)
-    }
+function myBind(context) {
+  var fn = this;
+  return function () {
+    fn.apply(context)
   }
+}
 //处理 内外层参数
 function myBind(context) {
   var fn = this;
@@ -44,7 +44,7 @@ function myBind(context) {
   return function () {
     // 不就是为了拷贝一份arguments么？用别的api不行吗？
     var bindArgs = Array.prototype.slice.call(arguments)
-    fn.apply(context,args.concat(bindArgs))
+    fn.apply(context, args.concat(bindArgs))
   }
 }
 // 处理如果绑定后的函数被当做构造函数调用
@@ -60,11 +60,11 @@ function myBind(context) {
 function myBind(context) {
   var fn = this;
   var args = [].shift.call(context)
-  function F () {}
+  function F() { }
   var fBound = function () {
     var bindArgs = [].slice.call(arguments);
     var flag = this instanceof fBound;
-    fn.apply(flag ? this : context,args.concat(bindArgs))
+    fn.apply(flag ? this : context, args.concat(bindArgs))
   }
   F.prototype = this.prototype;
   fBound.prototype = new F();
