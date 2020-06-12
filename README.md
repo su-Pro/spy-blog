@@ -126,20 +126,25 @@
 
 [Promise - 场景题汇总](./notes-JavaScript/promise练习.md)
 
-- [ ] 封装 AJAX
-- [ ] Nodejs-事件系统
+[Nodejs- 实现eventEmitter](./练习-Nodejs/eventEmitter.js); (待写简要思路)
 
-#### 封装组件
+#### 功能封装
+
+[封装一个vue-lazy吧](./vue%20手写/lazyLoad/note.md)
+
+[封装一个在线运行组件]()
+
+[封装一个表单验证吧]()
 
 ## vue
 
 [🛫 飞回索引！](#索引)
 
-[‼️‼️ 吐血自问自答 vue.js 面试题](notes-vue/面试题.md)
+[‼️‼️ 吐血自问自答 vue.js](notes-vue/面试题.md)
 
 [vuex 源码原理总结](notes-vue/vuex.md)
 
-[路由源码原理总结](notes-vue/vue-router.md)
+[vue-router 源码原理总结](notes-vue/vue-router.md)
 
 [实现一个简单的数据侦测？](note-vue/../notes-vue/响应式原理.md)
 
@@ -147,7 +152,7 @@
 
 [说说你对\$mount 和模板编译的理解？](notes-vue/$mount和模板编译原理.md)
 
-[说一下nextTick?](notes-vue/说一下你对$nextTick的理解.md)
+[说一下你对nextTick的理解?](notes-vue/说一下你对$nextTick的理解.md)
 
 - [ ] 详细说说虚拟 DOM？
 
@@ -173,9 +178,9 @@
 
 [说说你对模块化的理解？](notes-nodeJs/5.%20说说你对模块化的理解？.md)
 
-[顺带说说npm吧?](notes-nodeJs/6.%20顺带说说npm吧?.md)
-
 [说一下Nodejs的异步编程吧？](notes-nodeJs/说一下Nodejs的异步编程吧.md)
+
+
 
 ## 性能优化
 
@@ -220,43 +225,38 @@ css 和 js 阻塞页面渲染？你怎么理解？
 
 #### 数组
 
-|                                       出处                                        |                Hint + 解                 |
-| :-------------------------------------------------------------------------------: | :--------------------------------------: |
-|                                                                                   |                                          |
-|             [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)              |                   map                    |
+|                             原题出处                             |                Hint + 解                 |
+| :----------------------------------------------------------: | :--------------------------------------: |
+| [面试题03. 数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/) |        [哈希/quickSort + 前后比较](练习-数据结构算法刷题/数组/217.存在重复元素.js)         |
+|   [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)   |                   map                    |
 | [11. 盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) |                双指针夹逼                |
-|           [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/)            |                                          |
-|                                    2 数之和？                                     |               指针 + swap                |
-|                                    3 数之和？                                     |                                          |
-|                                    数组去重？                                     |                                          |
-|                                                                                   |                                          |
-|                                                                                   |                                          |
-|                     〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                      | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
+| [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/) |      [双指针 + swap （不为0一起动）](./练习-数据结构算法刷题/数组/283.移动零.js)       |
+|                          3 数之和？                          |                                          |
+|                          数组去重？                          |                                          |
+|           〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️           | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
 
 #### 链表（和递归天然结合，因此融合了递归一部分题型，理解就好）
 
-|                                          出处                                           |               Hint + 解：                |
-| :-------------------------------------------------------------------------------------: | :--------------------------------------: |
-|         [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)          |                                          |
-|   [876. 链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/)    |                                          |
-|          [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)           |                                          |
-|                                   有序链表插入元素？                                    |                                          |
-|            [86. 分隔链表](https://leetcode-cn.com/problems/partition-list/)             |                                          |
-|    [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)     |                                          |
-|                                        重排链表                                         |                                          |
-|    [24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)    |                                          |
-|            [2. 两数相加](https://leetcode-cn.com/problems/add-two-numbers/)             |                                          |
-|                                   merge sort 链表？？                                   |                                          |
-|       [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)       |                                          |
-|   [25. K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)    |                                          |
+|                             原题出处                             |               Hint + 解：                |
+| :----------------------------------------------------------: | :--------------------------------------: |
+| [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/) |                                          |
+| [876. 链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/) |                                          |
+| [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/) |                                          |
+|                      有序链表插入元素？                      |                                          |
+| [86. 分隔链表](https://leetcode-cn.com/problems/partition-list/) |                                          |
+| [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/) |                                          |
+|                           重排链表                           |                                          |
+| [24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) |                                          |
+| [2. 两数相加](https://leetcode-cn.com/problems/add-two-numbers/) |                                          |
+|                     merge sort 链表？？                      |                                          |
+| [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/) |                                          |
+| [25. K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) |                                          |
 | [面试题 02.06. 回文链表](https://leetcode-cn.com/problems/palindrome-linked-list-lcci/) |                                          |
-|                                                                                         |                                          |
-|                                                                                         |                                          |
-|                        〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                         | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
+|           〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️           | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
 
 #### 栈 & 队列
 
-|                                 出处                                  |               Hint + 解：                |
+|                                 原题出处                                  |               Hint + 解：                |
 | :-------------------------------------------------------------------: | :--------------------------------------: |
 | [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) |  DOM 树如何维护层级关系？这题就怎么做..  |
 |                              min stack？                              |                                          |
@@ -266,34 +266,31 @@ css 和 js 阻塞页面渲染？你怎么理解？
 |                              矩形面积？                               |                                          |
 |                              滑动窗口？                               |                                          |
 |                             队列实现栈？                              |                                          |
-|               〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
+|               〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
 
 #### 树（和递归天然结合，因此融合了递归一部分题型，理解就好）
 
-|                                                            出处                                                             |                   Hint + 解：                   |
-| :-------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------: |
-|               [二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal),(后序,前序)                |  在模拟后续实现思路时，注意剪枝这个 hack 操作   |
-|                 [429. N 叉树的层序遍历](https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/)                 | 利用 children 接口很简单，如果限制只能 DFS 呢？ |
-|                          [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)                          |                                                 |
-|                             [101. 对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/)                             |        左左 === 右右 && 左右 == 右左 👊         |
-|                     [98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)                     |                                                 |
-|                                                      二叉搜索树减枝？                                                       |                                                 |
-|                                                      二叉树搜索区间？                                                       |                                                 |
-|              [958. 二叉树的完全性检验](https://leetcode-cn.com/problems/check-completeness-of-a-binary-tree/)               |                                                 |
-|                       [验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree)                        |                                                 |
-|         [二叉搜索树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree)         |                                                 |
-|            [有序链表转换二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree)             |                                                 |
-|                    [面试题 07. 重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/)                    |   inorder\preorder 特点 + 分而治之 + sliceAPI   |
-|                      [面试题 26. 树的子结构](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)                      |          巧妙找到入口 + 精干的条件判断          |
-|                 [面试题 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)                  |            画图找规律：swap 子树的值            |
-|      [面试题 32 - I. 从上到下打印二叉树](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)       |                      队列                       |
-|   [面试题 32 - II. 从上到下打印二叉树 II](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/)   |                   队列 + 计数                   |
-| [面试题 32 - III. 从上到下打印二叉树 III](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/)  |        画图找规律：reverse 输出/双栈思想        |
+|                             原题出处                             |                   Hint + 解：                   |
+| :----------------------------------------------------------: | :---------------------------------------------: |
+| [二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal),(后序,前序) |  在模拟后续实现思路时，注意剪枝这个 hack 操作   |
+| [429. N 叉树的层序遍历](https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/) | 利用 children 接口很简单，如果限制只能 DFS 呢？ |
+| [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/) |                                                 |
+| [101. 对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/) |         左左 === 右右 && 左右 == 右左 👊         |
+| [98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/) |                                                 |
+|                       二叉搜索树减枝？                       |                                                 |
+|                       二叉树搜索区间？                       |                                                 |
+| [958. 二叉树的完全性检验](https://leetcode-cn.com/problems/check-completeness-of-a-binary-tree/) |                                                 |
+| [验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree) |                                                 |
+| [二叉搜索树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree) |                                                 |
+| [有序链表转换二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree) |                                                 |
+| [面试题 07. 重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/) |   inorder\preorder 特点 + 分而治之 + sliceAPI   |
+| [面试题 26. 树的子结构](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/) |          巧妙找到入口 + 精干的条件判断          |
+| [面试题 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/) |            画图找规律：swap 子树的值            |
+| [面试题 32 - I. 从上到下打印二叉树](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/) |                      队列                       |
+| [面试题 32 - II. 从上到下打印二叉树 II](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/) |                   队列 + 计数                   |
+| [面试题 32 - III. 从上到下打印二叉树 III](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/) |        画图找规律：reverse 输出/双栈思想        |
 | [面试题 34. 二叉树中和为某一值的路径](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/) |                  DFS + 回溯法                   |
-|                                                                                                                             |                                                 |
-|                                                                                                                             |                                                 |
-|                                                                                                                             |                                                 |
-|                                          〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                                           |    〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️     |
+|           〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️           |    〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️     |
 
 #### hashTable
 
@@ -303,7 +300,7 @@ css 和 js 阻塞页面渲染？你怎么理解？
 
 #### 排序
 
-|                                出处                                 |               Hint + 解：                |
+|                                原题出处                                 |               Hint + 解：                |
 | :-----------------------------------------------------------------: | :--------------------------------------: |
 |                              选择排序                               |                                          |
 |                              选择排序                               |                                          |
@@ -311,37 +308,30 @@ css 和 js 阻塞页面渲染？你怎么理解？
 |                              归并排序                               |                                          |
 |                              彩虹排序                               |                                          |
 | [169. 多数元素](https://leetcode-cn.com/problems/majority-element/) |                                          |
-|              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️               | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
+|              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️               | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
 
 ### 二分
 
-|                   出处                   |               Hint + 解：                |
+|                   原题出处                   |               Hint + 解：                |
 | :--------------------------------------: | :--------------------------------------: |
 |                                          |                                          |
 |                                          |                                          |
 |                                          |                                          |
-| 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
+| 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
 
 ### Recursion + DFS
 
-|                                                                出处                                                                |                                        Hint + 解：                                         |
-| :--------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
-|                                  [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)                                   |                                                                                            |
-|                               [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/)                               | [递归穷举后，添加限制条件（括号正确性判断）](./练习-数据结构算法刷题/递归/22.括号生成.js)  |
-|                                     [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)                                      | [快速幂求值（注意数学边界），缩小问题规模（递归](练习-数据结构算法刷题/递归/50.pow-x-n.js) |
-|                                       [78. 子集](https://leetcode-cn.com/problems/subsets/)                                        |        [01 问题，加或者不加，注意引用值问题](练习-数据结构算法刷题/递归/78.子集.js)        |
-|                                      [51. N 皇后](https://leetcode-cn.com/problems/n-queens/)                                      |                                                                                            |
-|                                   [322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)                                   |                                                                                            |
-|               [236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)               |                                                                                            |
-| [105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) |                                                                                            |
-|                                                                                                                                    |                                                                                            |
-|                                                                                                                                    |                                                                                            |
-|                                                                                                                                    |                                                                                            |
-|                                                                                                                                    |                                                                                            |
-|                                                                                                                                    |                                                                                            |
-|                                                                                                                                    |                                                                                            |
-|                                                                                                                                    |                                                                                            |
-|                                              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                                              |                          〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                          |
+|                             原题出处                             |                         Hint + 解：                          |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/) |                                                              |
+| [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/) | [递归穷举后，添加限制条件（括号正确性判断）](./练习-数据结构算法刷题/递归/22.括号生成.js) |
+|  [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)   | [快速幂求值（注意数学边界），缩小问题规模（递归](练习-数据结构算法刷题/递归/50.pow-x-n.js) |
+|    [78. 子集](https://leetcode-cn.com/problems/subsets/)     | [01 问题，加或者不加，注意引用值问题](练习-数据结构算法刷题/递归/78.子集.js) |
+|   [51. N 皇后](https://leetcode-cn.com/problems/n-queens/)   |                                                              |
+| [322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/) |                                                              |
+| [236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/) |                                                              |
+| [105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) |                                                              |
+|           〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️           |           〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️           |
 
 - [ ] [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
 - [ ]
@@ -350,28 +340,25 @@ css 和 js 阻塞页面渲染？你怎么理解？
 
 ### BFS
 
-|                                                                    出处                                                                     |               Hint + 解：                |
-| :-----------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------: |
-|                                  [130. 被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/)                                  |                                          |
+|                             原题出处                             |               Hint + 解：                |
+| :----------------------------------------------------------: | :--------------------------------------: |
+| [130. 被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/) |                                          |
 | [K Smallest in Unsorted Array](https://github.com/publicclassoverflow/laicode/blob/master/src/G/HeapAndBFS/Medium/KSmallestInUnsortedArray) |                                          |
-|                                    [200. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands/)                                     |                                          |
-|                                       [127. 单词接龙](https://leetcode-cn.com/problems/word-ladder/)                                        |                                          |
-|                                    [126. 单词接龙 II](https://leetcode-cn.com/problems/word-ladder-ii/)                                     |                                          |
-|                                                                                                                                             |                                          |
-|                                       [529. 扫雷游戏](https://leetcode-cn.com/problems/minesweeper/)                                        |                                          |
-|                     [515. 在每个树行中找最大值](https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row/)                      |                                          |
-|                                                                                                                                             |                                          |
-|                                                  〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                                                   | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
+| [200. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands/) |                                          |
+| [127. 单词接龙](https://leetcode-cn.com/problems/word-ladder/) |                                          |
+| [126. 单词接龙 II](https://leetcode-cn.com/problems/word-ladder-ii/) |                                          |
+| [515. 在每个树行中找最大值](https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row/) |                                          |
+|           〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️           | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
 
 ### DP
 
-|                                                出处                                                |               Hint + 解：                |
+|                                                原题出处                                                |               Hint + 解：                |
 | :------------------------------------------------------------------------------------------------: | :--------------------------------------: |
 |                  [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)                   |     一维 dp，线性回头看（斐波那契）      |
 |                    [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/)                     |                                          |
 |                 [45. 跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/)                  |                                          |
 | [122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) |                                          |
-|                              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                              | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
+|                              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                              | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
 
 ## 网络
 
@@ -379,7 +366,7 @@ css 和 js 阻塞页面渲染？你怎么理解？
 
 - [ ] 输入一个 url 会发生什么？
 
-#### HTTP + s
+#### HTTP1.1
 
 [你是如何理解 HTTP 的？特点有哪些？](/notes-网络/HTTP/你是如何理解HTTP的？特点有哪些？.md)
 
@@ -387,25 +374,23 @@ css 和 js 阻塞页面渲染？你怎么理解？
 
 [说一下你对域名的理解](/notes-网络/HTTP/说一下你对域名的理解？.md)
 
-[描述一下 HTTP 报文结构?](/notes-网络/HTTP/描述一下HTTP报文结构.md)
+[描述一下 HTTP 报文结构和常见的头部字段?](/notes-网络/HTTP/描述一下HTTP报文结构.md)
 
  [说一下 HTTP 的内容协商？](/notes-网络/HTTP/说一下%20HTTP%20的内容协商？.md)
 
-  [请求方法都有哪些？GET 和 POST 又有什么区别？](notes-网络/HTTP/请求方法都有哪些？GET和POST又有什么区别？.md)
+[请求方法都有哪些？GET 和 POST 又有什么区别？](notes-网络/HTTP/请求方法都有哪些？GET和POST又有什么区别？.md)
 
-  [常见状态码说一下？](notes-网络/HTTP/常见状态码.md)
+[常见状态码说一下？](notes-网络/HTTP/常见状态码.md)
 
-  [HTTP 重定向有了解吗？](notes-网络/HTTP/说一下重定向和跳转.md)
+[HTTP 重定向有了解吗？](notes-网络/HTTP/HTTP%20重定向有了解吗？.md)
 
-   [说一下你了解的缓存策略？](notes-网络/TCP/简述一下TCP报文结构.md)
+[说一下你了解的缓存策略？](notes-网络/TCP/../HTTP/说下你了解的缓存策略.md)
 
-  [HTTP 传输大文件有了解过吗？](notes-网络/HTTP/HTTP传输大文件有了解过吗？.md)
+[HTTP 传输大文件有了解过吗？](notes-网络/HTTP/HTTP传输大文件有了解过吗？.md)
 
-   [了解 HTTP 长连接吧？那队头阻塞呢？](/notes-网络/HTTP/了解HTTP长连接吧？那队头阻塞呢？.md)
+[了解 HTTP 长连接吧？那队头阻塞呢？](/notes-网络/HTTP/了解HTTP长连接吧？那队头阻塞呢？.md)
 
-   [描述一下 cookie？](/notes-网络/HTTP/说说你对cookie的理解%20.md)
-
-[HTTP 2/3 有了解吗？](/notes-网络/HTTP/说说HTTP2%20和HTTP3.md)
+[描述一下 cookie？](/notes-网络/HTTP/说说你对cookie的理解%20.md)
 
 
 [HTTP 性能优化方向有哪些？](/notes-网络/HTTP/HTTP%20性能优化方向有哪些？.md)
@@ -415,24 +400,27 @@ css 和 js 阻塞页面渲染？你怎么理解？
 
 - [ ] Restful API 了解吗？你的最佳实践是什么？
 
-
-**S**
-
-[说一下 HTTP 和 HTTPS 的区别](/notes-网络/HTTP/说一下HTTP%20和%20HTTPS%20的区别.md)
-
-[说说对称加密和非对称加密的理解？](/notes-网络/HTTP/说说对称加密和非对称加密的理解？.md)
-
-[摘要算法?和数据签名？](notes-网络/HTTP/摘要算法?和数据签名？.md)
-
-[说一下 TLS 握手](/notes-网络/HTTP/说一下TLS%20建立连接过程.md)
-
-[HTTPS优化策略有了解吗？](notes-网络/HTTP/HTTPS优化策略有了解吗？.md)
-
 #### websocket
 
 - [ ] 说说你对websocket的理解？
-
 - [ ] 他的应用领域有哪些？
+- [ ] websocket的长连接知道吗？
+
+#### HTTP2
+
+[HTTP 2/3 有了解吗？](/notes-网络/HTTP/说说HTTP2%20和HTTP3.md)
+
+#### HTTPS
+
+[说一下 HTTP 和 HTTPS 的区别](/notes-网络/HTTPS/说一下HTTP%20和%20HTTPS%20的区别.md)
+
+[说说对称加密和非对称加密的理解？](/notes-网络/HTTPS/说说对称加密和非对称加密的理解？.md)
+
+[摘要算法?和数据签名？](notes-网络/HTTPS/摘要算法?和数据签名？.md)
+
+[说一下 TLS 握手](/notes-网络/HTTPS/说一下TLS%20建立连接过程.md)
+
+[HTTPS优化策略有了解吗？](notes-网络/HTTPS/HTTPS优化策略有了解吗？.md)
 
 #### TCP
 
@@ -451,7 +439,7 @@ css 和 js 阻塞页面渲染？你怎么理解？
 [说说如何减少网络过程中的小报文？](./notes-网络/TCP/说说如何减少网络过程中的小报文？.md)
 
 [知道慢启动、拥塞避免、快速重传和快速恢复吗？](./notes-网络/TCP/知道慢启动、拥塞避免、快速重传和快速恢复吗.md)
- 
+
 [那你知道选择性重传算法吗？（SACK）](./notes-网络/TCP/那你知道SACK和选择性重传算法吗.md)
 
 [说说 TCP 断开的过程](./notes-网络/TCP/说说TCP挥手过程.md)
@@ -466,10 +454,10 @@ css 和 js 阻塞页面渲染？你怎么理解？
 
 #### IP
 
-
 ### Linux 
 
 > 现在只局限于 terminal常见指令的使用，没有做系统的整理和学习不过请给我点时间！！！
 
 [🛫 飞回索引！](#索引)
+
 

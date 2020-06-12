@@ -4,43 +4,43 @@
  */
 
 class EventEmitter {
-  constructor () {
+  constructor() {
     this.events = {}
     // 最大数量，可更改
     this._max = 10
   }
-  $on (type,handle) {
-    if(this._events[type]){
+  $on(type, handle) {
+    if (this._events[type]) {
       this.events[type].push(handle)
     }
     // 判断最大长度是否超出
-    if(this._max != 0 && this.events[type].length > this._max) {
+    if (this._max != 0 && this.events[type].length > this._max) {
       console.error('...')
-    }else{
+    } else {
       // 注意是数组形式；
       this.events[type] = [handle]
     }
   }
-  $emit(type,...msg){
+  $emit(type, ...msg) {
     const listeners = this.events[type]
-    listeners.length && listeners.forEach(l => l.apply(this,msg));
+    listeners.length && listeners.forEach(l => l.apply(this, msg));
   }
-  $once(type,handle) {
+  $once(type, handle) {
     const wrapper = () => {
       handle.call(this)
-      this.removeListener(type,wrapper)
+      this.removeListener(type, wrapper)
     }
-    this.$on(type,wrapper)
+    this.$on(type, wrapper)
   }
-  removeAllListeners (type) {
+  removeAllListeners(type) {
     this.events[type] && delete this.events[type]
   }
-  removeListener(type,handle) {
-    const listeners =  this.events[type]
-    listeners? listeners.filter(
+  removeListener(type, handle) {
+    const listeners = this.events[type]
+    listeners ? listeners.filter(
       (l => l != handle)
-    ) 
-    : listeners
+    )
+      : listeners
   }
 }
 
@@ -49,12 +49,12 @@ const myEmit = new EventEmitter()
 //   // dosomething...
 // })
 
-myEmit.$emit('my-click','hello wrold')
-myEmit.$once('my-once',function () {
+myEmit.$emit('my-click', 'hello wrold')
+myEmit.$once('my-once', function () {
   // dosomething....
 })
 // 因此在注册事件时，尽量使用函数名称进行注册，便于销毁时进行匹对
-myEmit.removeListener('my-click',function () {
+myEmit.removeListener('my-click', function () {
 })
 myEmit.removeAllListeners('my-click')
 myEmit.listeners('my-click')

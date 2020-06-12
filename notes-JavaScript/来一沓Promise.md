@@ -4,8 +4,6 @@
 
 它是用来解决形如“回调地狱” 的**异步串行**编程风格问题，主要策略：**将一个处理函数传入到 Promise 的 then 方法中，当 Promise 构造函数中获得最终结果后，会将结果传递给此时的then函数并执行他，当then函数完成后会告诉下一个 then 方法如何进行操作。**
 
-TODO: 封装ajax函数，补上ajax发起网络请求的回调地狱场景
-
 ### 特性
 
 #### 状态机
@@ -149,9 +147,13 @@ nodejs promisify
 
 #### 链式调用then
 
+#### catch方法
+
 #### finally方法
 
-finally本质上是then方法的特例
+finally本质上是then方法的特例，会将上一个then方法传递的参数，原封不动的传递到下一个then方法中，包括上一个抛出错误， 也会原封不动的传递下去。
+
+> 有点中间件的意思？
 
 ```js
 promise
@@ -187,31 +189,35 @@ Promise.finally = function (fn) {
 
 #### 并发all方法
 
+首先需要遍历这些参数，将他们依次执行，如果成功会将结果保存到一个数组中，最终将这个数组返回。
+
 ```js
 Promise._all = promises => new Promsie((resolve,reject) => {
   const resArr = new Array(promises.length);
   let _index = 0; // 用于标识当前已经完成的并发数
   // 用于将当前值加入到指定resArr，保证结果有序
-  const resolveData = (i,data) => {
+  const pushData = (i,data) => {
     resArr[i] = data;
     // 如果当前结果已经达到数量，就会调用resolve并将结果传递回去
     // 先++ 是因为起始位为0
     // 每做完一个任务就会+1
     if(++_index === promises.length) {
-      resolve(data)
+      resolve(resArr)
     }
   }
   promises.forEach((promise,index) => {
     if(isPromise(promise)) {
       // 会根据该promise的状态确定新的promise
       // 有一个失败则所有都会失败
-      promise.then((data) => { resolveData(index,promise) },reject)
+      promise.then((data) => { pushData(index,promise) },reject)
     }else {
     // 如果不是promise，会将该结果直接放入到数组中
-    resolveData(index,promise)
+    pushData(index,promise)
     }
   })
 })
+
+let isPromise = promise => typeof promise.then === 'function'
 ```
 
 #### race方法实现
@@ -226,3 +232,5 @@ Promise._race = promises => new Promise((resolve,rejcet) => {
 })
 ```
 
+
+#### Promise.allSettled()
