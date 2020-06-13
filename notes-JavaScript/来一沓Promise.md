@@ -94,7 +94,13 @@ Promise.reject(reason)方法也会返回一个新的 Promise 实例，该实例�
 
 #### Promise.prototype.catch()
 
-todo: 详解
+- Promise.prototype.catch()方法是.then(null, rejection)或.then(undefined, rejection)的别名，用于指定发生错误时的回调函数。
+
+- then()方法指定的回调函数，如果运行中抛出错误，也会被catch()方法捕获。
+
+- Promise 对象的错误具有“冒泡”性质，会一直向后传递，直到被捕获为止。也就是说，错误总是会被下一个catch语句捕获。
+  
+- 如果没有使用catch()方法指定错误处理的回调函数，Promise 对象抛出的错误不会传递到外层代码，即不会有任何反应。（俗称吃掉错误信息）
 
 #### Promsie.all()
 
@@ -113,7 +119,7 @@ p1,p2,p3 都是 Promise 实例，如果不是，会调用Promise.resolve方法�
 
 - 只要p1、p2、p3之中有一个被rejected，p的状态就变成rejected，此时第一个被reject的实例的返回值，会传递给p的回调函数。
 - 只有p1、p2、p3的状态都变成fulfilled，p的状态才会变成fulfilled，此时p1、p2、p3的返回值组成一个数组，传递给p的回调函数。
-nodejs promisify
+
 
 #### Promise.race()
 
@@ -124,6 +130,12 @@ nodejs promisify
 用于指定不管 Promise 对象最后状态如何，都会执行的操作。
 
 > finally方法的回调函数不接受任何参数，这意味着没有办法知道，前面的 Promise 状态到底是fulfilled还是rejected。这表明，finally方法里面的操作，应该是与状态无关的，不依赖于 Promise 的执行结果。
+
+#### nodejs：promisify
+
+#### Promise.allsettled（）
+
+[Promise.allsettled](https://es6.ruanyifeng.com/?search=catch&x=0&y=0#docs/promise#Promise-allSettled)
 
 ### 基于Promise的产物
 
@@ -146,8 +158,6 @@ nodejs promisify
 #### 发布订阅
 
 #### 链式调用then
-
-#### catch方法
 
 #### finally方法
 
@@ -176,61 +186,99 @@ promise
 ```
 
 ```js
-Promise.finally = function (fn) {
-  const P = this.constructor;
-  // 此时的this是上一次调用完then返回的新Promise
-  // 在这里就是做一个层透穿，重点是将fn执行
-  return this.then( 
-    data => P.resolve(fn()).then(() => data),
-    err => P.resolve(fn()).then(() => {throw err})
-    )
-}
+Promise._finally = cb =>  (this.then(
+  value => Promise.resolve(cb()).then(() => value),
+  error => Promise.resolve(cb()).then(() => throw error)
+))
 ```
 
 #### 并发all方法
 
-首先需要遍历这些参数，将他们依次执行，如果成功会将结果保存到一个数组中，最终将这个数组返回。
+Promise.all(iterators)返回一个新的 Promise 实例。iterators 中包含外界传入的多个 promise 实例。
+
+对于返回的新的 Promise 实例，有以下两种情况：
+
+- 如果传入的所有 promise 实例的状态均变为fulfilled，那么返回的 promise 实例的状态就是fulfilled，并且其 value 是 传入的所有 promise 的 value 组成的数组。
+- 如果有一个 promise 实例状态变为了rejected，那么返回的 promise 实例的状态立即变为rejected。
 
 ```js
-Promise._all = promises => new Promsie((resolve,reject) => {
-  const resArr = new Array(promises.length);
-  let _index = 0; // 用于标识当前已经完成的并发数
-  // 用于将当前值加入到指定resArr，保证结果有序
-  const pushData = (i,data) => {
-    resArr[i] = data;
-    // 如果当前结果已经达到数量，就会调用resolve并将结果传递回去
-    // 先++ 是因为起始位为0
-    // 每做完一个任务就会+1
-    if(++_index === promises.length) {
-      resolve(resArr)
-    }
-  }
-  promises.forEach((promise,index) => {
-    if(isPromise(promise)) {
-      // 会根据该promise的状态确定新的promise
-      // 有一个失败则所有都会失败
-      promise.then((data) => { pushData(index,promise) },reject)
-    }else {
-    // 如果不是promise，会将该结果直接放入到数组中
-    pushData(index,promise)
-    }
-  })
-})
+Promise._all = iterator => {
+  // 1. 包装参数
+  // 2. 初始化返回结果
+  // 3. 初始化并发控制器
+  let promises = Array.form(iterator);
+  let n = promises.length;
+  let promisesNums = 0;
+  let promisesData = new Array(n);
 
-let isPromise = promise => typeof promise.then === 'function'
+  return Promise((resolve,reject) => {
+    promises.forEach((promise,index) => {
+      // 使用resolve 包装promise
+      Promise.resolve(promise).then(data => {
+        // 1. 加入到结果中
+        // 2. 控制并发数量
+        promisesData[idnex] = data;
+        if(++promisesNums === n) {
+          resolve(promisesData)
+        }
+      })
+      // 3. 如果出错，直接reject 
+      .catch(reject)
+    })  
+  })
+}
 ```
 
 #### race方法实现
 
 ```js
-Promise._race = promises => new Promise((resolve,rejcet) => {
+Promise._race = iterator => {
+  let promises = Array.from(iterator);
+  
+  new Promise((resolve,reject) => {
+  //  只要有一个先到达，就返回其结果和他的状态
   promises.forEach(promise => {
-    // 谁先完成，就会将状态推向resolve或者reject
-    // 这里的resolve 和 reject 是_race返回的Promise
-    promise.then(resolve,rejcet);
+    Promise.resolve(promise)
+    .then(resolve)
+    .catch(reject)
   })
 })
+}
 ```
 
-
 #### Promise.allSettled()
+
+只需要在all实现的基础上， 将结果和状态进行关联，组成一个对象返回即可。
+
+
+```js
+const formatSettledResult = (success, value) =>
+    success
+        ? { status: "fulfilled", value }
+        : { status: "rejected", reason: value };
+
+Promise.allSettled = function(iterators) {
+    const promises = Array.from(iterators);
+    const num = promises.length;
+    const settledList = new Array(num);
+    let settledNum = 0;
+
+    return new Promise(resolve => {
+        promises.forEach((promise, index) => {
+            Promise.resolve(promise)
+                .then(value => {
+                    settledList[index] = formatSettledResult(true, value);
+                    if (++settledNum === num) {
+                        resolve(settledList);
+                    }
+                })
+                .catch(error => {
+                    settledList[index] = formatSettledResult(false, error);
+                    if (++settledNum === num) {
+                        resolve(settledList);
+                    }
+                });
+        });
+    });
+};
+```
