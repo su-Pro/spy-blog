@@ -18,46 +18,20 @@
  * 当 i 和 j 相遇说明处理完毕，退出即可
  */
 var maxArea = function (height) {
-	var area = cur = 0,
-		i = 0,
-		j = height.length - 1;
-		// 两个元素Debug循环条件
-	while (j - i >= 1) {
-		// 循环处理
-		if (height[i] > height[j]) {
-			// 因为水只能向矮的一侧进行堆积
-			cur = height[j--] * (j - i)
-		} else {
-			cur = height[i++] * (j - i)
-		}
-		area = Math.max(area, cur)
-	}
-	return area;
-
-
-
-
-
-
-
-
-
-
-
-
-
-function _ (arr) {
-  var i = 0,j = arr.length - 1,maxArea = 0,curMax = 0;
-  while(i <= j - 1) {
-    // debug 相等时的case
-    if(arr[i] < arr[j]){
-      curMax = arr[i++] * (j -i);
-    }else {
-      curMax = arr[j--] * (j -i);
+  var area = cur = 0,
+    i = 0,
+    j = height.length - 1;
+  // 两个元素Debug循环条件
+  while (j - i >= 1) {
+    // 循环处理
+    if (height[i] > height[j]) {
+      // 因为水只能向矮的一侧进行堆积
+      cur = height[j--] * (j - i)
+    } else {
+      cur = height[i++] * (j - i)
     }
-    maxArea = Math.max(maxArea,curMax)
+    area = Math.max(area, cur)
   }
-  return maxArea;
-}
-};
+  return area;
+
 // @lc code=end

@@ -22,11 +22,13 @@ function _q(arr) {
  *
  * 两个挡板 三个区域
  *
+ * 空间复杂度logn 
  *  */
 function _q(arr, left = 0, right = arr.length - 1) {
   if (left >= right) return arr;
   // 初始化pivot
   let pivot = Math.floor(left + (right - left) / 2);
+  // 划分两个区域
   pivot = _p(arr, pivot, left, right);
   _q(arr, left, pivot - 1);
   _q(arr, pivot + 1, right);
@@ -56,7 +58,7 @@ function _p(arr, pivot, left, right) {
   }
   // 循环结束后将pivot 归位
   swap(arr, leftBaf, right)
-  retrn leftBaf;
+  return leftBaf;
 }
 function swap(arr, v1, v2) {
   [arr[v1], arr[v2]] = [arr[v2], arr[v1]];
