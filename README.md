@@ -101,19 +101,19 @@
 
 [ES6 - class 原理有了解吗？](https://github.com/sup-fiveyear/Notes/issues/18)
 
-[extends 关键字原理？](https://github.com/sup-fiveyear/Notes/issues/20)
+[ES6 - extends 关键字原理？](https://github.com/sup-fiveyear/Notes/issues/20)
 
 [说一下什么是闭包？](https://github.com/sup-fiveyear/Notes/issues/6)
 
 - [ ] this 指向问题？
 
-[讲讲你理解的Promise](./notes-JavaScript/来一沓Promise.md)
+[ES6 - 讲讲你理解的Promise](./notes-JavaScript/来一沓Promise.md)
 
-[PromiseA+](./notes-JavaScript/实现PromiseA+.md)
+[ES6 - PromiseA+](./notes-JavaScript/实现PromiseA+.md)
 
-[尽兴聊一下generator?]()
+[ES6 - 尽兴聊一下generator?]()
 
-[说说async 的原理]()
+[ES6 - 说说async 的原理]()
 
 
 ### 编码练习
@@ -148,7 +148,7 @@
 
 [🛫 ](#索引)
 
-[吐血整理自认为的重点！](notes-vue/面试题.md)
+[吐血整理的重点！](notes-vue/面试题.md)
 
 [vuex 源码原理总结](notes-vue/vuex.md)
 
