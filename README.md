@@ -93,6 +93,8 @@
 
 [JavaScript：数据类型](https://github.com/sup-fiveyear/Notes/issues/2)
 
+[数组常见api及实现思路](./notes-JavaScript/数组常见API及实现.md)
+
 [你说一下你对原型的认识](https://github.com/sup-fiveyear/Notes/issues/3)
 
 [手写instanceof](./练习-JavaScript部分/手写instanceof.js)
@@ -243,22 +245,27 @@ css 和 js 阻塞页面渲染？你怎么理解？
 |                             TODO                             |                                                              |
 |              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️              |              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️              |
 
-- [ ] 基础排序手写一遍，重温思想，以及时间复杂度
+- [ ] 基础排序手写一遍重温思想
+- [ ] 排序时间复杂度总结
+- [ ] mergeSort重温
+- [ ] 栈排序
 
 #### 查找
 
 | [Array.prototype.find()/findIndex()/indexOf()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) |                                                              |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| 基础：[704. 二分查找](https://leetcode-cn.com/problems/binary-search/) |                                                              |
-|        基础：在有重复的数组中返回第一个/最后一个元素         |                                                              |
-|                基础：找到最接近target的k个数                 |                                                              |
-|                 基础：找到最接近target的元素                 |                                                              |
-| [74. 搜索二维矩阵](https://leetcode-cn.com/problems/search-a-2d-matrix/) |                                                              |
-| [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/) |                                                              |
+| [704. 二分查找](https://leetcode-cn.com/problems/binary-search/) | [相邻退出，进行后续处理](./练习-数据结构算法刷题/数组/二分查找/704.%20二分查找.js) |
+|         base-在有重复的数组中返回第一个/最后一个元素         | [移动mid，直到加单退出](./练习-数据结构算法刷题/数组/二分查找/在有重复的数组中返回第一个指定元素.js) |
+| [LintCode:460. 在排序数组中找最接近的K个数](https://www.lintcode.com/problem/find-k-closest-elements/description) | [范围所缩小至加单，中心开花](./练习-数据结构算法刷题/数组/二分查找/linkcode.找到最接近的k个数.js) |
+| [74. 搜索二维矩阵](https://leetcode-cn.com/problems/search-a-2d-matrix/) | [map回矩阵：r = mid / col c = mid % col](./练习-数据结构算法刷题/数组/二分查找/704.%20二分查找.js) |
+| [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [找到元素，双指针左右移动](./练习-数据结构算法刷题/数组/二分查找/34.%20在排序数组中查找元素的第一个和最后一个位置.js) |
 | [33. 搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/) |                                                              |
 | [287. 寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/) | https://leetcode-cn.com/problems/find-the-duplicate-number/solution/qian-duan-ling-hun-hua-shi-tu-jie-kuai-man-zhi-z-3/ |
 | [378. 有序矩阵中第K小的元素](https://leetcode-cn.com/problems/kth-smallest-element-in-a-sorted-matrix/) | https://leetcode-cn.com/problems/kth-smallest-element-in-a-sorted-matrix/solution/378java-er-fen-fa-tu-jie-you-xian-dui-lie-liang-ch/ |
+|                             TODO                             |                                                              |
 |              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️              |              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️              |
+
+
 
 
 #### ~
