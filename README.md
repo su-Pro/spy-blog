@@ -32,7 +32,7 @@
 
 #### [基础：网络](#网络)
 
-#### [基础：Linux](#linux)
+#### [基础：正则表达式](#正则)
 
 ---
 
@@ -91,50 +91,54 @@
 
 [🛫 ](#索引)
 
-[JavaScript：数据类型](https://github.com/sup-fiveyear/Notes/issues/2)
 
-[数组常见api及实现思路](./notes-JavaScript/数组常见API及实现.md)
+[ES5 - JavaScript：数据类型](https://github.com/sup-fiveyear/Notes/issues/2)
 
-[你说一下你对原型的认识](https://github.com/sup-fiveyear/Notes/issues/3)
+[ES5 - 说一下什么是闭包？](https://github.com/sup-fiveyear/Notes/issues/6)
 
-[手写instanceof](./练习-JavaScript部分/手写instanceof.js)
+[ES5 - 你说一下你对原型的认识](https://github.com/sup-fiveyear/Notes/issues/3)
 
-[说一下继承方案](./notes-JavaScript/说说继承.md)
+[ES5 - 手写instanceof](./练习-JavaScript部分/手写instanceof.js)
+
+[ES5 - 说一下继承方案](./notes-JavaScript/说说继承.md)
 
 [ES6 - class 原理有了解吗？](https://github.com/sup-fiveyear/Notes/issues/18)
 
-[ES6 - extends 关键字原理？](https://github.com/sup-fiveyear/Notes/issues/20)
-
-[说一下什么是闭包？](https://github.com/sup-fiveyear/Notes/issues/6)
+[ES6 - extends 原理？](https://github.com/sup-fiveyear/Notes/issues/20)
 
 - [ ] this 指向问题？
 
 [ES6 - 讲讲你理解的Promise](./notes-JavaScript/来一沓Promise.md)
 
-[ES6 - PromiseA+](./notes-JavaScript/实现PromiseA+.md)
+[ES6 - Promise场景题汇总](./notes-JavaScript/promise练习.md)
 
-[ES6 - 尽兴聊一下generator?]()
+[ES6 - 即兴一下async？](./notes-JavaScript/说说async的原理.md)
 
-[ES6 - 说说async 的原理]()
-
+[汇总 - 数组api](./notes-JavaScript/数组常见API及实现.md)
 
 ### 编码练习
 
 [🛫 ](#索引)
 
-[高阶函数之初见AOP](notes-JavaScript/高阶函数之初见AOP.md)
+[高阶函数之-初见AOP](notes-JavaScript/高阶函数之初见AOP.md)
 
-[高阶函数之函数柯里化](notes-JavaScript/高阶函数之函数柯里化.md)
+[高阶函数之-函数柯里化](notes-JavaScript/高阶函数之函数柯里化.md)
 
-[高阶函数之after 函数](/notes-JavaScript/高阶函数之after函数.md)
+[高阶函数之-after函数](/notes-JavaScript/高阶函数之after函数.md)
 
-[实现极简发布订阅模式](/notes-JavaScript/实现极简发布订阅.md)
+- [ ] 高阶函数之-compose函数
 
-[Promise - 如何实现PromiseA+ 规范中的Promise类？](/notes-JavaScript/实现PromiseA+.md)
+[实现简单：发布订阅模式](/notes-JavaScript/实现极简发布订阅.md)
 
-[Promise - 在Nodejs中，如何将一个异步函数promisify?](/notes-JavaScript/promisify.md)
+- [ ] 实现简单：全局单利模式
 
-[Promise - 场景题汇总](./notes-JavaScript/promise练习.md)
+[Promise - 实现PromiseA+](/notes-JavaScript/实现PromiseA+.md)
+
+[Promise - 实现promisify?](/notes-JavaScript/promisify.md)
+
+- [ ] Promise - 实现各路api
+
+- [ ] async - 原理实现
 
 [Nodejs- 实现eventEmitter](./练习-Nodejs/eventEmitter.js); (待写简要思路)
 
@@ -142,19 +146,19 @@
 
 [封装一个vue-lazy吧](./vue%20手写/lazyLoad/note.md)
 
-[封装一个在线运行组件]()
+- [ ] 封装一个在线运行组件
 
-[封装一个表单验证吧]()
+- [ ] 封装一个表单验证吧
 
 ## vue
 
 [🛫 ](#索引)
 
-[吐血整理的重点！](notes-vue/面试题.md)
+[吐血整理重点！](notes-vue/面试题.md)
 
-[vuex 源码原理总结](notes-vue/vuex.md)
+[vuex：原理总结](notes-vue/vuex.md)
 
-[vue-router 源码原理总结](notes-vue/vue-router.md)
+[vue-router：原理总结](notes-vue/vue-router.md)
 
 [实现一个简单的数据侦测？](note-vue/../notes-vue/响应式原理.md)
 
@@ -221,33 +225,30 @@ css 和 js 阻塞页面渲染？你怎么理解？
 > 缓慢更新中
 
 [🛫 ](#索引)
-
-
-
+`
 ## 数据结构算法
 
 ### 数组
 
 #### 排序
 
-|                           出处                           |                          Hint + 解                           |
+|                             出处                             |                          Hint + 解                           |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | [Array.prototype.sort()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) |                                                              |
-| [插入排序/选择排序/冒泡排序](https://zh.wikipedia.org/wiki/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F) |          [基础排序汇总]()                                                    |
-| [快速排序](https://zh.wikipedia.org/zh/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F) |                 [阮一峰老师 + 挡双指针swap](./练习-数据结构算法刷题/数组/排序/quickSort.js)                                             |
-| [归并排序](https://zh.wikipedia.org/wiki/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F) |            [山里有座庙，庙里有个老和尚，旁边有个小和尚](./练习-数据结构算法刷题/数组/排序/merageSort.js)                                                  |
+| [插入排序/选择排序/冒泡排序](https://zh.wikipedia.org/wiki/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F) |                       [基础排序汇总]()                       |
+| [快速排序](https://zh.wikipedia.org/zh/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F) | [阮一峰老师 / 挡板思想 + swap](./练习-数据结构算法刷题/数组/排序/quickSort.js) |
+| [归并排序](https://zh.wikipedia.org/wiki/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F) | [山里有座庙，庙里有个老和尚，旁边有个小和尚](./练习-数据结构算法刷题/数组/排序/merageSort.js) |
 |                           三栈排序                           |                                                              |
 |                           双栈排序                           |                                                              |
 | [88. 合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/) | [归并排序，谁大移谁(三指针)，注意合并逻辑条件](../Notes/练习-数据结构算法刷题/数组/排序/88.%20合并两个有序数组.js) |
-| [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/) |           [利用挡板思想进行排序分类，典型🌈问题](./练习-数据结构算法刷题/数组/排序/75.%20颜色分类.js)            |
+| [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/) | [利用挡板思想进行排序分类，典型🌈问题](./练习-数据结构算法刷题/数组/排序/75.%20颜色分类.js) |
 | [面试题 16.16. 部分排序](https://leetcode-cn.com/problems/sub-sort-lcci/) | [两趟，一正一反确定边界](./练习-数据结构算法刷题/数组/排序/面试题%2016.16.%20部分排序.js) |
-| [169. 多数元素](https://leetcode-cn.com/problems/majority-element/) |   [快速排序返回众数/hash计数](./练习-数据结构算法刷题/数组/排序/169.%20多数元素.js)                                                           |
-|                             TODO                             |                                                              |
+| [169. 多数元素](https://leetcode-cn.com/problems/majority-element/) | [快速排序返回众数/hash计数](./练习-数据结构算法刷题/数组/排序/169.%20多数元素.js) |
+|                            TODO：                            |                                                              |
 |              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️              |              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️              |
 
-- [ ] 基础排序手写一遍重温思想
+- [ ] 基础排序手写一遍重温思想，mergeSort重温
 - [ ] 排序时间复杂度总结
-- [ ] mergeSort重温
 - [ ] 栈排序
 
 #### 查找
@@ -259,13 +260,9 @@ css 和 js 阻塞页面渲染？你怎么理解？
 | [LintCode:460. 在排序数组中找最接近的K个数](https://www.lintcode.com/problem/find-k-closest-elements/description) | [范围所缩小至加单，中心开花](./练习-数据结构算法刷题/数组/二分查找/linkcode.找到最接近的k个数.js) |
 | [74. 搜索二维矩阵](https://leetcode-cn.com/problems/search-a-2d-matrix/) | [map回矩阵：r = mid / col c = mid % col](./练习-数据结构算法刷题/数组/二分查找/704.%20二分查找.js) |
 | [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [找到元素，双指针左右移动](./练习-数据结构算法刷题/数组/二分查找/34.%20在排序数组中查找元素的第一个和最后一个位置.js) |
-| [33. 搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/) |                                                              |
-| [287. 寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/) | https://leetcode-cn.com/problems/find-the-duplicate-number/solution/qian-duan-ling-hun-hua-shi-tu-jie-kuai-man-zhi-z-3/ |
-| [378. 有序矩阵中第K小的元素](https://leetcode-cn.com/problems/kth-smallest-element-in-a-sorted-matrix/) | https://leetcode-cn.com/problems/kth-smallest-element-in-a-sorted-matrix/solution/378java-er-fen-fa-tu-jie-you-xian-dui-lie-liang-ch/ |
-|                             TODO                             |                                                              |
+| [33. 搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/) | [分割后，必定一半是有序](练习-数据结构算法刷题/数组/二分查找/33.%20搜索旋转排序数组.js) |
+| TODO：[378. 有序矩阵中第K小的元素](https://leetcode-cn.com/problems/kth-smallest-element-in-a-sorted-matrix/) |                                                              |
 |              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️              |              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️              |
-
-
 
 
 #### ~
@@ -276,15 +273,14 @@ css 和 js 阻塞页面渲染？你怎么理解？
 |   [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)   |         [map](./练习-数据结构算法刷题/1.两数之和.js)         |
 | [11. 盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [双指针夹逼](./练习-数据结构算法刷题/数组/11.盛最多水的容器.js) |
 | [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/) | [双指针 + swap （不为0一起动）](./练习-数据结构算法刷题/数组/283.移动零.js) |
-|                          3 数之和？                          |                                                              |
-|                             TODO                             |                                                              |
+| TODO：[15. 三数之和](https://leetcode-cn.com/problems/3sum/) |                                                              |
 |              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️              |              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️              |
 
 ### 链表
 
 |                             出处                             |               Hint + 解：                |
 | :----------------------------------------------------------: | :--------------------------------------: |
-| [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/) |                                          |
+| Js：链表 |                                          |
 | [876. 链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/) |                                          |
 | [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/) |                                          |
 |                      有序链表插入元素？                      |                                          |
@@ -380,7 +376,20 @@ css 和 js 阻塞页面渲染？你怎么理解？
 | [122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) |                                          |
 |                              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                              | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
 
+### 箭指offer专题
 
+|                                                              |                                                              |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+|                           **数组**                           |                                                              |
+| [面试题03. 数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/) | [排序 +diff / hash +diff / 索引排序](./练习-数据结构算法刷题/箭指offer/面试题03.%20数组中重复的数字.js) |
+| 03-fllow up: [287. 寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/) | [数量二分法](练习-数据结构算法刷题/数组/二分查找/287.%20寻找重复数.js) |
+|                           **链表**                           |                                                              |
+| [面试题18. 删除链表的节点](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/) |                                                              |
+| [面试题22. 链表中倒数第k个节点](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/) |                                                              |
+| [面试题24. 反转链表](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/) |                                                              |
+| [面试题35. 复杂链表的复制](https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/) |                                                              |
+| [面试题52. 两个链表的第一个公共节点](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/) |                                                              |
+|              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️              |              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️              |
 
 
 ## 网络
@@ -477,8 +486,7 @@ css 和 js 阻塞页面渲染？你怎么理解？
 
 #### IP
 
-### Linux
+### 正则
 
-> 现在只局限于 terminal常见指令的使用，没有做系统的整理和学习不过请给我点时间！！！
 
 [🛫 ](#索引)

@@ -207,9 +207,9 @@ Promise._all = iterator => {
   // 2. 初始化返回结果
   // 3. 初始化并发控制器
   let promises = Array.form(iterator);
-  let n = promises.length;
+  let n = iterator.length;
   let promisesNums = 0;
-  let promisesData = new Array(n);
+  let promisesData = new Array(iterator);
 
   return Promise((resolve,reject) => {
     promises.forEach((promise,index) => {

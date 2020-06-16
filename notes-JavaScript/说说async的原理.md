@@ -225,7 +225,6 @@ var nums2 = await test(nums1);
 ```
 
 ```js
-xxx: 这里的val 是做什么？还不是很懂
 function co (generator) {
   var g = generator();
   function next (val) {
@@ -238,9 +237,6 @@ function co (generator) {
   next()
 }
 ```
-
-
-返回promise版本：
 
 ```js
 function co (gen) {

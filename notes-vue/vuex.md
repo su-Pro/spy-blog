@@ -1,12 +1,12 @@
 
 ## Vuex
 
-### 简述一下什么是vuex？
+### 1.简述一下什么是vuex？
 
 - vue 的状态管理模式
 - 集中式存储组件间共享的状态
 - 保证状态以可预测的方式进行更新  
-- 维护了vue的核心理念：单向数据流![image.png](https://cdn.nlark.com/yuque/0/2020/png/481272/1582461839496-77a43f95-f83b-4229-90ea-1350348eacd3.png#align=left&display=inline&height=267&margin=%5Bobject%20Object%5D&name=image.png&originHeight=866&originWidth=1280&size=53747&status=done&style=none&width=394)
+- 核心理念：单向数据流![image.png](https://cdn.nlark.com/yuque/0/2020/png/481272/1582461839496-77a43f95-f83b-4229-90ea-1350348eacd3.png#align=left&display=inline&height=267&margin=%5Bobject%20Object%5D&name=image.png&originHeight=866&originWidth=1280&size=53747&status=done&style=none&width=394)
 
 当多个组件共享一个状态时存在以下问题：
 
@@ -20,18 +20,17 @@
 **流程图如下：**
 ![image.png](https://cdn.nlark.com/yuque/0/2020/png/481272/1581983107677-33fc2639-1cdb-4c86-8022-25bb87505d17.png#align=left&display=inline&height=276&margin=%5Bobject%20Object%5D&name=image.png&originHeight=551&originWidth=701&size=33979&status=done&style=none&width=350.5)
 
-### action 和 mutations的区别？
+### 2.action 和 mutations的区别？
 
 你不能直接改变 store 中的状态。改变 store 中的状态的唯一途径就是显式地提交 (commit) mutation。mutations 更改状态最好是同步更改，虽然异步更改状态也可以，但是在严格模式下会报错。
 
-> 也好理解：异步操作已经脱离了当前的mutations，属于突变外的状态更改，不可控，因此给禁掉了
+> 也好理解：异步操作已经脱离了当前的mutations，属于突变外的状态更改，不可控，因此严格模式下给ban掉
 
-
-action 提交的是 mutation而不是直接进行状态修改，它可以包含任意异步操作
+action 提交的是 mutation 而不是直接进行状态修改，它可以包含任意异步操作。
 
 > 可以理解为redux里的中间件
 
-### 如何区分 vuex 和 props 的界限？
+### 3. 如何区分 vuex 和 组件内部状态 的界限？
 
 通常在业务组件中，使用vuex更多一些。这样可以在不同组件中统一操作vuex的状态，使得父子组件通信、兄弟组件通信和隔代组件通信变得清晰明了。
 
@@ -39,7 +38,8 @@ action 提交的是 mutation而不是直接进行状态修改，它可以包含�
 
 > 因此在设计通用组件时，需要将props进行详细的规定（至少给上类型判断）。这样使得使用该组件的同事很舒服，并且在开发环境下能够更好的debug。
 
-### vuex是如何安装到vue中的？
+
+###  vuex是如何安装到vue中的？
 
 首先在项目中通过`Vue.use( plugin )`将vuex进行安装,通过该api我们知道插件要么是一个提供了`install `方法的对象，要么是一个函数，该函数会当做`install`方法进行执行。
 
@@ -65,7 +65,7 @@ export function install (_Vue) {
 }
 ```
 
-### 如何让所有组件都能够获取$store属性？
+###  如何让所有组件都能够获取$store属性？
 
 vuex给出了两种方案：在vue版本大于等于2时，会采用mixin混入生命周期方案；小于2.0版本时会采用向Vue的原型对象上添加属性这种方案。
 
@@ -108,7 +108,7 @@ export default function (Vue) {
 }
 ```
 
-### vuex中是如何实现store中的响应式数据的？
+###  vuex中是如何实现store中的响应式数据的？
 
 借用了`Vue.js`的数据侦测(直接将store属性塞到了一个新的Vue实例的data属性中，好聪明🤔)
 
@@ -138,7 +138,7 @@ function resetStoreVM (store, state, hot) {
 }
 ```
 
-### vuex 中的getter是如何实现的？
+###  vuex 中的getter是如何实现的？
 
 和store响应式处理异曲同工，借助`Vue.js`中的计算属性来实现。但是在实现时，需要注意两个小问题：
 - getter 写法是函数，但实际上是对函数返回的对象进行使用，如何处理？
@@ -168,7 +168,7 @@ this._vm = new Vue({
 2. 对getters 进行一层代理，做一个存取器。这样就可以通过$store.getters直接获取`Vue.js`管理的计算属性。
 
 
-### vuex：commit 和 mutations 是如何建立联系的？
+###  vuex：commit 和 mutations 是如何建立联系的？
 
 本质上是通过**发布订阅模式**来实现的，vuex具体的实现过程稍微复杂，我将他抽象成极简的代码，说明意图：
 
@@ -204,7 +204,7 @@ this._vm = new Vue({
  }
 ```
 
-### vuex 模块的特点
+###  vuex 模块的特点
 
 > 默认情况下，模块内部的 action、mutation 和 getter 是注册在全局命名空间的——这样使得多个模块能够对同一 mutation 或 action 作出响应。
 
