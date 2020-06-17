@@ -96,13 +96,11 @@
 
 [ES5 - 说一下什么是闭包？](https://github.com/sup-fiveyear/Notes/issues/6)
 
-[ES5 - 你说一下你对原型的认识](https://github.com/sup-fiveyear/Notes/issues/3)
+[ES5 - 原型的理解](./notes-JavaScript/ES5/ES5%20-%20你说一下你对原型的认识.md)
 
-[ES5 - 手写instanceof](./练习-JavaScript部分/手写instanceof.js)
+[ES5 - 继承方案](./notes-JavaScript/说说继承.md)
 
-[ES5 - 说一下继承方案](./notes-JavaScript/说说继承.md)
-
-[ES6 - class 原理有了解吗？](https://github.com/sup-fiveyear/Notes/issues/18)
+[ES6 - class 原理](./)
 
 [ES6 - extends 原理？](https://github.com/sup-fiveyear/Notes/issues/20)
 
@@ -290,8 +288,8 @@ css 和 js 阻塞页面渲染？你怎么理解？
 | [24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) |                                          |
 | [2. 两数相加](https://leetcode-cn.com/problems/add-two-numbers/) |                                          |
 |                     merge sort 链表？？                      |                                          |
-| [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/) |                                          |
-| [25. K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) |                                          |
+| [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/) |           [思路:](./练习-数据结构算法刷题/链表/92.%20反转链表%20II.js)                               |
+| [25. K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) |              [思路](./练习-数据结构算法刷题/链表/25.%20K%20个一组翻转链表.js)                            |
 | [面试题 02.06. 回文链表](https://leetcode-cn.com/problems/palindrome-linked-list-lcci/) |                                          |
 |           〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️           | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
 
@@ -384,9 +382,9 @@ css 和 js 阻塞页面渲染？你怎么理解？
 | [面试题03. 数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/) | [排序 +diff / hash +diff / 索引排序](./练习-数据结构算法刷题/箭指offer/面试题03.%20数组中重复的数字.js) |
 | 03-fllow up: [287. 寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/) | [数量二分法](练习-数据结构算法刷题/数组/二分查找/287.%20寻找重复数.js) |
 |                           **链表**                           |                                                              |
-| [面试题18. 删除链表的节点](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/) |                                                              |
-| [面试题22. 链表中倒数第k个节点](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/) |                                                              |
-| [面试题24. 反转链表](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/) |                                                              |
+| [面试题18. 删除链表的节点](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/) |                 [思路：](./练习-数据结构算法刷题/链表/面试题18.%20删除链表的节点.js)                                             |
+| [面试题22. 链表中倒数第k个节点](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/) |              [思路：](./练习-数据结构算法刷题/链表/面试题22.%20链表中倒数第k个节点.js)                                                |
+| [面试题24. 反转链表](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/) |                [思路：](./练习-数据结构算法刷题/链表/面试题24.%20反转链表.js)                                              |
 | [面试题35. 复杂链表的复制](https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/) |                                                              |
 | [面试题52. 两个链表的第一个公共节点](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/) |                                                              |
 |              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️              |              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️              |
