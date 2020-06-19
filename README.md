@@ -274,24 +274,6 @@ css 和 js 阻塞页面渲染？你怎么理解？
 | TODO：[15. 三数之和](https://leetcode-cn.com/problems/3sum/) |                                                              |
 |              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️              |              〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️              |
 
-### 链表
-
-|                             出处                             |               Hint + 解：                |
-| :----------------------------------------------------------: | :--------------------------------------: |
-| Js：链表 |                                          |
-| [876. 链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/) |                                          |
-| [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/) |                                          |
-|                      有序链表插入元素？                      |                                          |
-| [86. 分隔链表](https://leetcode-cn.com/problems/partition-list/) |                                          |
-| [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/) |                                          |
-|                           重排链表                           |                                          |
-| [24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) |                                          |
-| [2. 两数相加](https://leetcode-cn.com/problems/add-two-numbers/) |                                          |
-|                     merge sort 链表？？                      |                                          |
-| [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/) |           [思路:](./练习-数据结构算法刷题/链表/92.%20反转链表%20II.js)                               |
-| [25. K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) |              [思路](./练习-数据结构算法刷题/链表/25.%20K%20个一组翻转链表.js)                            |
-| [面试题 02.06. 回文链表](https://leetcode-cn.com/problems/palindrome-linked-list-lcci/) |                                          |
-|           〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️           | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
 
 ### 栈 & 队列
 
@@ -306,6 +288,28 @@ css 和 js 阻塞页面渲染？你怎么理解？
 |                              滑动窗口？                               |                                          |
 |                             队列实现栈？                              |                                          |
 |               〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
+
+
+### 链表
+
+|                             出处                             |               Hint + 解：                |
+| :----------------------------------------------------------: | :--------------------------------------: |
+| [203. 移除链表元素](https://leetcode-cn.com/problems/remove-linked-list-elements/) |           [思路：](./练习-数据结构算法刷题/链表/203.%20移除链表元素.js)                               |
+| [876. 链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/) |                                          |
+| [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/) |                                          |
+|                      有序链表插入元素？                      |                                          |
+| [86. 分隔链表](https://leetcode-cn.com/problems/partition-list/) |           [思路：](./练习-数据结构算法刷题/链表/86.%20分隔链表.js)                               |
+| [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/) |                                          |
+|                           重排链表                           |                                          |
+| [24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) |                                          |
+| [2. 两数相加](https://leetcode-cn.com/problems/add-two-numbers/) | [思路：](./练习-数据结构算法刷题/链表/2.%20两数相加.js)                                         |
+| [445. 两数相加 II](https://leetcode-cn.com/problems/add-two-numbers-ii/) | [思路：](./练习-数据结构算法刷题/链表/445.%20两数相加%20II.js)|
+|                     难度中等217merge sort 链表？？               |                                          |
+| [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/) |           [思路:](./练习-数据结构算法刷题/链表/92.%20反转链表%20II.js)                               |
+| [25. K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) |              [思路](./练习-数据结构算法刷题/链表/25.%20K%20个一组翻转链表.js)                            |
+| [面试题 02.06. 回文链表](https://leetcode-cn.com/problems/palindrome-linked-list-lcci/) |                                          |
+| [160. 相交链表](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/) | [思路：](./练习-数据结构算法刷题/链表/160.%20相交链表.js)|
+|           〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️           | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
 
 ### 树（和递归天然结合，因此融合了递归一部分题型，理解就好）
 
