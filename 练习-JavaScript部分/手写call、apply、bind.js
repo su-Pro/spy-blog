@@ -37,36 +37,49 @@ function myBind(context) {
     fn.apply(context)
   }
 }
-//处理 内外层参数
-function myBind(context) {
-  var fn = this;
-  var args = Array.prototype.shift.call(arguments);
+
+// bind() 方法会创建一个新函数。当这个新函数被调用时，bind() 的第一个参数将作为它运行时的 this，之后的一序列参数将会在传递的实参前传入作为它的参数。(来自于 MDN )
+
+function bind(context, ...args) {
+  let fn = this;
   return function () {
-    // 不就是为了拷贝一份arguments么？用别的api不行吗？
-    var bindArgs = Array.prototype.slice.call(arguments)
-    fn.apply(context, args.concat(bindArgs))
+    let bindArgs = Array.from(arguments);
+    return fn.apply(context, args.concat(bindArgs))
   }
 }
-// 处理如果绑定后的函数被当做构造函数调用
-// 特点1： this 指向实例自己 特点2： 能够继承绑定函数中原型的方法，例如：
-/**
- * function bar () {}
- * bar.prototype.name = 'test'
- * var bindFoo = bar.bind()
- * var obj = new bindFoo()
- * obj.name  === 'test'
- */
 
-function myBind(context) {
-  var fn = this;
-  var args = [].shift.call(context)
-  function F() { }
-  var fBound = function () {
-    var bindArgs = [].slice.call(arguments);
-    var flag = this instanceof fBound;
-    fn.apply(flag ? this : context, args.concat(bindArgs))
+
+// 一个绑定函数也能使用new操作符创建对象：这种行为就像把原函数当成构造器。提供的 this 值被忽略，同时调用时的参数被提供给模拟函数。
+
+
+// 当 bind 返回的函数作为构造函数的时候，bind 时指定的 this 值会失效，但传入的参数依然生效
+
+
+function bind(context, ...args) {
+  let fn = this;
+  let fBound = function () {
+    let bindArgs = Array.from(arguments);
+    // 判断当前的this指向
+    return fn.apply(this instanceof fBound ? this : context, args.concat(bindArgs))
   }
-  F.prototype = this.prototype;
-  fBound.prototype = new F();
-  return fBound();
+  fBound.prototype = fn.prototype;
+  return fBound;
+}
+
+// 直接将 fBound.prototype = this.prototype，当修改 fBound.prototype 的时候，也会直接修改绑定函数的 prototype。
+
+
+
+
+function bind(context, ...args) {
+  let fn = this;
+  function F() { }
+  let fBind = function () {
+    let bindArgs = Array.from(arguments);
+    // 当做构造函数被调用
+    return fn.apply((this instanceof fBind) ? this : context, args.concat(bindArgs))
+  }
+  F.prototype = fn.prototype;
+  fBind.prototype = new F();
+  return fBind
 }

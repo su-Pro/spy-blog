@@ -1,4 +1,4 @@
-/*
+
 var isPalindrome = function (head) {
   if (head === null || head.next === null) return true;
   // 快指针，慢指针找中点
@@ -23,18 +23,18 @@ var isPalindrome = function (head) {
   }
   return true
 }
-*/
+
 
 // 数组做法，只需要将链表存储到数组中，对数组进行出栈 和出队，判断两个元素是否相同。
 var arr_isPalindrome = function (head) {
   var arr = [];
-  while(head !== null){
+  while (head !== null) {
     arr.push(head.val);
     head = head.next;
   }
   // 进行出栈出队比较
-  while(arr.length > 1) {
-    if(arr.pop() !== arr.shift) return false;
+  while (arr.length > 1) {
+    if (arr.pop() !== arr.shift) return false;
   }
   return true;
 }
