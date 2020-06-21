@@ -28,7 +28,7 @@ function Lazy(Vue) {
         });
     }
   }
-  // dosomethings
+
   return class LazyClass {
     constructor(options) {
       this.options = options;
@@ -87,8 +87,8 @@ function Lazy(Vue) {
     handleLazyLoad() {
       this.imgListenerQueue.forEach(imgListener => {
         if (!imgListener.state.loading) {
-          let catIn = imgListener.checkInViewPosition();
-          catIn && imgListener.loadImg();
+          let inView = imgListener.checkInViewPosition();
+          inView && imgListener.loadImg();
         }
       })
     }
