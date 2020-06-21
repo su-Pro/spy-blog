@@ -11,26 +11,25 @@
  * @return {ListNode}
  */
 
-// 核心：
-// - 构建虚拟节点
-// - 补0
-// - 边界情况
 var addTwoNumbers = function (l1, l2) {
-  let dummy = new ListNode(0);
-  let _run = dummy, sum = payload = 0;
+  let dummyNode = new ListNode(0);
+  let _run = dummyNode, sum = payload = 0;
   while (l1 || l2) {
+    // 遇null 补 0 操作
     let x = l1 ? l1.val : 0;
     let y = l2 ? l2.val : 0;
-    sum = x + y + payload;
-    payload = parseInt(sum / 10);
+    let sum = x + y + payload;
     _run.next = new ListNode(sum % 10);
     _run = _run.next;
+    payload = parseInt(sum / 10)
+
+    // 常规操作，保证“一对一对”进行
     if (l1) l1 = l1.next;
     if (l2) l2 = l2.next;
   }
+  // post process
   if (payload > 0) {
     _run.next = new ListNode(payload)
   }
-  return dummy.next;
-
+  return dummyNode.next;
 };
