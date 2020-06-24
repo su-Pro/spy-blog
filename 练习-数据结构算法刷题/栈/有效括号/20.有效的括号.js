@@ -62,41 +62,49 @@
  * 
  * 遇到( [ { 就压栈， 遇到 ) ] } 就弹栈，判断是否相等，如果不相等就退出
  */
-var isValid = function(s) {    
-  var len = s.length,curS = '',stack = [];
-  if(len % 2 != 0) {
-      return false;
-  }
-  for(let i = 0; i < len;i++){
-      curS = s[i]
-      switch(curS) {
-      case '(' : {
-          stack.push(curS)
-          break;
-      }
-      case '{' : {
-          stack.push(curS)
-          break;
-      }
-      case '[' : {
-          stack.push(curS)
-          break;
-      }
-      case ')' : {
-          if(stack.pop() !== '(') return false;
-          break;
-      }
-      case '}' : {
-          if(stack.pop() !== '{') return false;
-          break;
-      }
-      case ']' : {
-          if(stack.pop() !== '[') return false;
-          break;
-      }
-  }
-  }
-      return !stack.length;
+
+var isValid = function (s) {
+	var len = s.length, curS = '', stack = [];
+	// 防止为奇数元素
+	if (len % 2 != 0) {
+		return false;
+	}
+	for (let i = 0; i < len; i++) {
+		curS = s[i]
+		switch (curS) {
+			case '(': {
+				stack.push(curS)
+				break;
+			}
+			case '{': {
+				stack.push(curS)
+				break;
+			}
+			case '[': {
+				stack.push(curS)
+				break;
+			}
+			case ')': {
+				if (stack.pop() !== '(') return false;
+				break;
+			}
+			case '}': {
+				if (stack.pop() !== '{') return false;
+				break;
+			}
+			case ']': {
+				if (stack.pop() !== '[') return false;
+				break;
+			}
+		}
+	}
+	/**
+	 * - 如果此时stack没有元素
+	 * 	- 那么0 发生隐式类型转换 ==> false 取反 ==> true
+	 * - 如果此时stack有元素，eg：
+	 * 	- (((()) => (( 
+	 */
+	return !stack.length;
 };
 // @lc code=end
 

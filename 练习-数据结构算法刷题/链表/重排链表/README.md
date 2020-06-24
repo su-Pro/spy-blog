@@ -2,7 +2,7 @@
 
 [143. 重排链表](https://leetcode-cn.com/problems/reorder-list/)
 
-## 描述
+### 描述
 
 给定一个单链表 L：L0→L1→…→Ln-1→Ln ，
 将其重新排列后变为： L0→Ln→L1→Ln-1→L2→Ln-2→…
@@ -17,7 +17,7 @@
 
 给定链表 1->2->3->4->5, 重新排列为 1->5->2->4->3.
 
-## 思路
+### 思路
 
 整个问题可以分解为三步：
 
@@ -27,15 +27,13 @@
   - mid.next -> ... -> tail -> null
 - 对后一部分进行链表翻转([翻转链表](./../翻转链表/README.md))
   - 后一部分链表变为：
-  - tail ->  ... -> mid.next -> null
+  - tail -> ... -> mid.next -> null
 - 将两个链表进行合并操作([合并链表](./../合并两个有序链表/README.md))
   - head -> tail -> ... -> null
 
-## 代码
-
+### 代码
 
 ```js
-
 var reorderList = function (head) {
   if (head === null || head.next === null) {
     return head;
@@ -47,17 +45,18 @@ var reorderList = function (head) {
   // 切断first的尾巴
   mid.next = null;
   // 2. 翻转链表
-  let reversedSecond = reverseList(second)
+  let reversedSecond = reverseList(second);
   // 3. merge
   let result = merge(first, reversedSecond);
-  return result
-}
+  return result;
+};
 
 function findMiddleNode(node) {
   if (node === null || node.next === null) {
     return node;
   }
-  let slow = node, fast = node;
+  let slow = node,
+    fast = node;
   while (fast !== null && fast.next !== null) {
     slow = slow.next;
     fast = fast.next.next;
@@ -73,7 +72,9 @@ function reverseList(node) {
   // node.next.next = node;
   // node.next = null;
   // return newHead
-  let prev = null, cur = node, post;
+  let prev = null,
+    cur = node,
+    post;
   while (cur !== null) {
     post = cur.next;
     cur.next = prev;
@@ -85,9 +86,9 @@ function reverseList(node) {
 
 function merge(l1, l2) {
   if (l1 === null) {
-    return l2
+    return l2;
   } else if (l2 === null) {
-    return l1
+    return l1;
   }
   let dummyHead = new ListNode(-1);
   let runPoint = dummyHead;

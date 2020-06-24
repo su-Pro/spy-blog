@@ -149,9 +149,11 @@ console.log(a); // {0: 3, 1: 2, 2: 1, length: 3}
 
 ### 类数组转换
 
-#### Array.from
+类数组对象本质特征只有一个，就是拥有length属性。
 
-只要是部署了iterator接口的对象，都能将其转化为数组。注意 展开运算符是无法转化类数组对象的。
+#### Array.from()
+
+只要是部署了iterator接口的对象，都能将其转化为数组。注意 展开运算符是无法转化**没有部署iterator接口**的类数组对象的。
 
 ```js
 let obj = {length : 3}
@@ -160,14 +162,17 @@ Array.from(obj) // Array(3) [ undefined, undefined, undefined ]
 
 
 [...obj] // TypeError: obj is not iterable
+// 因为obj没有部署iterator接口
 
 ```
 
 #### Array.prototype.slice.call()
 
+es5常用的方式，还是拥抱ES6吧~
+
 #### apply + concat
 
-#### [unix：pipe](https://zh.wikipedia.org/wiki/%E7%AE%A1%E9%81%93_(Unix))
+### [unix：pipe](https://zh.wikipedia.org/wiki/%E7%AE%A1%E9%81%93_(Unix))
 
 pipe 管道可能是我们在linux下最常用的操作符之一了, 上一个函数的计算结果传给下一个函数, 就这样一直传递，如下代码：
 
@@ -195,7 +200,7 @@ const pipe = (...functions) => initialVal => functions.reduce((memo,cur) => {
 
 ```
 
-#### compose 
+### compose 
 
 TODO: redux 原理
 compose和pipe非常的像, pipe是从左到右执行顺序, compose是从右向左的执行顺序, 所以在实现上用了reduceRight这个方法.
@@ -205,7 +210,7 @@ const compose = (...functions) => (initialValue) =>
   functions.reduceRight((value, fn) => fn(value), initialValue);
 ```
 
-#### 去假值
+### 去假值
 
 ```js
 const falseyArray = [0, null, 1, undefined, 2, '', 3, false, 4, NaN]
@@ -222,7 +227,7 @@ const compact = (arr) => arr.reduce((memo,cur) => {
 },[])
 ```
 
-#### 简化条件
+### 简化条件
 
 ```js
 const value = 'cat'
@@ -237,7 +242,7 @@ if(['cat', 'dog', 'pig'].includes(value)){
 ```
 
 
-#### deduplicate
+### deduplicate
 
 ```js
 
@@ -257,7 +262,7 @@ const deduplicate = (items) => {
 deduplicate([[1], [1], { hello: 'world' }, { hello: 'world' }]);
 ```
 
-#### flatten
+### flatten
 
 正则 + split
 
