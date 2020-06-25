@@ -14,21 +14,21 @@
  */
 
 
-function LinkList (node) {
-  this.node = node;
-  this.next = null;
+function LinkList(node) {
+	this.node = node;
+	this.next = null;
 }
 
 class LRU {
-  constructor (size) {
-    this._linkSize = size;
-  }
-  set () {
-  
-  }
-  get () {
+	constructor(size) {
+		this._linkSize = size;
+	}
+	set() {
 
-  }
+	}
+	get() {
+
+	}
 
 }
 
@@ -36,28 +36,28 @@ class LRU {
 // ES6 Map
 // 该数据结构提供了iteraotr接口，遍历该数据的顺序即是插入的顺序，同时拥有map的优势：O（1）时间查找和插入
 
-function LRUcache (capacity) {
-  this.capacity = capacity;
-  this.map = new Map();
+function LRUcache(capacity) {
+	this.capacity = capacity;
+	this.map = new Map();
 }
 LRUCache.prototype.get = function (key) {
-  let _cacheValue = this.map.get(key)
-  if(typeof _cacheValue === 'undefined') return -1;
-  //使得让该key跑到最map的头部
-  this.map.delete(key)
-  this.map.set(key,_cacheValue)
-  return _cacheValue
+	let _cacheValue = this.map.get(key)
+	if (typeof _cacheValue === 'undefined') return -1;
+	//使得让该key跑到最map的头部
+	this.map.delete(key)
+	this.map.set(key, _cacheValue)
+	return _cacheValue
 }
 
-LRUCache.prototype.set = function (key,val) {
-  //如果元素在缓存中
-  if(this.map.has(key)) {
-    this.map.delete(key)
-  }else if(this.map.size() >= this.capacity) {
-    // 需要删除末尾元素
-    let tail = this.map.keys.next().value;
-    this.map.delete(tail)
-  }
-  // 处理完毕后将需要缓存的元素缓存到map中
-  this.map.set(key,val);
+LRUCache.prototype.set = function (key, val) {
+	//如果元素在缓存中
+	if (this.map.has(key)) {
+		this.map.delete(key)
+	} else if (this.map.size() >= this.capacity) {
+		// 需要删除末尾元素
+		let tail = this.map.keys.next().value;
+		this.map.delete(tail)
+	}
+	// 处理完毕后将需要缓存的元素缓存到map中
+	this.map.set(key, val);
 }

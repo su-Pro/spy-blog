@@ -331,26 +331,26 @@ export default new Vuex.Store({
     }
 })
 ```
+### 10. 模块是如何收集的？
 
-### 模块是如何构建层级关系的？
-
-对用户输入的内容进行处理，转化成一颗树形结构，并进行模块收集安装操作。
+对用户输入的内容进行处理，转化成一颗树形结构，这样会比直接写modules更好处理。
 
 在初始化store时就会进行模块收集操作，如下：
 
 ```js
-    constructor(options) {        
-        // 1.格式化用户传入的参数,转换成树形结构
-        this._modules = new ModuleCollection(options);
-        ...
-    }
+class Store {
+  constructor(options) {        
+    // 格式化用户传入的参数,转换成树形结构
+    this._modules = new ModuleCollection(options);
+    ...
+  }
+}
 ```
 
-ModuleCollection 方法会对options进行转化处理，便于后续的处理。（可以对比理解AST）
+`ModuleCollection` 会对options进行格式化，最终会成为这样的数据结构：
 
-格式化成这样的数据结构
 ```js
-this.root = {
+root : {
     _raw:xxx,
     _children:{
         a:{
@@ -368,33 +368,77 @@ this.root = {
     state:xxx.state
 }
 ```
-通过register方法对模块进行递归安装构建：
+
+通过register方法对模块进行递归构建：
 
 ```js
 export default class ModuleCollection {
     constructor(options) {
-        // 注册模块  递归注册 根模块  
+        // 首次调用register时,路径设置为空数组
+        // 设置为数组的目的是便于后续找父级的操作
         this.register([], options);
     }
     register(path, rootModule) { 
         let newModule = new Module(rootModule);        
         // 找到根模块
-        if (path.length == 0) {
+        if (path.length === 0) {
             this.root = newModule;
-        } else { 
-          // 通过reduce 方法找到对应的父级
+        } else {           
             let parent = path.slice(0, -1).reduce((memo, current) => {
                 return memo.getChild(current);
             }, this.root);
-            // 找到父级后，需要将当前模块添加到父级身上
+        // 找到父级后，需要将当前模块添加到父级身上
             parent.addChild(path[path.length - 1], newModule);
         }
-        // 有子模块的情况下，需要将path进行拼接后，以当前module进行模块注册
+        // 有子模块的情况下，需要将path进行拼接后，以当前子模块再次进行模块注册
+        // k 叉树递归
         if (rootModule.modules) {
             forEach(rootModule.modules, (module, moduleName) => {
                 this.register([...path, moduleName], module);
             });
         }
     }
+}
+```
+
+`Module` 只是对模块属性的简单封装，同时提供一些实例方法，便于格式化模块。
+
+```js
+export default class Module {
+    constructor(rootModule) {
+        this._rawModule = rootModule;
+        this._children = {};
+        this.state = rootModule.state;
+    }
+    getChild(key) {
+        return this._children[key];
+    }
+    addChild(key, module) {
+        this._children[key] = module;
+    }    
+}
+```
+
+### 11. 有了收集的根状态root，那么如何遍历它并安装到最终的store上呢？
+
+```js
+function installModule(store, rootState, path, module) {
+    console.log(path);
+
+    module.forEachMutation((mutation,type)=>{
+        console.log(mutation,type)
+    });
+
+    module.forEachAction((action,type)=>{
+        console.log(action,type)
+    });
+
+    module.forEachGetters((getter,key)=>{
+        console.log(getter,key);
+    }); 
+
+    module.forEachChild((child,key)=>{
+        installModule(store,rootState,path.concat(key),child);
+    })
 }
 ```
