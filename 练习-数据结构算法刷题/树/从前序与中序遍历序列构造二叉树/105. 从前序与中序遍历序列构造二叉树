@@ -1,0 +1,29 @@
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */
+/**
+ * @param {number[]} preorder
+ * @param {number[]} inorder
+ * @return {TreeNode}
+ */
+var buildTree = function (preorder, inorder) {
+  if (!preorder.length || !inorder.length) {
+    return null
+  }
+  const rootVal = preorder[0]
+  const resultRoot = new TreeNode(rootVal);
+  // 标识在inorder中的位置，以及左子树的个数
+  let i = 0;
+  for (; i < inorder.length; ++i) {
+    if (inorder[i] === rootVal) {
+      break
+    }
+  }
+  resultRoot.left = buildTree(preorder.slice(1, i + 1), inorder.slice(0, i))
+  resultRoot.right = buildTree(preorder.slice(i + 1), inorder.slice(i + 1))
+  return resultRoot
+};
