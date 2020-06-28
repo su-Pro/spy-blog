@@ -9,24 +9,24 @@
  * 
  * 注意点：slice API： 左包含又不包含，截取时注意边界。
  */
-var buildTree = function(preorder, inorder) {
-  if(!preorder.length || !inorder.length) {
+var buildTree = function (preorder, inorder) {
+  if (!preorder.length || !inorder.length) {
     return null;
   }
   let curRoot = preorder[0];
   const newRoot = new Tree(curRoot);
   // - 左子树数量 - curRoot 在 inorder中的偏移
   let i = 0;
-  for(;i < inorder.length;i ++) {
-    if(inorder[i] === curRoot) {
+  for (; i < inorder.length; i++) {
+    if (inorder[i] === curRoot) {
       break;
     }
   }
   // preorder 中截取从第1个开始i个元素
   // inorder 中截取从0开始，i - 1个元素，略过curRoot
-  newRoot.left = buildTree(preorder.slice(1,i + 1),inorder.slice(0,i));
+  newRoot.left = buildTree(preorder.slice(1, i + 1), inorder.slice(0, i));
   // preorder 中截取从第i+1个元素截取
   // inorder 中从i + 1个元素截取到末尾，略过curRoot
-  newRoot.right = buildTree(preorder.slice(i + 1),inorder.slice(i + 1));
+  newRoot.right = buildTree(preorder.slice(i + 1), inorder.slice(i + 1));
   return newRoot;
 };

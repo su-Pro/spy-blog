@@ -46,20 +46,20 @@
  * @return {number}
  */
 var minDepth = function (root) {
-    var global_min = Number.MAX_SAFE_INTEGER;
-    if(root == null){
-        return 0;
-    }
-    if(root.left ==null && root.right == null){
-        return 1;
-    }
-    if(root.left != null){
-        global_min = Math.min(minDepth(root.left),global_min);
-    }
-    if(root.right != null){
-        global_min = Math.min(minDepth(root.right),global_min);
-    }
-    return global_min + 1;
+  var global_min = Number.MAX_SAFE_INTEGER;
+  if (root == null) {
+    return 0;
+  }
+  if (root.left == null && root.right == null) {
+    return 1;
+  }
+  if (root.left != null) {
+    global_min = Math.min(minDepth(root.left), global_min);
+  }
+  if (root.right != null) {
+    global_min = Math.min(minDepth(root.right), global_min);
+  }
+  return global_min + 1;
 
 };
 // @lc code=end
