@@ -17,12 +17,12 @@ var lowestCommonAncestor = function (root, p, q) {
   let left = lowestCommonAncestor(root.left, p, q);
   let right = lowestCommonAncestor(root.right, p, q);
   // recusion rule
-  // case 1: 
+  // case 1: 都没有命中
   if (left === null && right === null) return null;
-  // case 3:
+  // case 3: 右无，左命中其中一个节点
   if (left === null) return right;
-  // case 4:
+  // case 4: 左无，右命中其中一个节点
   if (right === null) return left;
-  // case 2:
+  // case 2: 左右都有值，当前root就是最近公共祖先
   return root;
 };

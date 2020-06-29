@@ -342,21 +342,27 @@ css 和 js 阻塞页面渲染？你怎么理解？
 
 #### 抓典型
 
-[二叉树的中序遍历](./练习-数据结构算法刷题/树/二叉树中序遍历/README.md)
+- [二叉树的中序遍历](./练习-数据结构算法刷题/树/二叉树中序遍历/README.md)
 
-[从前序与中序遍历序列构造二叉树](./练习-数据结构算法刷题/树/从前序与中序遍历序列构造二叉树/README.md)
+- [从前序与中序遍历序列构造二叉树](./练习-数据结构算法刷题/树/从前序与中序遍历序列构造二叉树/README.md)
 
-[110. 平衡二叉树]()
+- [平衡二叉树](./练习-数据结构算法刷题/树/平衡二叉树/README.md)
 
-[101. 对称二叉树]()
+- [对称二叉树](./练习-数据结构算法刷题/树/对称二叉树/README.md)
 
-[98. 验证二叉搜索树]()
+- [验证二叉搜索树](./练习-数据结构算法刷题/树/验证二叉搜索树/README.md)
 
-958.二叉树的完全性检验
+- [二叉搜索树的范围和](./练习-数据结构算法刷题/树/二叉搜索树的范围和/README.md)
 
-[二叉搜索树的范围和]()
+- [二叉树的最近公共祖先](./练习-数据结构算法刷题/树/二叉树的最近公共祖先/README.md)
 
-二叉树的最近公共祖先
+- [ ] 二叉树的完全性检验
+
+- [ ] 有序链表转换二叉搜索树 
+
+- [ ] [面试题 26. 树的子结构](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)
+
+- [ ] [面试题 34. 二叉树中和为某一值的路径](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/)
 
 #### 找感觉
 
@@ -366,27 +372,9 @@ css 和 js 阻塞页面渲染？你怎么理解？
 
 二叉树的锯齿形层次遍历
 
-|                                                            出处                                                             |                   Hint + 解：                   |
-| :-------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------: |
-|               [二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal),(后序,前序)                |  在模拟后续实现思路时，注意剪枝这个 hack 操作   |
-|                 [429. N 叉树的层序遍历](https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/)                 | 利用 children 接口很简单，如果限制只能 DFS 呢？ |
-|                                                    |                                                 |
-|                                                          |         左左 === 右右 && 左右 == 右左 👊         |
-|                                          |                                                 |
-|                                                      二叉搜索树减枝？                                                       |                                                 |
-|                                                      二叉树搜索区间？                                                       |                                                 |
-|              [958. 二叉树的完全性检验](https://leetcode-cn.com/problems/check-completeness-of-a-binary-tree/)               |                                                 |
-|                       [验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree)                        |                                                 |
-|         [二叉搜索树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree)         |                                                 |
-|            [有序链表转换二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree)             |                                                 |
-|                    [面试题 07. 重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/)                    |   inorder\preorder 特点 + 分而治之 + sliceAPI   |
-|                      [面试题 26. 树的子结构](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)                      |          巧妙找到入口 + 精干的条件判断          |
-|                 [面试题 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)                  |            画图找规律：swap 子树的值            |
-|      [面试题 32 - I. 从上到下打印二叉树](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)       |                      队列                       |
-|   [面试题 32 - II. 从上到下打印二叉树 II](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/)   |                   队列 + 计数                   |
-| [面试题 32 - III. 从上到下打印二叉树 III](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/)  |        画图找规律：reverse 输出/双栈思想        |
-| [面试题 34. 二叉树中和为某一值的路径](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/) |                  DFS + 回溯法                   |
-|                                             〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                                              |       〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️        |
+[面试题 32 - I. 从上到下打印二叉树](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)
+[面试题 32 - II. 从上到下打印二叉树 II](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/)
+[面试题 32 - III. 从上到下打印二叉树 III](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/)
 
 ### String
 
