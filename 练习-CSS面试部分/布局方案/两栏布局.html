@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- float+BFC -->
-  <!-- <style>
+  <title>Document</title>  
+  <!-- 
+  <style>
+    /* 清除浮动 */
     .parent{
       overflow: hidden;
     }
@@ -17,13 +18,13 @@
       background-color: #e2e2e2;
     }
     .left{
-     overflow: hidden; 
-     background-color: rgb(219, 248, 161);
-     height: 300px;
+      overflow: hidden; 
+      background-color: rgb(219, 248, 161);
+      height: 300px;
     }
-  </style> -->
-  <!-- flex布局 -->
-  <!-- <style>
+  </style>   
+  <style>
+    /* flex布局 */
     .parent{
       display:flex
     }
@@ -39,8 +40,9 @@
       flex: 1;
       height: 300px;
     }
-  </style> -->
+  </style>
   <style>
+    /* gird布局 */
     .parent{
       display: grid;
       grid-template-columns: auto 1fr;
@@ -55,6 +57,39 @@
       height: 400px;
       background-color: rebeccapurple;
     }
+  </style>
+  -->
+  <style>
+    * {
+      margin: 0
+      }
+    :root,body{
+      height:100%;
+    }
+    .parent{
+      width: 100%;
+      height: 100%;
+      /* inline-block间隙 */
+      font-size: 0;
+    }
+    .parent .left {
+      width: 200px;     
+      height: 100%; 
+      display: inline-block;
+      /* vertical-align: top; */
+      /* https://developer.mozilla.org/zh-CN/docs/Web/CSS/vertical-align */
+      background-color: aquamarine;      
+    }
+    .right{
+      display: inline-block;
+      /* vertical-align: middle; */
+      margin-left: -200px;      
+      padding-left: 200px;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+    }    
+    
   </style>
 </head>
 <body>
