@@ -42,7 +42,7 @@ var generateParenthesis = function (n) {
   _generator(0, 2 * n, '');
   function _generator(level, max, curString) {
     // base case 
-    if (level === nax) { // 找到个数达标的情况
+    if (level === max) { // 找到个数达标的情况
       console.log(curString);
       return;
     }

@@ -9,8 +9,7 @@ var subsets = function (nums) {
   /**
    * index 代表当前是第几层
    * 
-   * temp 可以理解为 每一种遍历树的路径
-   * 
+   * temp：   
    *  - 既作为子结果存入到res中
    *  - 又作为唯一路径去移动（所以需要pop push操作他）
    *  */
