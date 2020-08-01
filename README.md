@@ -2,32 +2,24 @@
 
 > 本仓库做为一个我自己的全局索引，可能会链接到不同的仓库中。
 
-## HTML + CSS
+## 算法和数据结构
 
-### HTML
+线上地址：
 
-[高频知识点](./notes-htmlcss/html汇总.md)
+> 阅读体验更好
 
-### CSS
+仓库地址：
 
-[CSS：选择器分类以及权重计算](https://github.com/sup-fiveyear/Notes/issues/14)
+>里面有已经发布的和未发布的题解，有兴趣的同学可以查阅
 
-[盒模型汇总](https://github.com/sup-fiveyear/Notes/issues/4)
+## 网络
 
-[BFC & IFC](https://github.com/sup-fiveyear/Notes/issues/5)
+[TCP/IP 网络基础](./notes-网络/TCP/README.md)
 
-[请你描述一下 flex 布局](https://github.com/sup-fiveyear/Notes/issues/19)
+[HTTP 重点速揽](./notes-网络/HTTP/README.md)
 
-[Grid 布局有了解吗？说说](https://github.com/sup-fiveyear/Notes/issues/22)
+[HTTPS 保驾护航](./notes-网络/HTTPS/README.md)
 
-[层叠规则知道吗？](https://github.com/sup-fiveyear/Notes/issues/23)
-
-[常见居中方案](./notes-htmlcss/常见居中.md)
-
-- [ ] 移动端适配汇总
-- [ ] 文本截断
-- [ ] 边框画图
-- [ ] 常见布局方案
 
 ## 浏览器
 
@@ -48,6 +40,7 @@
 [DOM 和 事件相关汇总](./notes-浏览器/DOM.md)
 
 [说一下 AJAX 和跨域吧？](./notes-浏览器/说一下AJAX和跨域.md)
+
 
 ## ES
 
@@ -122,9 +115,21 @@
 
 [vue - 封装懒加载指令](./组件/vue-懒加载/Note.md)
 
-- [ ] 封装一个在线运行组件
+## nodeJS
 
-* [ ] 封装一个表单验证吧
+[🛫 ](#索引)
+
+[NodeJs 有哪些特点？应用场景又有哪些？](notes-nodeJs/1.%20NodeJs有哪些特点？应用场景又有哪些？.md)
+
+[V8、libuv 和 Nodejs 之间的关系？](notes-nodeJs/2.%20V8%20libuv%20和%20Nodejs之间的关系？.md)
+
+[说说你对 global 以及 global.process 的理解？](notes-nodeJs/3.%20说说你对global%20以及global.process的理解？.md.md)
+
+[说一下 Liubv 的事件循环机制？](notes-nodeJs/4.%20说一下Liubv的事件循环机制.md)
+
+[说说你对模块化的理解？](notes-nodeJs/5.%20说说你对模块化的理解？.md)
+
+[说一下 Nodejs 的异步编程吧？](notes-nodeJs/说一下Nodejs的异步编程吧.md)
 
 ## vue
 
@@ -160,22 +165,6 @@
 
 [🛫 ](#索引)
 
-## nodeJS
-
-[🛫 ](#索引)
-
-[NodeJs 有哪些特点？应用场景又有哪些？](notes-nodeJs/1.%20NodeJs有哪些特点？应用场景又有哪些？.md)
-
-[V8、libuv 和 Nodejs 之间的关系？](notes-nodeJs/2.%20V8%20libuv%20和%20Nodejs之间的关系？.md)
-
-[说说你对 global 以及 global.process 的理解？](notes-nodeJs/3.%20说说你对global%20以及global.process的理解？.md.md)
-
-[说一下 Liubv 的事件循环机制？](notes-nodeJs/4.%20说一下Liubv的事件循环机制.md)
-
-[说说你对模块化的理解？](notes-nodeJs/5.%20说说你对模块化的理解？.md)
-
-[说一下 Nodejs 的异步编程吧？](notes-nodeJs/说一下Nodejs的异步编程吧.md)
-
 ## 性能优化
 
 [🛫 ](#索引)
@@ -202,95 +191,29 @@ css 和 js 阻塞页面渲染？你怎么理解？
 
 [如何高性能渲染十万条数据？](../Notes/练习-实际开发/虚拟列表/README.md)
 
-## 网络
+## HTML + CSS
 
-[TCP/IP 构建网络基础体系](./nodes-notes-网络/TCP/README.md)
+### HTML
 
-[HTTP  重点速揽](./notes-网络/HTTP/README.md)
+[高频知识点](./notes-htmlcss/html汇总.md)
 
-[HTTPS 保驾护航](./notes-网络/HTTPS/README.md)
+### CSS
 
+[CSS：选择器分类以及权重计算](https://github.com/sup-fiveyear/Notes/issues/14)
 
-#### HTTP1.1
+[盒模型汇总](https://github.com/sup-fiveyear/Notes/issues/4)
 
+[BFC & IFC](https://github.com/sup-fiveyear/Notes/issues/5)
 
+[请你描述一下 flex 布局](https://github.com/sup-fiveyear/Notes/issues/19)
 
-[你知道 HTTP 都有哪些版本吗？](/notes-网络/HTTP/你知道HTTP都有哪些版本吗？.md)
+[Grid 布局有了解吗？说说](https://github.com/sup-fiveyear/Notes/issues/22)
 
-[说一下你对域名的理解](/notes-网络/HTTP/说一下你对域名的理解？.md)
+[层叠规则知道吗？](https://github.com/sup-fiveyear/Notes/issues/23)
 
-[描述一下 HTTP 报文结构和常见的头部字段?](/notes-网络/HTTP/描述一下HTTP报文结构.md)
+[常见居中方案](./notes-htmlcss/常见居中.md)
 
-[说一下 HTTP 的内容协商？](/notes-网络/HTTP/说一下%20HTTP%20的内容协商？.md)
-
-[请求方法都有哪些？GET 和 POST 又有什么区别？](notes-网络/HTTP/请求方法都有哪些？GET和POST又有什么区别？.md)
-
-[常见状态码说一下？](notes-网络/HTTP/常见状态码.md)
-
-[HTTP 重定向有了解吗？](notes-网络/HTTP/HTTP%20重定向有了解吗？.md)
-
-[说一下你了解的缓存策略？](notes-网络/TCP/../HTTP/说下你了解的缓存策略.md)
-
-[HTTP 传输大文件有了解过吗？](notes-网络/HTTP/HTTP传输大文件有了解过吗？.md)
-
-[了解 HTTP 长连接吧？那队头阻塞呢？](/notes-网络/HTTP/了解HTTP长连接吧？那队头阻塞呢？.md)
-
-[描述一下 cookie？](/notes-网络/HTTP/说说你对cookie的理解%20.md)
-
-[HTTP 性能优化方向有哪些？](/notes-网络/HTTP/HTTP%20性能优化方向有哪些？.md)
-
-- [ ] 说说 HTTP 相关的代理有哪些？
-
-* [ ] Restful API 了解吗？你的最佳实践是什么？
-
-#### websocket
-
-- [ ] 说说你对 websocket 的理解？
-- [ ] 他的应用领域有哪些？
-- [ ] websocket 的长连接知道吗？
-
-#### HTTP2
-
-[HTTP 2/3 有了解吗？](/notes-网络/HTTP/说说HTTP2%20和HTTP3.md)
-
-#### HTTPS
-
-[说一下 HTTP 和 HTTPS 的区别](/notes-网络/HTTPS/说一下HTTP%20和%20HTTPS%20的区别.md)
-
-[说说对称加密和非对称加密的理解？](/notes-网络/HTTPS/说说对称加密和非对称加密的理解？.md)
-
-[摘要算法?和数据签名？](notes-网络/HTTPS/摘要算法?和数据签名？.md)
-
-[说一下 TLS 握手](/notes-网络/HTTPS/说一下TLS%20建立连接过程.md)
-
-[HTTPS 优化策略有了解吗？](notes-网络/HTTPS/HTTPS优化策略有了解吗？.md)
-
-#### TCP
-
-[说说你是如何理解 TCP 的？](./notes-网络/TCP/说说你是如何理解TCP的？.md)
-
-[简述一下 TCP 报文结构?](./notes-网络/TCP/简述一下TCP报文结构.md)
-
-[描述一下你理解的 TCP 握手过程](./notes-网络/TCP/TCP建立连接？.md)
-
-[说一下你对 MSS 和数据传输的理解？](./notes-网络/TCP/说说你对MSS的理解.md)
-
-[说一下你对超时重传的理解？](./notes-网络/TCP/说说你对超时重传的理解.md)
-
-[说说你对滑动窗口的理解？](./notes-网络/TCP/说说你对滑动窗口的理解.md)
-
-[说说如何减少网络过程中的小报文？](./notes-网络/TCP/说说如何减少网络过程中的小报文？.md)
-
-[知道慢启动、拥塞避免、快速重传和快速恢复吗？](./notes-网络/TCP/知道慢启动、拥塞避免、快速重传和快速恢复吗.md)
-
-[那你知道选择性重传算法吗？（SACK）](./notes-网络/TCP/那你知道SACK和选择性重传算法吗.md)
-
-[说说 TCP 断开的过程](./notes-网络/TCP/说说TCP挥手过程.md)
-
-[知道 TCP 的 keepalive 机制吗？](./notes-网络/TCP/知道TCP的keepalive机制吗.md)
-
-#### UDP
-
-- [ ] 和 TCP 的区别？
-
-- [ ] 为什么 DNS 使用 UDP 协议？
+- [ ] 移动端适配汇总
+- [ ] 文本截断
+- [ ] 边框画图
+- [ ] 常见布局方案
