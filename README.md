@@ -1,44 +1,8 @@
 记录前端知识体系的点点滴滴，能力有限，持续更新。
 
-> 自己挖的坑自己填！从 2020 年 4 月底开始维护，希望和你一起进步。
-
-## 索引
-
-#### [前端：H5/C3](#html--css)
-
-#### [前端：浏览器原理](#浏览器)
-
-#### [前端：ECMA-script](#es)
-
-#### [前端：编码/组件练习](#编码/组件练习)
-
-<br/>
-
-#### [前端框架：vue](#vue)
-
-#### [前端框架：React](#react)
-
-<br/>
-
-#### [前端工程：Webpack](#webpack)
-
-#### [前端工程：Node.js](#nodejs)
-
-#### [前端工程：性能优化](#性能优化)
-
-<br/>
-
-#### [基础：数据结构和算法](#数据结构算法)
-
-#### [基础：网络](#网络)
-
-#### [基础：正则表达式](#正则)
-
----
+> 本仓库做为一个我自己的全局索引，可能会链接到不同的仓库中。
 
 ## HTML + CSS
-
-[🛫 ](#索引)
 
 ### HTML
 
@@ -61,8 +25,6 @@
 [常见居中方案](./notes-htmlcss/常见居中.md)
 
 - [ ] 移动端适配汇总
-- [ ] 开发经验汇总
-- [ ] 雪碧图实现
 - [ ] 文本截断
 - [ ] 边框画图
 - [ ] 常见布局方案
@@ -129,7 +91,6 @@
 
 [汇总 - 数组 api](./notes-JavaScript/数组常见API及实现.md)
 
-## 编码/组件练习
 
 ### 手写
 
@@ -241,214 +202,18 @@ css 和 js 阻塞页面渲染？你怎么理解？
 
 [如何高性能渲染十万条数据？](../Notes/练习-实际开发/虚拟列表/README.md)
 
-> 缓慢更新中
-
-## 数据结构算法
-
-[🛫 ](#索引)
-
-### 数组
-
-#### 排序
-
-|                                                         出处                                                          |                                                     Hint + 解                                                      |
-| :-------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------: |
-| [Array.prototype.sort()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) |                                                                                                                    |
-|           [插入排序/选择排序/冒泡排序](https://zh.wikipedia.org/wiki/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F)            |                                                  [基础排序汇总]()                                                  |
-|                     [快速排序](https://zh.wikipedia.org/zh/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F)                      |               [阮一峰老师 / 挡板思想 + swap](练习-数据结构算法刷题/数组/排序/快速排序/quickSort.js)                |
-|                    [归并排序](https://zh.wikipedia.org/wiki/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F)                     |        [山里有座庙，庙里有个老和尚，旁边有个小和尚](练习-数据结构算法刷题/数组/排序/归并排序/merageSort.js)        |
-|                                                       三栈排序                                                        |                                                                                                                    |
-|                                                       双栈排序                                                        |                                                                                                                    |
-|                     [88. 合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/)                      | [归并排序，谁大移谁(三指针)，注意合并逻辑条件](../Notes/练习-数据结构算法刷题/数组/排序/88.%20合并两个有序数组.js) |
-|                             [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/)                             |            [利用挡板思想进行排序分类，典型 🌈 问题](./练习-数据结构算法刷题/数组/排序/75.%20颜色分类.js)            |
-|                       [面试题 16.16. 部分排序](https://leetcode-cn.com/problems/sub-sort-lcci/)                       |             [两趟，一正一反确定边界](./练习-数据结构算法刷题/数组/排序/面试题%2016.16.%20部分排序.js)              |
-|                          [169. 多数元素](https://leetcode-cn.com/problems/majority-element/)                          |                 [快速排序返回众数/hash 计数](./练习-数据结构算法刷题/数组/排序/169.%20多数元素.js)                 |
-|                                                        TODO：                                                         |                                                                                                                    |
-|                                          〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                                           |                                         〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                                         |
-
-- [ ] 基础排序手写一遍重温思想，mergeSort 重温
-- [ ] 排序时间复杂度总结
-- [ ] 栈排序
-
-#### 查找
-
-| [Array.prototype.find()/findIndex()/indexOf()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) |                                                                                                                       |
-| :--------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------: |
-|                                        [704. 二分查找](https://leetcode-cn.com/problems/binary-search/)                                        |                  [相邻退出，进行后续处理](./练习-数据结构算法刷题/数组/二分查找/704.%20二分查找.js)                   |
-|                                                  base-在有重复的数组中返回第一个/最后一个元素                                                  |         [移动 mid，直到加单退出](./练习-数据结构算法刷题/数组/二分查找/在有重复的数组中返回第一个指定元素.js)         |
-|              [LintCode:460. 在排序数组中找最接近的 K 个数](https://www.lintcode.com/problem/find-k-closest-elements/description)               |           [范围所缩小至加单，中心开花](./练习-数据结构算法刷题/数组/二分查找/linkcode.找到最接近的k个数.js)           |
-|                                    [74. 搜索二维矩阵](https://leetcode-cn.com/problems/search-a-2d-matrix/)                                    |          [map 回矩阵：r = mid / col c = mid % col](./练习-数据结构算法刷题/数组/二分查找/704.%20二分查找.js)          |
-|  [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)   | [找到元素，双指针左右移动](./练习-数据结构算法刷题/数组/二分查找/34.%20在排序数组中查找元素的第一个和最后一个位置.js) |
-|                            [33. 搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)                            |                [分割后，必定一半是有序](练习-数据结构算法刷题/数组/二分查找/33.%20搜索旋转排序数组.js)                |
-|                TODO：[378. 有序矩阵中第 K 小的元素](https://leetcode-cn.com/problems/kth-smallest-element-in-a-sorted-matrix/)                 |                                                                                                                       |
-|                                                       〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                                                       |                                          〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                                           |
-
-#### ~
-
-|                                                 出处                                                  |                                   Hint + 解                                   |
-| :---------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
-| [面试题 03. 数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/) |       [哈希/quickSort](练习-数据结构算法刷题/数组/217.存在重复元素.js)        |
-|                       [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)                        |                 [map](./练习-数据结构算法刷题/1.两数之和.js)                  |
-|           [11. 盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/)           |        [双指针夹逼](./练习-数据结构算法刷题/数组/11.盛最多水的容器.js)        |
-|                     [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/)                      | [双指针 + swap （不为 0 一起动）](./练习-数据结构算法刷题/数组/283.移动零.js) |
-|                     TODO：[15. 三数之和](https://leetcode-cn.com/problems/3sum/)                      |                                                                               |
-|                                  〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                                   |                      〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                       |
-
-### 栈
-
-#### 抓典型
-
-- [最小栈](./练习-数据结构算法刷题/栈/最小栈/README.md)
-
-- [有效括号](./练习-数据结构算法刷题/栈/有效括号/README.md)
-
-- [双栈实习队列](./练习-数据结构算法刷题/栈/双栈实现队列/README.md)
-
-- [三栈排序](./练习-数据结构算法刷题/栈/三栈排序/1.js)
-
-- [双栈排序](./练习-数据结构算法刷题/栈/双栈排序/README.md)
-
-- [ ] 滑动窗口
-
-### 链表
-
-#### 抓典型
-
-- [翻转链表](./练习-数据结构算法刷题/链表/翻转链表/README.md)
-
-- [链表的中间结点](./练习-数据结构算法刷题/链表/链表的中间结点/README.md)
-
-- [环形链表](./练习-数据结构算法刷题/链表/环形链表/README.md)
-
-- [链表的中间结点](./练习-数据结构算法刷题/链表/链表的中间结点/README.md)
-
-- [重排链表](./练习-数据结构算法刷题/链表/重排链表/README.md)
-
-- [分隔链表](./练习-数据结构算法刷题/链表/分隔链表/README.md)
-
-- [两数相加](./练习-数据结构算法刷题/链表/两数相加/两数相加.md)
-
-#### 找感觉
-
-- [面试题 18. 删除链表的节点](练习-数据结构算法刷题/链表/面试题18.%20删除链表的节点.js)
-
-- [面试题 22. 链表中倒数第 k 个节点](练习-数据结构算法刷题/链表/面试题22.%20链表中倒数第k个节点.js)
-
-- [反转链表 2](./练习-数据结构算法刷题/链表/翻转链表/92.%20反转链表%20II.js)
-
-- [k 个一组翻转链表](练习-数据结构算法刷题/链表/翻转链表/25.%20K%20个一组翻转链表.js)
-
-- [移除链表元素](./练习-数据结构算法刷题/链表/面试题18.%20删除链表的节点.js)
-
-- [回文链表](练习-数据结构算法刷题/链表/x.%20回文链表.js)
-
-- [两数相加 II](./练习-数据结构算法刷题/链表/445.%20两数相加%20II.js)
-
-### 树
-
-#### 抓典型
-
-- [二叉树的中序遍历](./练习-数据结构算法刷题/树/二叉树中序遍历/README.md)
-
-- [从前序与中序遍历序列构造二叉树](./练习-数据结构算法刷题/树/从前序与中序遍历序列构造二叉树/README.md)
-
-- [平衡二叉树](./练习-数据结构算法刷题/树/平衡二叉树/README.md)
-
-- [对称二叉树](./练习-数据结构算法刷题/树/对称二叉树/README.md)
-
-- [验证二叉搜索树](./练习-数据结构算法刷题/树/验证二叉搜索树/README.md)
-
-- [二叉搜索树的范围和](./练习-数据结构算法刷题/树/二叉搜索树的范围和/README.md)
-
-- [二叉树的最近公共祖先](./练习-数据结构算法刷题/树/二叉树的最近公共祖先/README.md)
-
-- [ ] 二叉树的完全性检验
-
-- [ ] 有序链表转换二叉搜索树 
-
-- [ ] [面试题 26. 树的子结构](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)
-
-- [ ] [面试题 34. 二叉树中和为某一值的路径](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/)
-
-#### 找感觉
-
-前序遍历
-
-后序遍历
-
-二叉树的锯齿形层次遍历
-
-[面试题 32 - I. 从上到下打印二叉树](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)
-[面试题 32 - II. 从上到下打印二叉树 II](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/)
-[面试题 32 - III. 从上到下打印二叉树 III](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/)
-
-### String
-
-### Recursion + DFS
-
-|                                                                出处                                                                |                                        Hint + 解：                                         |
-| :--------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
-|                                  [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)                                   |                                                                                            |
-|                               [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/)                               | [递归穷举后，添加限制条件（括号正确性判断）](./练习-数据结构算法刷题/递归/22.括号生成.js)  |
-|                                     [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)                                      | [快速幂求值（注意数学边界），缩小问题规模（递归](练习-数据结构算法刷题/递归/50.pow-x-n.js) |
-|                                       [78. 子集](https://leetcode-cn.com/problems/subsets/)                                        |        [01 问题，加或者不加，注意引用值问题](练习-数据结构算法刷题/递归/78.子集.js)        |
-|                                      [51. N 皇后](https://leetcode-cn.com/problems/n-queens/)                                      |                                                                                            |
-|                                   [322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)                                   |                                                                                            |
-|               [236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)               |                                                                                            |
-| [105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) |                                                                                            |
-|                                                 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                                                 |                             〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                             |
-
-- [ ] [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
-- [ ]
-- [ ] [46. 全排列](https://leetcode-cn.com/problems/permutations/) [47. 全排列 II](https://leetcode-cn.com/problems/permutations-ii/)
-- [ ] [17. 电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/) [77. 组合](https://leetcode-cn.com/problems/combinations/)
-
-### BFS
-
-|                                                                    出处                                                                     |            Hint + 解：             |
-| :-----------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------: |
-|                                  [130. 被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/)                                  |                                    |
-| [K Smallest in Unsorted Array](https://github.com/publicclassoverflow/laicode/blob/master/src/G/HeapAndBFS/Medium/KSmallestInUnsortedArray) |                                    |
-|                                    [200. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands/)                                     |                                    |
-|                                       [127. 单词接龙](https://leetcode-cn.com/problems/word-ladder/)                                        |                                    |
-|                                    [126. 单词接龙 II](https://leetcode-cn.com/problems/word-ladder-ii/)                                     |                                    |
-|                     [515. 在每个树行中找最大值](https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row/)                      |                                    |
-|                                                     〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                                                      | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
-
-### DP
-
-|                                                出处                                                |            Hint + 解：             |
-| :------------------------------------------------------------------------------------------------: | :--------------------------------: |
-|                  [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)                   |  一维 dp，线性回头看（斐波那契）   |
-|                    [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/)                     |                                    |
-|                 [45. 跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/)                  |                                    |
-| [122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) |                                    |
-|                                 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                                 | 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️ |
-
-### 箭指 offer 专题
-
-|                                                                                                                                 |                                                                                                         |
-| :-----------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: |
-|                                                            **数组**                                                             |                                                                                                         |
-|              [面试题 03. 数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)              | [排序 +diff / hash +diff / 索引排序](./练习-数据结构算法刷题/箭指offer/面试题03.%20数组中重复的数字.js) |
-|                   03-fllow up: [287. 寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)                   |                 [数量二分法](练习-数据结构算法刷题/数组/二分查找/287.%20寻找重复数.js)                  |
-|                                                            **链表**                                                             |                                                                                                         |
-|               [面试题 18. 删除链表的节点](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/)                |                  [思路：](./练习-数据结构算法刷题/链表/面试题18.%20删除链表的节点.js)                   |
-|       [面试题 22. 链表中倒数第 k 个节点](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)        |                [思路：](./练习-数据结构算法刷题/链表/面试题22.%20链表中倒数第k个节点.js)                |
-|                        [面试题 24. 反转链表](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/)                        |                     [思路：](./练习-数据结构算法刷题/链表/面试题24.%20反转链表.js)                      |
-|                  [面试题 35. 复杂链表的复制](https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/)                  |                                                                                                         |
-| [面试题 52. 两个链表的第一个公共节点](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/) |                                                                                                         |
-|                                               〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                                                |                                   〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️                                    |
-
 ## 网络
 
-[🛫 ](#索引)
+[TCP/IP 构建网络基础体系](./nodes-notes-网络/TCP/README.md)
 
-- [ ] 输入一个 url 会发生什么？
+[HTTP  重点速揽](./notes-网络/HTTP/README.md)
+
+[HTTPS 保驾护航](./notes-网络/HTTPS/README.md)
+
 
 #### HTTP1.1
 
-[你是如何理解 HTTP 的？特点有哪些？](/notes-网络/HTTP/你是如何理解HTTP的？特点有哪些？.md)
+
 
 [你知道 HTTP 都有哪些版本吗？](/notes-网络/HTTP/你知道HTTP都有哪些版本吗？.md)
 
@@ -529,9 +294,3 @@ css 和 js 阻塞页面渲染？你怎么理解？
 - [ ] 和 TCP 的区别？
 
 - [ ] 为什么 DNS 使用 UDP 协议？
-
-#### IP
-
-### 正则
-
-[🛫 ](#索引)
