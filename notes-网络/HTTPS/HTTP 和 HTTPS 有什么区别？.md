@@ -1,4 +1,4 @@
-## HTTP 和 HTTPS 有什么区别？
+## HTTP 和 HTTPS 有什么区别
 
 ### HTTPS 和 HTTP 的关系
 
