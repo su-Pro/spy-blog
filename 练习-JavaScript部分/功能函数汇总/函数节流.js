@@ -1,3 +1,44 @@
+/**
+ * 时间戳思路
+ * @param {Function} fn 需要节流的函数
+ * @param {Number} wait - (ms) 节流的时间间隔
+ */
+function throttle (fn,wait) {
+  let prevTime = 0,
+      context = null;
+  return function (...args) {
+    let curTime = +new Date();
+    if(curTime - prevTime > wait) {
+      fn.apply(context,args)
+      prevTime = curTime;
+    }
+  }
+}
+
+/**
+ * 定时器版本
+ * @param {*} fn 
+ * @param {*} wait 
+ */
+function throttle (fn,wait) {
+  let timer = null,
+      context = null;
+  return function (...args) {
+    context = this;
+    if(!timer) {
+      timer = setTimeout(function () {
+        fn.apply(context,args)
+        timer = null;
+      },wait) 
+    }
+  }
+} 
+
+
+
+
+
+
 
 function throttle (fn,wait,options) {
   var prevTimeSpan = 0,curTimeSpan,tDiff,context;

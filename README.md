@@ -4,117 +4,48 @@
 
 ## 算法和数据结构
 
-[沉浸阅读]()
-
-[仓库位置]()
+[算法手册](https://github.com/sup-fiveyear/FE-base)
 
 >里面有发布 & 未发布的题解，有兴趣的同学可以查阅（都是ac过的代码）
 
 ## 设计模式
 
-[TS:面向对象 & 设计原则 & 设计模式](./notes-设计模式/README.MD)
+- [ ] [TS:面向对象 & 设计原则 & 设计模式](./notes-设计模式/README.MD)
+
+> 只有 单例 + 发布订阅 比较 弱... 后期会补上的！
 
 ## 网络
 
-[TCP/IP 网络基础](./notes-网络/TCP/README.md)
+- [x] [HTTP 重点速揽](./notes-网络/HTTP/README.md)
 
-[HTTP 重点速揽](./notes-网络/HTTP/README.md)
+- [x] [HTTPS 保驾护航](./notes-网络/HTTPS/README.md)
 
-[HTTPS 保驾护航](./notes-网络/HTTPS/README.md)
+- [ ] [TCP/IP 网络基础](./notes-网络/TCP/README.md)
 
 ## 浏览器
 
-[了解浏览器吗？请简单描述一下浏览器的架构？](https://github.com/sup-fiveyear/Notes/issues/15)
+- [x] [浏览器基础](./notes-浏览器/README.md)
 
-[输入 URL 后，都发生了什么？请从浏览器的视角分析进行分析?](https://github.com/sup-fiveyear/Notes/issues/16)
+- [ ] [V8]()
 
-[那具体分析一下浏览器在渲染这个环节做了那些事情？](https://github.com/sup-fiveyear/Notes/issues/17)
+## x-script
 
-[了解浏览器是如何执行 js 脚本的吗？其大体流程是怎样的？](https://github.com/sup-fiveyear/Notes/issues/13)
+- [x] [ECMAScript](./notes-JavaScript/README.md)
 
-[单线程的 JavaScript，是如何处理复杂的 web 交互的？](https://github.com/sup-fiveyear/Notes/issues/12)
+- [x] [JavaScript:DOM](./notes-JavaScript/DOM/DOM汇总.md)
+- [ ] [JavaScript:BOM]()
 
-[V8 的 GC 过程有了解吗？说说你的理解](https://github.com/sup-fiveyear/Notes/issues/9)
+- [ ] [TypeScript]()
 
-[DOM 和 事件相关汇总](./notes-浏览器/DOM.md)
+- [ ] [JavaScript-函数式编程](./notes-JavaScript/函数式编程/README.md)
 
-[说一下 AJAX 和跨域吧？](./notes-浏览器/说一下AJAX和跨域.md)
+## node.js
 
-## javascript
-
-[ECMAscript](./notes-JavaScript/README.md)
-
-[ES6 - 新增数据结构之set](./待迁移-ES6/新增数据结构set/map.md)
-
-[ES6 - 新增数据结构之map](./notes-JavaScript/ES6/新增数据结构/map/map.md)
-
-[ES6 - 新增数据结构之WeakSet]()
-
-[ES6 - 新增数据结构之WeakMap]()
-
-### 类
-
-[ES6 - class](./)
-
-[ES6 - extends](https://github.com/sup-fiveyear/Notes/issues/20)
-
-[ES6 - 装饰器](https://github.com/sup-fiveyear/Notes/issues/20)
-
-### 异步
-
-[ES6 - 讲讲你理解的 Promise](./notes-JavaScript/来一沓Promise.md)
-
-[ES6 - Promise 场景题汇总](./notes-JavaScript/promise练习.md)
-
-[ES6 - 即兴一下 async？](./notes-JavaScript/说说async的原理.md)
-
-[汇总 - 数组 api](./notes-JavaScript/数组常见API及实现.md)
-
-### 手写
-
-[🛫](#索引)
-
-[高阶函数之-初见 AOP](notes-JavaScript/高阶函数之初见AOP.md)
-
-[高阶函数之-函数柯里化](notes-JavaScript/高阶函数之函数柯里化.md)
-
-[高阶函数之-after 函数](/notes-JavaScript/高阶函数之after函数.md)
-
-- [ ] 高阶函数之-compose 函数
-
-[实现简单：发布订阅模式](/notes-JavaScript/实现极简发布订阅.md)
-
-- [ ] 实现简单：全局单利模式
-
-[Promise - 实现 PromiseA+](/notes-JavaScript/实现PromiseA+.md)
-
-[Promise - 实现 promisify?](/notes-JavaScript/promisify.md)
-
-- [ ] Promise - 实现各路 api
-
-- [ ] async - 原理实现
-
-[Nodejs- 实现 eventEmitter](./练习-Nodejs/eventEmitter.js); (待写简要思路)
-
-### 组件
-
-[vue - 封装懒加载指令](./组件/vue-懒加载/Note.md)
-
-## nodeJS
-
-[🛫](#索引)
-
-[NodeJs 有哪些特点？应用场景又有哪些？](notes-nodeJs/1.%20NodeJs有哪些特点？应用场景又有哪些？.md)
-
-[V8、libuv 和 Nodejs 之间的关系？](notes-nodeJs/2.%20V8%20libuv%20和%20Nodejs之间的关系？.md)
-
-[说说你对 global 以及 global.process 的理解？](notes-nodeJs/3.%20说说你对global%20以及global.process的理解？.md.md)
-
-[说一下 Liubv 的事件循环机制？](notes-nodeJs/4.%20说一下Liubv的事件循环机制.md)
-
-[说说你对模块化的理解？](notes-nodeJs/5.%20说说你对模块化的理解？.md)
-
-[说一下 Nodejs 的异步编程吧？](notes-nodeJs/说一下Nodejs的异步编程吧.md)
+- [ ] [nodejs 核心模块](./notes-nodeJs/README.md)
+- [ ] [RESTful - CRUD]()
+- [ ] [Express 原理总结]()
+- [ ] [GraphQL]()
+- [ ] [MongoDB - 基础使用]()
 
 ## vue
 
@@ -138,7 +69,7 @@
 
 ## react
 
-[🛫](#索引)
+- [x] [react-advanced](https://github.com/fullStack-feed/react-advanced)
 
 ## webpack
 
@@ -148,11 +79,7 @@
 
 [原理 - 懒加载：单入口文件和多入口文件实现懒加载](/notes-工程化/webpack/原理%20-%20懒加载：单入口文件和多入口文件实现懒加载.md)
 
-[🛫](#索引)
-
 ## 性能优化
-
-[🛫](#索引)
 
 ### 网络层面
 
@@ -171,10 +98,6 @@ css 和 js 阻塞页面渲染？你怎么理解？
 有了解同构应用吗（SSR）？
 
 - [ ] SSR 项目技术沉淀
-
-### 实际开发
-
-[如何高性能渲染十万条数据？](../Notes/练习-实际开发/虚拟列表/README.md)
 
 ## HTML + CSS
 
@@ -202,3 +125,5 @@ css 和 js 阻塞页面渲染？你怎么理解？
 - [ ] 文本截断
 - [ ] 边框画图
 - [ ] 常见布局方案
+
+[vue - 封装懒加载指令](./组件/vue-懒加载/Note.md)

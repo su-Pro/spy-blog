@@ -1,3 +1,21 @@
+/**
+ * 
+ * @param {Function} fn 需要防抖的函数
+ * @param {Number} wait(ms) 防抖的时间
+ */
+function debounce(fn,wait) {
+  let timer = null;
+  let _ = function(...args) {
+    let context = this;
+    if(timer) clearTimeout(timer)
+    timer = setTimeout(function () {
+      fn.apply(context,args)
+    },wait)
+  }
+  return _;
+}
+
+
 function debounce (fn,wait,options) {
   let timer = null,context,callNow;
   var _debounce = function (...args) {
@@ -42,4 +60,4 @@ function _debounce (fn,wait,options) {
   return _;
 }
 
-// 合并先跳过；
+合并先跳过；

@@ -38,16 +38,16 @@ new操作符的四个过程：
 2. 将构造函数的作用域赋给新对象并执行（修改this）
 3. 如果构造函数返回值位对象，返回这个对象，否则返回新对象
 
-```javascript
 function myNew (constructor,…args) {
     let to = {};
-    to.__proto__ = constructor.prototype; 
+    to.__proto__ = constructor.prototype;
     // 也可以使用Object.setPrototypeof()
     // eg: Object.setPrototypeof(to,constructor.prototype)
-    // https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf
-    let result = constructor.apply(to,args); 
+    // <https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf>
+    let result = constructor.apply(to,args);
     return (typeof result === “object”) ? result : to;
 }
+
 ```
 
 谈到原型链时，不得不提instanceof 操作符，该操作符用于判断对象是否在指定的原型链上，如果存在即返回true。
@@ -72,7 +72,7 @@ let _instanceof = (child,parent) => {
     if(childProto === parentPrototype) {
       return true
     }
-   // step by step 
+   // step by step
     childProto = Object.getProptypeOf(childProto)
   }
 }
@@ -91,20 +91,24 @@ let _instanceof = (child,parent) => {
 ### 拓展原型链的方法
 
 **new**
+
 * 优点：标准方法，兼容性好
 * 缺点：构造函数式初始化可能会给对象带来不必要的方法和属性
 
 **Object.create** （IE9+）
+
 * 优点： 一次性设置 \__proto\__ 属性，以便浏览器能够优化对象
 * 缺点： 第二个参数可能会成为一个性能黑洞（属性描述符）
 
 **setPrototypeOf**:（IE9+）
+
 - 允许动态操作对象的原型，甚至能强制给通过 Object.create(null) 创建出来的没有原型的对象添加一个原型。
--  但是该方法的性能不好，因为浏览器无法对动态设置的原型进行性能优化
+- 但是该方法的性能不好，因为浏览器无法对动态设置的原型进行性能优化
 
 > 动态设置原型干扰了所有的优化，甚至可能使浏览器为了运行成功，使用完全未经优化的代码进行重编译
 
 \__proto\__ ：
+
 - 各个浏览器封装的方法，兼容性极佳，但并不是标准行为。
 - 应该完全将其抛弃因为这个行为完全不具备性能可言，和setPrototypeOf类似的性能问题
 
@@ -113,6 +117,7 @@ let _instanceof = (child,parent) => {
 创建一个对象，该对象的_proto_指针指向指定的原型，同时可以通过第二个参数设置属性描述符/存储描述符
 
 pollfill
+
 ```javascript
 if (typeof Object.create !== "function") {
   Object.create = function (proto) {

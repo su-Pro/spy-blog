@@ -326,8 +326,6 @@ true + true // 2 typeof:number
 2. 调用 x.toString()，如果转换为原始类型，则**返回**
 3. 没有返回原始值 -> 报错
 
-> valueOf是对象上的方法，数组并没有没有(node.js中有)，数组只有被重写的toString.. 函数是有valueOf()的
-
 ```javascript
 a == 1 && a == 2 && a == 3   如何 ==> true?
 答案：
@@ -365,7 +363,8 @@ if(typeof Object.assign !== 'function’) {
       for(let i = 1; i < arguments.length;i++){
         let curSource = arguments[i];
         if(curSource !== null) {
-          // in 操作符 无法遍历出不可枚举值
+          // in 操作符
+          // 筛选不可枚举 & 继承属性
           for(let key in curSource) {
             if(Object.hasOwnProperty.call(curSource,key)){
               to[key] = curSource[key]
@@ -408,7 +407,7 @@ function recursionClone(target = {},origin) {
     if(Object.hasOwnProperty.call(origin,key)) {
       let isObj = typeof (origin[key]) === ‘object’ && origin[key] !== ‘null’
       if(isObj) {
-        let isArr = Object.toString.call(origin[key]) === ‘[object array]’
+        let isArr = Array.isArray(key);
         isArr ? target[key] = [] : target[key] = {}
         recursionClone(target[key],origin[key])
       }else {

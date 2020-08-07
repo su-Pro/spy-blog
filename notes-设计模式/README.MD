@@ -11,3 +11,7 @@
 - [x] [Singleton](../notes-设计模式/创建模式/README.md)
 
 ## 行为模式
+
+- [x] [实现简单：发布订阅模式](/notes-JavaScript/实现极简发布订阅.md)
+
+[Nodejs- 实现 eventEmitter](./练习-Nodejs/eventEmitter.js); (待写简要思路)

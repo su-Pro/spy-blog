@@ -1,8 +1,8 @@
 ## 继承
 
-### 什么是面向对象？JavaScript是面向对象语言吗？
+### 什么是面向对象？JavaScript是面向对象语言吗
 
-面向对象语言都有一个标志就是类的概念，通过类可以**创建多个对象具有相同方法和属性**。在JavaScript中没有类的概念，因此他的继承和面向对象语言不太一样，是基于原型对象的一种继承方案。
+面向对象语言都有一个标志就是类的概念，通过类可以**创建多个对象具有相同方法和属性**。JavaScript 只是在两个对象之间创建一个关联，这样，一个对象就可以通过委托访问另一个对象的属性和函数。因此他的继承和面向对象语言不太一样，是基于原型对象的一种继承方案。
 
 ### 原型链继承
 
@@ -15,11 +15,11 @@
 - 不能用对象字面量语法向原型中添加属性（改变原型指针，会切断原型链）
 
 ```javascript
-function Child() {
+function Parent() {
   this.name = ['1','2']
 }
 function Son () {}
-Son.prototype = new Child();
+Son.prototype = new Parent();
 var son1 = new Son();// 无法向父类传递参数
 var son2 = new Son()
 son1.name.push('3')
@@ -28,10 +28,12 @@ son1.name.push('3')
 
 ### 借用构造函数继承
 
-子类的构造函数内部调用父类的构造函数，能够解决传递参数的问题。
+**子类的构造函数内部调用父类的构造函数，能够解决传递参数的问题。**
+
+缺点：
 
 - 不存在原型这层关系后，导致函数无法复用
-- 超类原型对象中的方法无法被继承，所有类型只能使用构造函数中的方法
+- 无法关联超类
 
 ```javascript
 function Parent() {
@@ -52,6 +54,10 @@ function Child(...args) {
 
 将原型链继承和借用构造函数融为一体，能够实现向父类传递参数并且避免了引用值的问题，是最常用的一种继承方案。
 
+缺点：
+
+- 由于重写了Child的 prototype，需要手动将constructor归位
+
 ```javascript
 function Parent(name) {
   this.name = [‘foo’,’bar’];
@@ -70,19 +76,18 @@ Child.prototype.constructor = Child;
 
 ### 原型式继承
 
-借助原型式继承可以对已有的对象创建一个新对象（继承已有的对象），这种实现继承的方法优点在于**不需要创建构造函数**。
+借助原型式继承可以对已有的对象创建一个新对象（从而关联两个对象），这种实现继承的方法优点在于**不需要创建构造函数**。
 
 前提是你必须有一个对象作为另外一个对象的继承基础，ES5对该模式封装为：`Object.create(对象,属性描述符)`
 
 问题：
-- 和原型链继承一样的问题，对引用值的共享
+
+- 引用值的共享
 
 ```javascript
-function Parent(name) {
-  this.name = [‘foo’,’bar’];
-}
-Parent.prototype.func = function () {
-  console.log(‘继承成功’);
+var person = {
+    name: 'kevin',
+    friends: ['daisy', 'kelly']
 }
 function myCreate (o) {
   // 中转函数
@@ -92,18 +97,24 @@ function myCreate (o) {
 }
 ```
 
-### 寄生组合继承(圣杯继承)
+### 圣杯继承
 
 最完美的一种继承方案，需要注意的是重写原型后，需要将constructor 进行归位操作。
 
-问题：
+优点
 
- - 调用两次超类构造函数
+- 保持原型链不变
+- 避免引用值问题
+- 正常使用 `instanceof` & `isPrototypeOf`
 
+instanceof vs isPrototypeof
+
+> isPrototypeOf() 与 instanceof 运算符不同。在表达式 "object instanceof AFunction"中，object 的原型链是针对 AFunction.prototype 进行检查的，而不是针对 AFunction 本身。
 
 ```javascript
 function _extend (sub,super) {
   var _prototype = _create(super.prototype);
+  // 归位
   _prototype.constructor = sub;
   sub.prototype = _prototype;
 
