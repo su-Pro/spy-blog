@@ -34,7 +34,6 @@ function yellow() {
 1. 封装亮灯函数，用于控制不同秒数和颜色
 2. 链式调用串起亮灯顺序，最后递归自己
 
-
 ```js
   const light = function (wait,cb) {
     // 需要将其包装成一个Promise 这样方便链式调用
@@ -55,12 +54,12 @@ function yellow() {
       return light(1000,yellow)
     }).then(() => {
       step()
-    }) 
+    })
   }
 ```
 
-### 实现mergePromise函数
-
 ### 封装一个异步加载图片的方法
+
+### 封装ajax请求方法
 
 ### 限制异步操作的并发个数并尽可能快的完成全部

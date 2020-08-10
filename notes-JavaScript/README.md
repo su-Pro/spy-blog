@@ -12,6 +12,8 @@
 
 ### ES6
 
+**数据结构：**
+
 - [x] [ES - 数组总结](./数组常见API及实现.md)
 
 [ES6 - 新增数据结构之set](./待迁移-ES6/新增数据结构set/map.md)
@@ -22,7 +24,7 @@
 
 [ES6 - 新增数据结构之WeakMap]()
 
-### 类
+**类：**
 
 [ES6 - class](./)
 
@@ -30,23 +32,16 @@
 
 [ES6 - 装饰器](https://github.com/sup-fiveyear/Notes/issues/20)
 
-### 异步
+**异步：**
 
-[ES6 - 讲讲你理解的 Promise](./notes-JavaScript/来一沓Promise.md)
+- [x] [ES6 - 总结Promise](./ES6/Promise/来一沓Promise.md)
 
-[ES6 - Promise 场景题汇总](./notes-JavaScript/promise练习.md)
+- [x] [Promise - 实现 PromiseA+](./ES6/Promise/实现PromiseA+.md)
+
+- [x] [Promise - 实现 Promise.race() && Promise.all() && Promise.allsettled()](./ES6/Promise/Promise%20-%20实现%20Promise.race()%20&&%20Promise.all()%20&&%20Promise.allsettled().md)
+
+- [x] [ES6 - Promise 场景题汇总](/notes-JavaScript/ES6/Promise/promise练习.md)
 
 [ES6 - 即兴一下 async？](./notes-JavaScript/说说async的原理.md)
 
-[汇总 - 数组 api](./notes-JavaScript/数组常见API及实现.md)
-
-
-
-[Promise - 实现 PromiseA+](/notes-JavaScript/实现PromiseA+.md)
-
 [Promise - 实现 promisify?](/notes-JavaScript/promisify.md)
-
-- [ ] Promise - 实现各路 api
-
-- [ ] async - 原理实现
-

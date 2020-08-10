@@ -41,7 +41,7 @@
 
 ## node.js
 
-- [ ] [nodejs 核心模块](./notes-nodeJs/README.md)
+- [x] [nodejs 核心](./notes-nodeJs/README.md)
 - [ ] [RESTful - CRUD]()
 - [ ] [Express 原理总结]()
 - [ ] [GraphQL]()
