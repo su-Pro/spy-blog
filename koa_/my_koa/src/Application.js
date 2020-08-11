@@ -46,7 +46,7 @@ module.exports = class extends EventEmitter {
       let middleware = this.middlewares(i)
       //  开始执行middleware，注意try catch捕获异常
       try {
-        return  Promise.resolve(middleware(ctx,() => dispatch(i+1)))
+        return  Promise.resolve(middleware(ctx,() =>  dispatch(i+1)))
       } catch (e) {
         return Promise.reject(e)
       }

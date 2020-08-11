@@ -8,29 +8,24 @@
 
 **事件调度**
 
-- [ ] Eventloop
-- [ ] 宏任务与微任务
-- [ ] 定时器精准问题
+- [x] [Eventloop](./浏览器基础/说一下浏览器事件循环.md)
 
 **运行机制：**
 
 - [ ] 如何运行一段JavaScript代码
-- [ ] 垃圾回收策略
+- [ ] [垃圾回收策略](./浏览器基础/说一下垃圾回收策略？.md)
 
 **AJAX & 同源策略：**
 
-- [ ] AJAX 原理 + 封装
-- [ ] 同源策略：跨域
+- [x] [AJAX 原理](浏览器基础/说一下AJAX.md)
+- [x] [封装AJAX](../练习-JavaScript部分/AJAX.js)
+- [x] [同源策略：跨域](浏览器基础/跨域通信.md)
 
 **存储：**
 
 - [ ] 本地存储
 
-
-
 [了解浏览器吗？请简单描述一下浏览器的架构？](https://github.com/sup-fiveyear/Notes/issues/15)
-
-[输入 URL 后，都发生了什么？请从浏览器的视角分析进行分析?](https://github.com/sup-fiveyear/Notes/issues/16)
 
 [那具体分析一下浏览器在渲染这个环节做了那些事情？](https://github.com/sup-fiveyear/Notes/issues/17)
 
