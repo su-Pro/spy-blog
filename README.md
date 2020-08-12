@@ -33,11 +33,12 @@
 - [x] [ECMAScript](./notes-JavaScript/README.md)
 
 - [x] [JavaScript:DOM](./notes-JavaScript/DOM/DOM汇总.md)
+
 - [ ] [JavaScript:BOM]()
 
 - [ ] [TypeScript]()
 
-- [ ] [JavaScript-函数式编程](./notes-JavaScript/函数式编程/README.md)
+- [ ] [JavaScript-Functional](./notes-JavaScript/函数式编程/README.md)
 
 ## node.js
 
