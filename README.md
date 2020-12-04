@@ -1,3 +1,5 @@
+# 前端部分
+
 记录前端知识体系的点点滴滴，能力有限，持续更新。
 
 > 本仓库做为一个我自己的全局索引，可能会链接到不同的仓库中。
@@ -6,7 +8,7 @@
 
 [算法手册](https://github.com/sup-fiveyear/FE-base)
 
->里面有发布 & 未发布的题解，有兴趣的同学可以查阅（都是ac过的代码）
+> 里面有发布 & 未发布的题解，有兴趣的同学可以查阅（都是 ac 过的代码）
 
 ## 设计模式
 
@@ -28,7 +30,7 @@
 
 - [ ] [V8]()
 
-## x-script
+## javaScript
 
 - [x] [ECMAScript](./notes-JavaScript/README.md)
 
@@ -52,13 +54,13 @@
 
 [🛫](#索引)
 
-[vue.js重点总结](notes-vue/面试题.md)
+[vue.js 重点总结](notes-vue/面试题.md)
 
 [vuex：原理总结](notes-vue/vuex.md)
 
 [vue-router：原理总结](notes-vue/vue-router.md)
 
-[实现一下vue2的数据侦测？](note-vue/../notes-vue/响应式原理.md)
+[实现一下 vue2 的数据侦测？](note-vue/../notes-vue/响应式原理.md)
 
 [\$wtach 和 computed 实现原理？](notes-vue/$watch和computed.md)
 
@@ -76,7 +78,7 @@
 
 [实践总结](notes-工程化/webpack/基础总结.md)
 
-[原理 - 模块化：如何同时支持CommonJs规范和ES module规范](notes-工程化/webpack/原理%20-%20模块化：如何同时支持CommonJs规范和ES%20module规范.md)
+[原理 - 模块化：如何同时支持 CommonJs 规范和 ES module 规范](notes-工程化/webpack/原理%20-%20模块化：如何同时支持CommonJs规范和ES%20module规范.md)
 
 [原理 - 懒加载：单入口文件和多入口文件实现懒加载](/notes-工程化/webpack/原理%20-%20懒加载：单入口文件和多入口文件实现懒加载.md)
 
