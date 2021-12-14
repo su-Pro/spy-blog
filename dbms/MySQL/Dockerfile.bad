@@ -1,0 +1,7 @@
+FROM ubuntu:21.04
+RUN apt-get update
+RUN apt-get install -y wget
+RUN wget https://github.com/ipinfo/cli/releases/download/ipinfo-2.0.1/ipinfo_2.0.1_linux_amd64.tar.gz
+RUN tar zxf ipinfo_2.0.1_linux_amd64.tar.gz
+RUN mv ipinfo_2.0.1_linux_amd64 /usr/bin/ipinfo
+RUN rm -rf ipinfo_2.0.1_linux_amd64.tar.gz

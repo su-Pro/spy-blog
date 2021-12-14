@@ -1,0 +1,107 @@
+{
+  "main": {
+    "id": "4a561b26e65b0de3",
+    "type": "split",
+    "children": [
+      {
+        "id": "023c79567f729517",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "README.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "eeaf916c9356ddc4",
+    "type": "split",
+    "children": [
+      {
+        "id": "7d3fc300ff7e7112",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7d28d9c7cd51b0e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "03fb70a2a3a88d3e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c2caebd2760df946",
+    "type": "split",
+    "children": [
+      {
+        "id": "79030ca8047c2e48",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "19f251cea607d878",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "99e986d7a2e75fb8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 235
+  },
+  "active": "023c79567f729517",
+  "lastOpenFiles": [
+    "README.md",
+    "index.md",
+    "coding/algorithms/dynamic programming.md",
+    "coding/algorithms/linear/322.Coin Change.md",
+    "fe/webpack 手写/实现打包器/node_modules/debug/CHANGELOG.md"
+  ]
+}
