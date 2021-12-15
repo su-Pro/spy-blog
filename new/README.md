@@ -5,22 +5,30 @@
 
 #### 1.1.1 CS
 
-> 多以经典书籍作为主脉络，拆分出重要章节做以主题式阅读。
+> 以经典书籍作为主脉络，拆分出重要章节做以主题式阅读。
+> 《深入理解计算机系统》、《操作系统导论》
 
-《深入理解计算机系统》
+***computer hardware***
+- I/O stand for
+- memory mountain
 
-《操作系统导论》
+***operating system***
+- ...
+
 
 ####  1.1.2 coding
 ***algorithms***
+- [[X pointer]]
 - [[dynamic programming]]
 
 #### 1.1.3 software development
+***MySQL***
+- [[indexed]]
+- [[join operations]]
 
- - FE
- - DBMS
- - system design
- - devOps
+***FE*** 
+***system design***
+***devOps***
 
 ### 1.2 软素质
 
@@ -50,3 +58,5 @@
 #### 养成体系
 
 ## 3. 日志归档
+
+- 2021 年总结

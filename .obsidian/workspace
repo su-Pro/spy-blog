@@ -4,14 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "023c79567f729517",
+        "id": "124853188c63f66b",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "README.md",
-            "mode": "source"
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -52,7 +49,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 192
   },
   "right": {
     "id": "c2caebd2760df946",
@@ -68,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,9 +80,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -94,14 +88,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235
+    "width": 235,
+    "collapsed": true
   },
-  "active": "023c79567f729517",
+  "active": "124853188c63f66b",
   "lastOpenFiles": [
-    "README.md",
-    "index.md",
-    "coding/algorithms/dynamic programming.md",
-    "coding/algorithms/linear/322.Coin Change.md",
-    "fe/webpack 手写/实现打包器/node_modules/debug/CHANGELOG.md"
+    "new/README.md",
+    "new/coding/algorithms/X pointer.md",
+    "new/coding/algorithms/x - pointer/56. 合并区间.md",
+    "new/coding/algorithms/x - pointer/Array Deduplication III.md",
+    "new/coding/algorithms/dynamic programming.md",
+    "new/coding/algorithms/x - pointer/475. 供暖器.md",
+    "new/coding/algorithms/x - pointer/881. 救生艇.md",
+    "new/coding/algorithms/x - pointer/80. 删除有序数组中的重复项 II.md",
+    "new/coding/algorithms/x - pointer/26. 删除有序数组中的重复项.md",
+    "new/redis/onePage - redis.md"
   ]
 }
