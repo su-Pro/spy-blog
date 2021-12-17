@@ -1,7 +1,7 @@
 {
-  "baseFontSize": 15,
+  "baseFontSize": 14,
   "theme": "moonstone",
   "translucency": false,
   "baseFontSizeAction": true,
-  "cssTheme": "Solarized"
+  "cssTheme": "Things"
 }

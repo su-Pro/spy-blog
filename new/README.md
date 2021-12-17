@@ -9,7 +9,7 @@
 > - 体系知识:[《深入理解计算机系统》](https://book.douban.com/subject/26912767/)
 > - 操作系统:[《操作系统导论》](https://book.douban.com/subject/33463930/)
 > - 编程能力:[《计算机的解释与构造》](https://book.douban.com/subject/1148282/)
-> - 网络基础:[《自顶向下》](https://book.douban.com/subject/30280001/)
+> - 数据结构与算法（理论层面）
 
 ***computer hardware***
 - I/O stand for
@@ -20,12 +20,14 @@
 
 
 ####  1.1.2 coding
+
 ***algorithms***
-- [[X pointer]]
+- [[pointer]]
 - [[dynamic programming]]
-- 
+- [[search]]
 
 #### 1.1.3 software development
+***FE*** 
 
 ***MySQL***
 - [[indexed]]
@@ -34,8 +36,6 @@
 ***system design***
 > 高并发：秒杀尝尽
 > 高一致性：协同文档？？
-
-***FE*** 
 
 ***devOps***
 

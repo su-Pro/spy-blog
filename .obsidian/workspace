@@ -4,29 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "124853188c63f66b",
+        "id": "f91e5fc8e10e5211",
         "type": "leaf",
-        "dimension": 76.24768946395564,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "new/coding/algorithms/search - bfs/102. 二叉树的层序遍历.md",
-            "mode": "source"
+            "file": "new/README.md",
+            "mode": "preview"
           }
-        },
-        "group": "34a3d559f5d26eb7"
+        }
       },
       {
-        "id": "23dbe98ad36472ea",
+        "id": "8c59a9afeddb72f8",
         "type": "leaf",
-        "dimension": 23.752310536044362,
         "state": {
-          "type": "outline",
+          "type": "markdown",
           "state": {
-            "file": "new/coding/algorithms/search - bfs/102. 二叉树的层序遍历.md"
+            "file": "new/coding/algorithms/search.md",
+            "mode": "source"
           }
-        },
-        "group": "34a3d559f5d26eb7"
+        }
       }
     ],
     "direction": "vertical"
@@ -66,7 +63,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 337
+    "width": 331.5
   },
   "right": {
     "id": "c2caebd2760df946",
@@ -82,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "new/coding/algorithms/search - bfs/102. 二叉树的层序遍历.md",
+                "file": "new/README.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "new/coding/algorithms/search - bfs/102. 二叉树的层序遍历.md"
+                "file": "new/README.md"
               }
             }
           }
@@ -111,17 +108,17 @@
     "width": 235,
     "collapsed": true
   },
-  "active": "124853188c63f66b",
+  "active": "f91e5fc8e10e5211",
   "lastOpenFiles": [
-    "new/coding/algorithms/search - bfs/102. 二叉树的层序遍历.md",
     "new/README.md",
-    "new/cs/《CSAPP》/6.1 存储技术.md",
-    "new/cs/存储体系.md",
-    "new/cs/topic/Untitled.md",
-    "new/coding/dataSource/stack/1047. 删除字符串中的所有相邻重复项.md",
-    "new/coding/algorithms/X pointer.md",
-    "new/coding/algorithms/x - pointer/56. 合并区间.md",
-    "new/coding/algorithms/x - pointer/Array Deduplication III.md",
-    "new/coding/algorithms/dynamic programming.md"
+    "e74bbeaff6ff180cb7c192aa192b30b7.png",
+    "new/coding/algorithms/search.md",
+    "new/coding/algorithms/dynamic programming.md",
+    "new/coding/algorithms/pointer.md",
+    "new/coding/dataSource/tree/1644. 二叉树的最近公共祖先 II.md",
+    "new/coding/dataSource/tree/Untitled.md",
+    "new/coding/dataSource/线性数据结构.md",
+    "new/coding/dataSource/tree/236. 二叉树的最近公共祖先.md",
+    "new/coding/algorithms/search - bfs/103. 二叉树的锯齿形层序遍历.md"
   ]
 }
