@@ -5,8 +5,11 @@
 
 #### 1.1.1 CS
 
-> 以经典书籍作为主脉络，拆分出重要章节做以主题式阅读。
-> 《深入理解计算机系统》、《操作系统导论》
+> 今年要完成的四个基础方向：
+> - 体系知识:[《深入理解计算机系统》](https://book.douban.com/subject/26912767/)
+> - 操作系统:[《操作系统导论》](https://book.douban.com/subject/33463930/)
+> - 编程能力:[《计算机的解释与构造》](https://book.douban.com/subject/1148282/)
+> - 网络基础:[《自顶向下》](https://book.douban.com/subject/30280001/)
 
 ***computer hardware***
 - I/O stand for
@@ -20,15 +23,23 @@
 ***algorithms***
 - [[X pointer]]
 - [[dynamic programming]]
+- 
 
 #### 1.1.3 software development
+
 ***MySQL***
 - [[indexed]]
 - [[join operations]]
 
-***FE*** 
 ***system design***
+> 高并发：秒杀尝尽
+> 高一致性：协同文档？？
+
+***FE*** 
+
 ***devOps***
+
+> docker 工作流，github workflow
 
 ### 1.2 软素质
 

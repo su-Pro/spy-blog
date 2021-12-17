@@ -6,10 +6,27 @@
       {
         "id": "124853188c63f66b",
         "type": "leaf",
+        "dimension": 76.24768946395564,
         "state": {
-          "type": "graph",
-          "state": {}
-        }
+          "type": "markdown",
+          "state": {
+            "file": "new/coding/algorithms/search - bfs/102. 二叉树的层序遍历.md",
+            "mode": "source"
+          }
+        },
+        "group": "34a3d559f5d26eb7"
+      },
+      {
+        "id": "23dbe98ad36472ea",
+        "type": "leaf",
+        "dimension": 23.752310536044362,
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "new/coding/algorithms/search - bfs/102. 二叉树的层序遍历.md"
+          }
+        },
+        "group": "34a3d559f5d26eb7"
       }
     ],
     "direction": "vertical"
@@ -49,7 +66,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 192
+    "width": 337
   },
   "right": {
     "id": "c2caebd2760df946",
@@ -65,6 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "new/coding/algorithms/search - bfs/102. 二叉树的层序遍历.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -80,7 +98,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "new/coding/algorithms/search - bfs/102. 二叉树的层序遍历.md"
+              }
             }
           }
         ],
@@ -93,15 +113,15 @@
   },
   "active": "124853188c63f66b",
   "lastOpenFiles": [
+    "new/coding/algorithms/search - bfs/102. 二叉树的层序遍历.md",
     "new/README.md",
+    "new/cs/《CSAPP》/6.1 存储技术.md",
+    "new/cs/存储体系.md",
+    "new/cs/topic/Untitled.md",
+    "new/coding/dataSource/stack/1047. 删除字符串中的所有相邻重复项.md",
     "new/coding/algorithms/X pointer.md",
     "new/coding/algorithms/x - pointer/56. 合并区间.md",
     "new/coding/algorithms/x - pointer/Array Deduplication III.md",
-    "new/coding/algorithms/dynamic programming.md",
-    "new/coding/algorithms/x - pointer/475. 供暖器.md",
-    "new/coding/algorithms/x - pointer/881. 救生艇.md",
-    "new/coding/algorithms/x - pointer/80. 删除有序数组中的重复项 II.md",
-    "new/coding/algorithms/x - pointer/26. 删除有序数组中的重复项.md",
-    "new/redis/onePage - redis.md"
+    "new/coding/algorithms/dynamic programming.md"
   ]
 }
