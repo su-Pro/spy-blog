@@ -4,26 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "f91e5fc8e10e5211",
+        "id": "6cc0800db7b4aed0",
         "type": "leaf",
+        "dimension": 84.96000000000001,
         "state": {
-          "type": "markdown",
+          "type": "image",
           "state": {
-            "file": "new/README.md",
-            "mode": "preview"
+            "file": "Pasted image 20211217132727.png"
           }
-        }
+        },
+        "group": "6f8efb728b17e3ae"
       },
       {
-        "id": "8c59a9afeddb72f8",
+        "id": "c5d1a59e5fd87e19",
         "type": "leaf",
+        "dimension": 15.040000000000001,
         "state": {
-          "type": "markdown",
+          "type": "outline",
           "state": {
-            "file": "new/coding/algorithms/search.md",
-            "mode": "source"
+            "file": "Pasted image 20211217132727.png"
           }
-        }
+        },
+        "group": "6f8efb728b17e3ae"
       }
     ],
     "direction": "vertical"
@@ -58,6 +60,14 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "121a417b8450fd9c",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
           }
         ]
       }
@@ -79,8 +89,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "new/README.md",
-                "collapseAll": true,
+                "file": "Pasted image 20211217132727.png",
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -96,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "new/README.md"
+                "file": "Pasted image 20211217132727.png"
               }
             }
           }
@@ -105,20 +115,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235,
+    "width": 246.5,
     "collapsed": true
   },
-  "active": "f91e5fc8e10e5211",
+  "active": "6cc0800db7b4aed0",
   "lastOpenFiles": [
-    "new/README.md",
+    "Pasted image 20211217132727.png",
+    "Pasted image 20211217132047.png",
+    "Pasted image 20211217130933.png",
+    "Pasted image 20211216082456.png",
     "e74bbeaff6ff180cb7c192aa192b30b7.png",
-    "new/coding/algorithms/search.md",
-    "new/coding/algorithms/dynamic programming.md",
-    "new/coding/algorithms/pointer.md",
-    "new/coding/dataSource/tree/1644. 二叉树的最近公共祖先 II.md",
-    "new/coding/dataSource/tree/Untitled.md",
-    "new/coding/dataSource/线性数据结构.md",
-    "new/coding/dataSource/tree/236. 二叉树的最近公共祖先.md",
-    "new/coding/algorithms/search - bfs/103. 二叉树的锯齿形层序遍历.md"
+    "test.md",
+    "logs/2021-12-18.md",
+    "Day Planners/Day Planner-20211217.md",
+    "Day Planners/Day Planner-20211218.md",
+    "new/README.md"
   ]
 }

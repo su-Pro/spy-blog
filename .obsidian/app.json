@@ -3,5 +3,10 @@
   "attachmentFolderPath": "coding",
   "alwaysUpdateLinks": true,
   "promptDelete": false,
-  "autoPairBrackets": true
+  "autoPairBrackets": true,
+  "foldIndent": true,
+  "defaultViewMode": "preview",
+  "showLineNumber": true,
+  "emacsyKeys": false,
+  "readableLineLength": false
 }
