@@ -4,28 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "6cc0800db7b4aed0",
+        "id": "b2beec84df8bd416",
         "type": "leaf",
-        "dimension": 84.96000000000001,
         "state": {
-          "type": "image",
+          "type": "markdown",
           "state": {
-            "file": "Pasted image 20211217132727.png"
+            "file": "coding/beginner/beginer - index.md",
+            "mode": "preview"
           }
-        },
-        "group": "6f8efb728b17e3ae"
+        }
       },
       {
-        "id": "c5d1a59e5fd87e19",
+        "id": "f388846ed10f52ec",
         "type": "leaf",
-        "dimension": 15.040000000000001,
         "state": {
-          "type": "outline",
+          "type": "markdown",
           "state": {
-            "file": "Pasted image 20211217132727.png"
+            "file": "coding/beginner/15. dp 2/53.最大子数组和.md",
+            "mode": "source"
           }
-        },
-        "group": "6f8efb728b17e3ae"
+        }
       }
     ],
     "direction": "vertical"
@@ -73,7 +71,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 331.5
+    "width": 348.0121879577637
   },
   "right": {
     "id": "c2caebd2760df946",
@@ -89,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pasted image 20211217132727.png",
+                "file": "coding/beginner/beginer - index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20211217132727.png"
+                "file": "coding/beginner/beginer - index.md"
               }
             }
           }
@@ -115,20 +113,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 246.5,
+    "width": 255.35166931152344,
     "collapsed": true
   },
-  "active": "6cc0800db7b4aed0",
+  "active": "b2beec84df8bd416",
   "lastOpenFiles": [
-    "Pasted image 20211217132727.png",
-    "Pasted image 20211217132047.png",
-    "Pasted image 20211217130933.png",
-    "Pasted image 20211216082456.png",
-    "e74bbeaff6ff180cb7c192aa192b30b7.png",
-    "test.md",
-    "logs/2021-12-18.md",
-    "Day Planners/Day Planner-20211217.md",
-    "Day Planners/Day Planner-20211218.md",
-    "new/README.md"
+    "coding/beginner/beginer - index.md",
+    "coding/beginner/15. dp 2/72. 编辑距离.md",
+    "coding/beginner/15. dp 2/45.跳跃游戏 II.md",
+    "coding/beginner/15. dp 2/53.最大子数组和.md",
+    "coding/beginner/14. dp 1/Longest Ascending SubArray.md",
+    "coding/beginner/14. dp 1/55.跳跃游戏.md",
+    "coding/beginner/14. dp 1/剑指 Offer 14- I. 剪绳子.md",
+    "temp/内推模板.md",
+    "coding/beginner/15. dp 2/221. 最大正方形.md",
+    "temp/1维 - 动态规划.md"
   ]
 }

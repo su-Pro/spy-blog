@@ -1,5 +1,8 @@
 [
-  "marginnote-companion",
   "file-explorer-note-count",
-  "things-logbook"
+  "things-logbook",
+  "sliding-panes-obsidian",
+  "obsidian-outliner",
+  "recent-files-obsidian",
+  "table-editor-obsidian"
 ]

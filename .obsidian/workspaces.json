@@ -1,0 +1,124 @@
+{
+  "workspaces": {
+    "laioffer": {
+      "main": {
+        "id": "4a561b26e65b0de3",
+        "type": "split",
+        "children": [
+          {
+            "id": "2f718b887b506d46",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "coding/beginner/beginer - index.md",
+                "mode": "preview"
+              }
+            }
+          },
+          {
+            "id": "9ef474d8dacbe30a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "coding/beginner/14. dp 1/剑指 Offer 14- I. 剪绳子.md",
+                "mode": "preview"
+              }
+            }
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "eeaf916c9356ddc4",
+        "type": "split",
+        "children": [
+          {
+            "id": "7d3fc300ff7e7112",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "e7d28d9c7cd51b0e",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              },
+              {
+                "id": "03fb70a2a3a88d3e",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "121a417b8450fd9c",
+                "type": "leaf",
+                "state": {
+                  "type": "starred",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 348.0121879577637
+      },
+      "right": {
+        "id": "c2caebd2760df946",
+        "type": "split",
+        "children": [
+          {
+            "id": "79030ca8047c2e48",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "19f251cea607d878",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "coding/beginner/14. dp 1/剑指 Offer 14- I. 剪绳子.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "99e986d7a2e75fb8",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "coding/beginner/14. dp 1/剑指 Offer 14- I. 剪绳子.md"
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 255.35166931152344
+      },
+      "active": "9ef474d8dacbe30a"
+    }
+  },
+  "active": "laioffer"
+}
