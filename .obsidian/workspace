@@ -9,7 +9,40 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "coding/beginner/beginer - index.md",
+            "file": "log/2021/2021-12-19.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "d2843d226a288621",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "coding/beginner/15. dp 2/53.最大子数组和.md",
+            "mode": "preview"
+          }
+        }
+      },
+      {
+        "id": "f84273b71e2b9ac5",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "coding/beginner/15. dp 2/139. 单词拆分.md",
+            "mode": "preview"
+          }
+        }
+      },
+      {
+        "id": "1b64c324fad9defe",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "coding/beginner/15. dp 2/72. 编辑距离.md",
             "mode": "preview"
           }
         }
@@ -87,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "coding/beginner/beginer - index.md",
+                "file": "log/2021/2021-12-19.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "coding/beginner/beginer - index.md"
+                "file": "log/2021/2021-12-19.md"
               }
             }
           }
@@ -118,15 +151,15 @@
   },
   "active": "b2beec84df8bd416",
   "lastOpenFiles": [
+    "log/2021/2021-12-19.md",
     "coding/beginner/beginer - index.md",
+    "log/2021/2021-12-18.md",
+    "coding/beginner/15. dp 2/221. 最大正方形.md",
+    "coding/beginner/15. dp 2/53.最大子数组和.md",
+    "coding/beginner/15. dp 2/139. 单词拆分.md",
     "coding/beginner/15. dp 2/72. 编辑距离.md",
     "coding/beginner/15. dp 2/45.跳跃游戏 II.md",
-    "coding/beginner/15. dp 2/53.最大子数组和.md",
     "coding/beginner/14. dp 1/Longest Ascending SubArray.md",
-    "coding/beginner/14. dp 1/55.跳跃游戏.md",
-    "coding/beginner/14. dp 1/剑指 Offer 14- I. 剪绳子.md",
-    "temp/内推模板.md",
-    "coding/beginner/15. dp 2/221. 最大正方形.md",
-    "temp/1维 - 动态规划.md"
+    "coding/beginner/14. dp 1/55.跳跃游戏.md"
   ]
 }
