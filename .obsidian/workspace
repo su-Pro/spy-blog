@@ -4,57 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "b2beec84df8bd416",
+        "id": "0bfffd84f812c998",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "log/2021/2021-12-19.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "d2843d226a288621",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "coding/beginner/15. dp 2/53.最大子数组和.md",
+            "file": "log/2022年计划.md",
             "mode": "preview"
           }
         }
       },
       {
-        "id": "f84273b71e2b9ac5",
+        "id": "a819aa3b48ab5535",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "coding/beginner/15. dp 2/139. 单词拆分.md",
+            "file": "log/2021/2021-12-20.md",
             "mode": "preview"
-          }
-        }
-      },
-      {
-        "id": "1b64c324fad9defe",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "coding/beginner/15. dp 2/72. 编辑距离.md",
-            "mode": "preview"
-          }
-        }
-      },
-      {
-        "id": "f388846ed10f52ec",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "coding/beginner/15. dp 2/53.最大子数组和.md",
-            "mode": "source"
           }
         }
       }
@@ -104,7 +71,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.0121879577637
+    "width": 348.0121879577637,
+    "collapsed": true
   },
   "right": {
     "id": "c2caebd2760df946",
@@ -120,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "log/2021/2021-12-19.md",
+                "file": "log/2021/2021-12-20.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,8 +105,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "log/2021/2021-12-19.md"
+                "file": "log/2021/2021-12-20.md"
               }
+            }
+          },
+          {
+            "id": "6e728993132b41d3",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
             }
           }
         ],
@@ -149,17 +125,17 @@
     "width": 255.35166931152344,
     "collapsed": true
   },
-  "active": "b2beec84df8bd416",
+  "active": "a819aa3b48ab5535",
   "lastOpenFiles": [
-    "log/2021/2021-12-19.md",
-    "coding/beginner/beginer - index.md",
-    "log/2021/2021-12-18.md",
-    "coding/beginner/15. dp 2/221. 最大正方形.md",
+    "log/2021/2021-12-20.md",
+    "log/2022年计划.md",
+    "coding/beginner/14. dp 1/剑指 Offer 14- I. 剪绳子.md",
     "coding/beginner/15. dp 2/53.最大子数组和.md",
-    "coding/beginner/15. dp 2/139. 单词拆分.md",
+    "coding/beginner/15. dp 2/221. 最大正方形.md",
+    "coding/beginner/16. dp 3/764. 最大加号标志.md",
+    "coding/beginner/beginer - index.md",
+    "coding/beginner/16. dp 3/1139. 最大的以 1 为边界的正方形.md",
     "coding/beginner/15. dp 2/72. 编辑距离.md",
-    "coding/beginner/15. dp 2/45.跳跃游戏 II.md",
-    "coding/beginner/14. dp 1/Longest Ascending SubArray.md",
-    "coding/beginner/14. dp 1/55.跳跃游戏.md"
+    "temp/1维 - 动态规划.md"
   ]
 }

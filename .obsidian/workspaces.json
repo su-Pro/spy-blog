@@ -118,7 +118,135 @@
         "width": 255.35166931152344
       },
       "active": "9ef474d8dacbe30a"
+    },
+    "log": {
+      "main": {
+        "id": "4a561b26e65b0de3",
+        "type": "split",
+        "children": [
+          {
+            "id": "0bfffd84f812c998",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "log/2022年计划.md",
+                "mode": "preview"
+              }
+            }
+          },
+          {
+            "id": "a819aa3b48ab5535",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "log/2021/2021-12-20.md",
+                "mode": "preview"
+              }
+            }
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "eeaf916c9356ddc4",
+        "type": "split",
+        "children": [
+          {
+            "id": "7d3fc300ff7e7112",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "e7d28d9c7cd51b0e",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              },
+              {
+                "id": "03fb70a2a3a88d3e",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "121a417b8450fd9c",
+                "type": "leaf",
+                "state": {
+                  "type": "starred",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 348.0121879577637
+      },
+      "right": {
+        "id": "c2caebd2760df946",
+        "type": "split",
+        "children": [
+          {
+            "id": "79030ca8047c2e48",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "19f251cea607d878",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "log/2022年计划.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "99e986d7a2e75fb8",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "log/2022年计划.md"
+                  }
+                }
+              },
+              {
+                "id": "6e728993132b41d3",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 2
+          }
+        ],
+        "direction": "horizontal",
+        "width": 255.35166931152344,
+        "collapsed": true
+      },
+      "active": "0bfffd84f812c998"
     }
   },
-  "active": "laioffer"
+  "active": "log"
 }

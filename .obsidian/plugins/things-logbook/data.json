@@ -1,8 +1,8 @@
 {
   "hasAcceptedDisclaimer": true,
-  "latestSyncTime": 1639902642,
+  "latestSyncTime": 1640011023,
   "isSyncEnabled": true,
-  "syncInterval": 7200,
+  "syncInterval": 1800,
   "sectionHeading": "## Logbook",
   "tagPrefix": "logbook/"
 }
