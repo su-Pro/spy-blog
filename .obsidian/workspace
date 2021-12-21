@@ -20,8 +20,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "log/2021/2021-12-20.md",
+            "file": "coding/beginner/beginer - index.md",
             "mode": "preview"
+          }
+        }
+      },
+      {
+        "id": "645f68b07959f3e1",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "coding/beginner/16. dp 3/1139. 最大的以 1 为边界的正方形.md",
+            "mode": "source"
           }
         }
       }
@@ -71,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.0121879577637,
-    "collapsed": true
+    "width": 348.0121879577637
   },
   "right": {
     "id": "c2caebd2760df946",
@@ -88,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "log/2021/2021-12-20.md",
+                "file": "coding/beginner/beginer - index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "log/2021/2021-12-20.md"
+                "file": "coding/beginner/beginer - index.md"
               }
             }
           },
@@ -127,15 +137,15 @@
   },
   "active": "a819aa3b48ab5535",
   "lastOpenFiles": [
+    "coding/beginner/beginer - index.md",
+    "coding/training/dp/dynamic programming.md",
+    "coding/training/dp/1154. 一年中的第几天.md",
+    "coding/beginner/16. dp 3/1139. 最大的以 1 为边界的正方形.md",
+    "log/2021/2021-12-21.md",
     "log/2021/2021-12-20.md",
+    "log/2021/2021-12-19.md",
     "log/2022年计划.md",
     "coding/beginner/14. dp 1/剑指 Offer 14- I. 剪绳子.md",
-    "coding/beginner/15. dp 2/53.最大子数组和.md",
-    "coding/beginner/15. dp 2/221. 最大正方形.md",
-    "coding/beginner/16. dp 3/764. 最大加号标志.md",
-    "coding/beginner/beginer - index.md",
-    "coding/beginner/16. dp 3/1139. 最大的以 1 为边界的正方形.md",
-    "coding/beginner/15. dp 2/72. 编辑距离.md",
-    "temp/1维 - 动态规划.md"
+    "coding/beginner/15. dp 2/53.最大子数组和.md"
   ]
 }
