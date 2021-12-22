@@ -1,7 +1,6 @@
 ## Table Contents
-> 对一类问题进行总结，保证能够不断优化解题技巧
 
-^891a10
+### recursion
 
 ### dp
 #### dp - 1 

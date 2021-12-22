@@ -1,28 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "2021-12-20",
-      "path": "log/2021/2021-12-20.md"
-    },
-    {
-      "basename": "2021-12-19",
-      "path": "log/2021/2021-12-19.md"
+      "basename": "2021-12-22",
+      "path": "log/2021/2021-12-22.md"
     },
     {
       "basename": "beginer - index",
       "path": "coding/beginner/beginer - index.md"
     },
     {
-      "basename": "55.跳跃游戏",
-      "path": "coding/beginner/14. dp 1/55.跳跃游戏.md"
+      "basename": "45.跳跃游戏 II",
+      "path": "coding/beginner/dp/45.跳跃游戏 II.md"
     },
     {
-      "basename": "Longest Ascending SubArray",
-      "path": "coding/beginner/14. dp 1/Longest Ascending SubArray.md"
+      "basename": "chapter 6 - the memory hierarchy",
+      "path": "cs/《CSAPP》/chapter 6 - the memory hierarchy.md"
     },
     {
-      "basename": "剑指 Offer 14- I. 剪绳子",
-      "path": "coding/beginner/14. dp 1/剑指 Offer 14- I. 剪绳子.md"
+      "basename": "大部头读书笔记",
+      "path": "temp/大部头读书笔记.md"
+    },
+    {
+      "basename": "存储体系",
+      "path": "cs/存储体系.md"
+    },
+    {
+      "basename": "2021-12-20",
+      "path": "log/2021/2021-12-20.md"
+    },
+    {
+      "basename": "2021-12-19",
+      "path": "log/2021/2021-12-19.md"
     }
   ],
   "omittedPaths": [],

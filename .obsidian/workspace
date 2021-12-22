@@ -4,34 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "0bfffd84f812c998",
+        "id": "b3a8d884fbd7cff4",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "log/2022年计划.md",
-            "mode": "preview"
-          }
-        }
-      },
-      {
-        "id": "a819aa3b48ab5535",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "coding/beginner/beginer - index.md",
-            "mode": "preview"
-          }
-        }
-      },
-      {
-        "id": "645f68b07959f3e1",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "coding/beginner/16. dp 3/1139. 最大的以 1 为边界的正方形.md",
+            "file": "log/2021/2021-12-22.md",
             "mode": "source"
           }
         }
@@ -77,6 +55,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "f6c4e2793ed70f06",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
           }
         ]
       }
@@ -98,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "coding/beginner/beginer - index.md",
+                "file": "log/2021/2021-12-22.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +101,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "coding/beginner/beginer - index.md"
+                "file": "log/2021/2021-12-22.md"
               }
             }
           },
@@ -135,17 +121,17 @@
     "width": 255.35166931152344,
     "collapsed": true
   },
-  "active": "a819aa3b48ab5535",
+  "active": "b3a8d884fbd7cff4",
   "lastOpenFiles": [
+    "log/2021/2021-12-22.md",
     "coding/beginner/beginer - index.md",
-    "coding/training/dp/dynamic programming.md",
-    "coding/training/dp/1154. 一年中的第几天.md",
+    "coding/beginner/dp/45.跳跃游戏 II.md",
+    "cs/《CSAPP》/chapter 6 - the memory hierarchy.md",
+    "temp/大部头读书笔记.md",
+    "cs/存储体系.md",
+    "cs/《CSAPP》/6.1 存储技术.md",
     "coding/beginner/16. dp 3/1139. 最大的以 1 为边界的正方形.md",
-    "log/2021/2021-12-21.md",
-    "log/2021/2021-12-20.md",
-    "log/2021/2021-12-19.md",
     "log/2022年计划.md",
-    "coding/beginner/14. dp 1/剑指 Offer 14- I. 剪绳子.md",
-    "coding/beginner/15. dp 2/53.最大子数组和.md"
+    "coding/training/dp/dynamic programming.md"
   ]
 }
