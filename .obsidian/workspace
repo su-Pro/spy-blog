@@ -6,22 +6,19 @@
       {
         "id": "841aed8c2660297c",
         "type": "leaf",
-        "dimension": 33.60891445003595,
-        "pinned": true,
+        "dimension": 40.02340550029257,
         "state": {
           "type": "markdown",
           "state": {
             "file": "coding/beginner/beginer - index.md",
             "mode": "preview"
-          },
-          "pinned": true
-        },
-        "group": "6f22d5f410c5110a"
+          }
+        }
       },
       {
         "id": "eb405b5b3f3e9759",
         "type": "leaf",
-        "dimension": 33.60891445003595,
+        "dimension": 59.97659449970744,
         "state": {
           "type": "markdown",
           "state": {
@@ -29,20 +26,6 @@
             "mode": "source"
           }
         }
-      },
-      {
-        "id": "828eff0d27fef449",
-        "type": "leaf",
-        "dimension": 32.78217109992811,
-        "pinned": true,
-        "state": {
-          "type": "outline",
-          "state": {
-            "file": "coding/beginner/beginer - index.md"
-          },
-          "pinned": true
-        },
-        "group": "6f22d5f410c5110a"
       }
     ],
     "direction": "vertical"
@@ -98,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 443.0074996948242
+    "width": 292.5074996948242
   },
   "right": {
     "id": "c2caebd2760df946",
@@ -114,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "coding/training/散题收集.md",
+                "file": "coding/beginner/beginer - index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "coding/training/散题收集.md"
+                "file": "coding/beginner/beginer - index.md"
               }
             }
           },
@@ -151,10 +134,10 @@
     "width": 255.35166931152344,
     "collapsed": true
   },
-  "active": "eb405b5b3f3e9759",
+  "active": "841aed8c2660297c",
   "lastOpenFiles": [
-    "coding/training/散题收集.md",
     "coding/beginner/beginer - index.md",
+    "coding/training/散题收集.md",
     "coding/training/Untitled.md",
     "coding/beginner/3. linked-list/206. 反转链表.md",
     "coding/beginner/recursion/59. 螺旋矩阵 II.md",
