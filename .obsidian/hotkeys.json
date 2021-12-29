@@ -1,1 +1,12 @@
-{}
+{
+  "table-editor-obsidian:format-all-tables": [
+    {
+      "modifiers": [
+        "Alt",
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "T"
+    }
+  ]
+}

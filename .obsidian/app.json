@@ -8,5 +8,7 @@
   "defaultViewMode": "preview",
   "showLineNumber": true,
   "emacsyKeys": false,
-  "readableLineLength": false
+  "readableLineLength": false,
+  "legacyEditor": false,
+  "livePreview": false
 }

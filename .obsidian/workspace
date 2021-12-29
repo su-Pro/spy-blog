@@ -4,26 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "841aed8c2660297c",
+        "id": "bb8e96f5c79fe7ab",
         "type": "leaf",
-        "dimension": 40.02340550029257,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "coding/beginner/beginer - index.md",
-            "mode": "preview"
-          }
-        }
-      },
-      {
-        "id": "eb405b5b3f3e9759",
-        "type": "leaf",
-        "dimension": 59.97659449970744,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "coding/training/散题收集.md",
-            "mode": "source"
+            "file": "coding/README.md",
+            "mode": "source",
+            "source": true
           }
         }
       }
@@ -70,7 +58,7 @@
             }
           },
           {
-            "id": "f6c4e2793ed70f06",
+            "id": "8d9f84cb8da04509",
             "type": "leaf",
             "state": {
               "type": "recent-files",
@@ -81,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 292.5074996948242
+    "width": 239.99999809265137,
+    "collapsed": true
   },
   "right": {
     "id": "c2caebd2760df946",
@@ -97,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "coding/beginner/beginer - index.md",
+                "file": "coding/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,12 +103,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "coding/beginner/beginer - index.md"
+                "file": "coding/README.md"
               }
             }
           },
           {
-            "id": "6e728993132b41d3",
+            "id": "b558c8bea4f1598f",
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
@@ -127,24 +116,24 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
     "width": 255.35166931152344,
     "collapsed": true
   },
-  "active": "841aed8c2660297c",
+  "active": "bb8e96f5c79fe7ab",
   "lastOpenFiles": [
-    "coding/beginner/beginer - index.md",
-    "coding/training/散题收集.md",
-    "coding/training/Untitled.md",
-    "coding/beginner/3. linked-list/206. 反转链表.md",
-    "coding/beginner/recursion/59. 螺旋矩阵 II.md",
-    "coding/beginner/recursion/54. 螺旋矩阵.md",
-    "coding/beginner/recursion/25. K 个一组翻转链表.md",
-    "coding/beginner/recursion/51. N 皇后.md",
-    "coding/beginner/recursion/408. 有效单词缩写.md",
-    "coding/beginner/recursion/344. 反转字符串.md"
+    "coding/README.md",
+    "coding/1-beginner/dp/221. 最大正方形.md",
+    "coding/3-contest/第 273 场周赛.md",
+    "coding/1-beginner/beginer - index.md",
+    "coding/1-beginner/dp/53.最大子数组和.md",
+    "coding/1-beginner/dp/45.跳跃游戏 II.md",
+    "coding/1-beginner/dp/55.跳跃游戏.md",
+    "coding/1-beginner/dp/72. 编辑距离.md",
+    "coding/1-beginner/dp/764. 最大加号标志.md",
+    "coding/1-beginner/dp/485. 最大连续 1 的个数.md"
   ]
 }
