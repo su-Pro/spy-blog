@@ -6,6 +6,7 @@
       {
         "id": "bb8e96f5c79fe7ab",
         "type": "leaf",
+        "dimension": 74.63235294117646,
         "state": {
           "type": "markdown",
           "state": {
@@ -13,7 +14,20 @@
             "mode": "source",
             "source": true
           }
-        }
+        },
+        "group": "e1bd114d9d88a455"
+      },
+      {
+        "id": "ba525cdd2538b9a9",
+        "type": "leaf",
+        "dimension": 25.367647058823533,
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "coding/README.md"
+          }
+        },
+        "group": "e1bd114d9d88a455"
       }
     ],
     "direction": "vertical"
@@ -69,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 239.99999809265137,
-    "collapsed": true
+    "width": 344.49999809265137
   },
   "right": {
     "id": "c2caebd2760df946",
@@ -126,14 +139,14 @@
   "active": "bb8e96f5c79fe7ab",
   "lastOpenFiles": [
     "coding/README.md",
-    "coding/1-beginner/dp/221. 最大正方形.md",
-    "coding/3-contest/第 273 场周赛.md",
     "coding/1-beginner/beginer - index.md",
+    "coding/1-beginner/0. 贪心/455. assign-cookies.md",
+    "coding/3-contest/第 273 场周赛.md",
+    "coding/1-beginner/dp/221. 最大正方形.md",
     "coding/1-beginner/dp/53.最大子数组和.md",
     "coding/1-beginner/dp/45.跳跃游戏 II.md",
     "coding/1-beginner/dp/55.跳跃游戏.md",
     "coding/1-beginner/dp/72. 编辑距离.md",
-    "coding/1-beginner/dp/764. 最大加号标志.md",
-    "coding/1-beginner/dp/485. 最大连续 1 的个数.md"
+    "coding/1-beginner/dp/764. 最大加号标志.md"
   ]
 }

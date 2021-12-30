@@ -1,6 +1,24 @@
 # index
 
 ## solid skill
+
+### 回溯/贪心
+- 解决一个问题需要多个步骤，每一个步骤有多种选择。
+- 可以使用贪心算法解决的问题，每一步只需要解决一个子问题，只做出一种选择，就可以完成任务。
+
+> 关联的：回溯、DP
+> 「回溯算法」需要记录每一个步骤、每一个选择，用于回答所有具体解的问题；
+> 「动态规划」需要记录的是每一个步骤、所有选择的汇总值（最大、最小或者计数）;
+> 「贪心算法」由于适用的问题，每一个步骤只有一种选择，一般而言只需要记录与当前步骤相关的变量的值；
+
+- [x] [[455. assign-cookies]]
+
+
+| 题目                                                                 | 类型      | callback          |
+| -------------------------------------------------------------------- | --------- | ----------------- |
+| [860. lemonade-change](https://leetcode-cn.com/problems/lemonade-change/) | #greedy | [[455. assign-cookies]] |
+
+
 ### sort
 - [ ] [[912. 排序数组#quick_sort|快速排序]]
 - [ ] [[912. 排序数组#merge_sort|归并排序]]
@@ -15,11 +33,11 @@
 
 包含滑动窗口题型
 
-| 题目                                                                                 | 类型                       | callback |
-| ------------------------------------------------------------------------------------ | -------------------------- | -------- |
-| [14. Longest Common Prefix](https://leetcode-cn.com/problems/longest-common-prefix/) | #two-pointer #string-match |          |
-| [1995. Count Special Quadruplets](https://leetcode-cn.com/problems/count-special-quadruplets/) | #two-pointer #hash |          |
-| [643. Maximum Average Subarray I](https://leetcode-cn.com/problems/maximum-average-subarray-i/) | #sliding-window |          |
+| 题目                                                                                            | 类型                       | callback |
+| ----------------------------------------------------------------------------------------------- | -------------------------- | -------- |
+| [14. Longest Common Prefix](https://leetcode-cn.com/problems/longest-common-prefix/)            | #two-pointer #string-match |          |
+| [1995. Count Special Quadruplets](https://leetcode-cn.com/problems/count-special-quadruplets/)  | #two-pointer #hash         |          |
+| [643. Maximum Average Subarray I](https://leetcode-cn.com/problems/maximum-average-subarray-i/) | #sliding-window            |          |
 
 
 ### linkList
@@ -94,11 +112,11 @@ Pasted image 20211223102130.png
 相似问题:
 https://leetcode-cn.com/problems/count-square-submatrices-with-all-ones/
 
-| 题目                                                                                            | 类型               | callback/note                  |
-| ----------------------------------------------------------------------------------------------- | ------------------ | ------------------------------ |
-| [1480. Running Sum of 1d Array](https://leetcode-cn.com/problems/running-sum-of-1d-array/)      | #PrefixSum #线性DP | [[Longest Ascending SubArray]] |
-| [303. Range Sum Query - Immutable](https://leetcode-cn.com/problems/range-sum-query-immutable/) | #PrefixSum #线性DP #有问题 | 不太懂为什么dp的长度要加+1     |
-| [304. Range Sum Query 2D - Immutable](https://leetcode-cn.com/problems/range-sum-query-2d-immutable/) | #PrefixSum #矩阵DP |  [[221. 最大正方形]]    |
+| 题目                                                                                                  | 类型                       | callback/note                  |
+| ----------------------------------------------------------------------------------------------------- | -------------------------- | ------------------------------ |
+| [1480. Running Sum of 1d Array](https://leetcode-cn.com/problems/running-sum-of-1d-array/)            | #PrefixSum #线性DP         | [[Longest Ascending SubArray]] |
+| [303. Range Sum Query - Immutable](https://leetcode-cn.com/problems/range-sum-query-immutable/)       | #PrefixSum #线性DP #有问题 | 不太懂为什么dp的长度要加+1     |
+| [304. Range Sum Query 2D - Immutable](https://leetcode-cn.com/problems/range-sum-query-2d-immutable/) | #PrefixSum #矩阵DP         | [[221. 最大正方形]]            |
 
 [[322.Coin Change]]
 [[53.最大子数组和]]
