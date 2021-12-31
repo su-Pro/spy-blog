@@ -5,6 +5,10 @@
       "path": "coding/README.md"
     },
     {
+      "basename": "704. Binary Search",
+      "path": "coding/1-beginner/binary-search/704. Binary Search.md"
+    },
+    {
       "basename": "455. assign-cookies",
       "path": "coding/1-beginner/0. 贪心/455. assign-cookies.md"
     },

@@ -2,6 +2,18 @@
 
 ## solid skill
 
+### binary search
+
+- [ ] [704. Binary Search](https://leetcode-cn.com/problems/binary-search/)
+
+| 题目                                                                                   | 类型                 | callback   |
+| -------------------------------------------------------------------------------------- | -------------------- | ---------- |
+| [35. Search Insert Position](https://leetcode-cn.com/problems/search-insert-position/) | #binary-search #细节 | 初始化边界 |
+| [278. First Bad Version](https://leetcode-cn.com/problems/first-bad-version/)          | #binary-search       | 后续处理   |
+| [278. First Bad Version](https://leetcode-cn.com/problems/first-bad-version/)          | #binary-search       | 后续处理   |
+
+
+
 ### 回溯/贪心
 - 解决一个问题需要多个步骤，每一个步骤有多种选择。
 - 可以使用贪心算法解决的问题，每一步只需要解决一个子问题，只做出一种选择，就可以完成任务。
@@ -14,8 +26,8 @@
 - [x] [[455. assign-cookies]]
 
 
-| 题目                                                                 | 类型      | callback          |
-| -------------------------------------------------------------------- | --------- | ----------------- |
+| 题目                                                                      | 类型    | callback                |
+| ------------------------------------------------------------------------- | ------- | ----------------------- |
 | [860. lemonade-change](https://leetcode-cn.com/problems/lemonade-change/) | #greedy | [[455. assign-cookies]] |
 
 
@@ -24,20 +36,23 @@
 - [ ] [[912. 排序数组#merge_sort|归并排序]]
 
 
-| 题目 | 类型 | callback |
-| ---- | ---- | -------- |
-|      |      |          |
+| 题目                                                                                          | 类型               | callback |
+| --------------------------------------------------------------------------------------------- | ------------------ | -------- |
+| [189. Rotate Array](https://leetcode-cn.com/problems/rotate-array/)                           | #技巧 #two-pointer | 反转数组 |
+| [977. Squares of a Sorted Array](https://leetcode-cn.com/problems/squares-of-a-sorted-array/) | #two-pointer       | 对向而行 |
 
 
 ### runPointer
 
 包含滑动窗口题型
 
-| 题目                                                                                            | 类型                       | callback |
-| ----------------------------------------------------------------------------------------------- | -------------------------- | -------- |
-| [14. Longest Common Prefix](https://leetcode-cn.com/problems/longest-common-prefix/)            | #two-pointer #string-match |          |
-| [1995. Count Special Quadruplets](https://leetcode-cn.com/problems/count-special-quadruplets/)  | #two-pointer #hash         |          |
-| [643. Maximum Average Subarray I](https://leetcode-cn.com/problems/maximum-average-subarray-i/) | #sliding-window            |          |
+| 题目                                                                                                                 | 类型                       | callback |
+| -------------------------------------------------------------------------------------------------------------------- | -------------------------- | -------- |
+| [14. Longest Common Prefix](https://leetcode-cn.com/problems/longest-common-prefix/)                                 | #two-pointer #string-match |          |
+| [1995. Count Special Quadruplets](https://leetcode-cn.com/problems/count-special-quadruplets/)                       | #two-pointer #hash         |          |
+| [643. Maximum Average Subarray I](https://leetcode-cn.com/problems/maximum-average-subarray-i/)                      | #sliding-window            |          |
+| [1752. Check if Array Is Sorted and Rotated](https://leetcode-cn.com/problems/check-if-array-is-sorted-and-rotated/) | #技巧                      |          |
+| [846. Hand of Straights](https://leetcode-cn.com/problems/hand-of-straights/)                                        | #two-pointer #hash         |          |
 
 
 ### linkList
@@ -85,9 +100,10 @@ Pasted image 20211223102130.png
 
 ---
 
-| 题目 | 类型 | callback |
-| ---- | ---- | -------- |
-|      |      |          |
+| 题目                                                                                             | 类型        | callback |
+| ------------------------------------------------------------------------------------------------ | ----------- | -------- |
+| [1361. Validate Binary Tree Nodes](https://leetcode-cn.com/problems/validate-binary-tree-nodes/) | #tree #技巧 |          |
+|                                                                                                  |             |          |
 
 
 ### dp
@@ -117,6 +133,9 @@ https://leetcode-cn.com/problems/count-square-submatrices-with-all-ones/
 | [1480. Running Sum of 1d Array](https://leetcode-cn.com/problems/running-sum-of-1d-array/)            | #PrefixSum #线性DP         | [[Longest Ascending SubArray]] |
 | [303. Range Sum Query - Immutable](https://leetcode-cn.com/problems/range-sum-query-immutable/)       | #PrefixSum #线性DP #有问题 | 不太懂为什么dp的长度要加+1     |
 | [304. Range Sum Query 2D - Immutable](https://leetcode-cn.com/problems/range-sum-query-2d-immutable/) | #PrefixSum #矩阵DP         | [[221. 最大正方形]]            |
+| [746. Min Cost Climbing Stairs](https://leetcode-cn.com/problems/min-cost-climbing-stairs/)           | #线性DP                    | [[55.跳跃游戏]]                |
+| [70. Climbing Stairs](https://leetcode-cn.com/problems/climbing-stairs/)                              | #线性DP                    | [[Longest Ascending SubArray]] |
+| [70. Climbing Stairs](https://leetcode-cn.com/problems/climbing-stairs/)                              | #线性DP                    | [[Longest Ascending SubArray]] |
 
 [[322.Coin Change]]
 [[53.最大子数组和]]
@@ -132,9 +151,12 @@ https://leetcode-cn.com/problems/count-square-submatrices-with-all-ones/
 - [256. 粉刷房子](https://leetcode-cn.com/problems/paint-house/)
 - [[120. 三角形最小路径和]]
 
-| 题目 | 类型 | callback |
-| ---- | ---- | -------- |
-|      |      |          |
+### 数学
+
+| 题目                                                                                                         | 类型     | callback    |
+| ------------------------------------------------------------------------------------------------------------ | -------- | ----------- |
+| [507. Perfect Number](https://leetcode-cn.com/problems/perfect-number/)                                      | #Math    | 完全平方数? |
+| [1360. Number of Days Between Two Dates](https://leetcode-cn.com/problems/number-of-days-between-two-dates/) | #Date #Math  ˇ|             |
 
 ## contest
 [[第 273 场周赛]]
@@ -143,7 +165,15 @@ https://leetcode-cn.com/problems/count-square-submatrices-with-all-ones/
 
 ## books
 
-- 《挑战程序设计竞赛》
-- 《剑指offer》 & 专项练习
+### 《挑战程序设计竞赛》
+
+#### 1. 蓄势待发
+
+- (抽签) [18. 4Sum](https://leetcode-cn.com/problems/4sum/)
+- (三角形) [976. Largest Perimeter Triangle](https://leetcode-cn.com/problems/largest-perimeter-triangle/)
+- (Ants) [1503. Last Moment Before All Ants Fall Out of a Plank](https://leetcode-cn.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/)
+
+
+#### 2.《剑指offer》 & 专项练习
 - 《编程之美》
 - 《编程珠玑》
