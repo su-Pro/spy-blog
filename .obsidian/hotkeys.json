@@ -8,5 +8,14 @@
       ],
       "key": "T"
     }
+  ],
+  "editor:toggle-fold": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod"
+      ],
+      "key": "-"
+    }
   ]
 }

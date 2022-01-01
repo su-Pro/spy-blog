@@ -2,163 +2,55 @@
   "recentFiles": [
     {
       "basename": "README",
-      "path": "coding/README.md"
-    },
-    {
-      "basename": "704. Binary Search",
-      "path": "coding/1-beginner/binary-search/704. Binary Search.md"
-    },
-    {
-      "basename": "455. assign-cookies",
-      "path": "coding/1-beginner/0. 贪心/455. assign-cookies.md"
-    },
-    {
-      "basename": "第 273 场周赛",
-      "path": "coding/3-contest/第 273 场周赛.md"
-    },
-    {
-      "basename": "221. 最大正方形",
-      "path": "coding/1-beginner/dp/221. 最大正方形.md"
-    },
-    {
-      "basename": "53.最大子数组和",
-      "path": "coding/1-beginner/dp/53.最大子数组和.md"
-    },
-    {
-      "basename": "45.跳跃游戏 II",
-      "path": "coding/1-beginner/dp/45.跳跃游戏 II.md"
-    },
-    {
-      "basename": "55.跳跃游戏",
-      "path": "coding/1-beginner/dp/55.跳跃游戏.md"
-    },
-    {
-      "basename": "72. 编辑距离",
-      "path": "coding/1-beginner/dp/72. 编辑距离.md"
-    },
-    {
-      "basename": "764. 最大加号标志",
-      "path": "coding/1-beginner/dp/764. 最大加号标志.md"
-    },
-    {
-      "basename": "485. 最大连续 1 的个数",
-      "path": "coding/1-beginner/dp/485. 最大连续 1 的个数.md"
-    },
-    {
-      "basename": "139. 单词拆分",
-      "path": "coding/1-beginner/dp/139. 单词拆分.md"
-    },
-    {
-      "basename": "剑指 Offer 14- I. 剪绳子",
-      "path": "coding/1-beginner/dp/剑指 Offer 14- I. 剪绳子.md"
-    },
-    {
-      "basename": "Longest Ascending SubArray",
-      "path": "coding/1-beginner/dp/Longest Ascending SubArray.md"
-    },
-    {
-      "basename": "面试题 17.24. 最大子矩阵",
-      "path": "coding/1-beginner/dp/面试题 17.24. 最大子矩阵.md"
-    },
-    {
-      "basename": "51. N 皇后",
-      "path": "51. N 皇后.md"
-    },
-    {
-      "basename": "59. 螺旋矩阵 II",
-      "path": "59. 螺旋矩阵 II.md"
-    },
-    {
-      "basename": "121. 买卖股票的最佳时机#P0#3",
-      "path": "coding/2-training/121. 买卖股票的最佳时机#P0#3.md"
-    },
-    {
-      "basename": "198.打家劫舍",
-      "path": "coding/2-training/198.打家劫舍.md"
-    },
-    {
-      "basename": "213.打家劫舍 II",
-      "path": "coding/2-training/213.打家劫舍 II.md"
-    },
-    {
-      "basename": "300.最长递增子序列",
-      "path": "coding/2-training/300.最长递增子序列.md"
-    },
-    {
-      "basename": "1014.最佳观光组合",
-      "path": "coding/2-training/1014.最佳观光组合.md"
-    },
-    {
-      "basename": "1609. 奇偶树",
-      "path": "coding/2-training/1609. 奇偶树.md"
-    },
-    {
-      "basename": "1644. 二叉树的最近公共祖先 II",
-      "path": "coding/2-training/1644. 二叉树的最近公共祖先 II.md"
-    },
-    {
-      "basename": "2100. 适合打劫银行的日子",
-      "path": "coding/2-training/2100. 适合打劫银行的日子.md"
-    },
-    {
-      "basename": "index",
-      "path": "coding/2-training/index.md"
-    },
-    {
-      "basename": "2109. 向字符串添加空格",
-      "path": "coding/2-training/2109. 向字符串添加空格.md"
-    },
-    {
-      "basename": "面试题 02.06. 回文链表",
-      "path": "coding/2-training/面试题 02.06. 回文链表.md"
-    },
-    {
-      "basename": "509. 斐波那契数",
-      "path": "coding/1-beginner/recursion/509. 斐波那契数.md"
-    },
-    {
-      "basename": "408. 有效单词缩写",
-      "path": "coding/1-beginner/recursion/408. 有效单词缩写.md"
-    },
-    {
-      "basename": "344. 反转字符串",
-      "path": "coding/1-beginner/recursion/344. 反转字符串.md"
-    },
-    {
-      "basename": "92. 反转链表 II",
-      "path": "coding/1-beginner/recursion/92. 反转链表 II.md"
-    },
-    {
-      "basename": "59. 螺旋矩阵 II",
-      "path": "coding/1-beginner/recursion/59. 螺旋矩阵 II.md"
-    },
-    {
-      "basename": "50. Pow(x, n)",
-      "path": "coding/1-beginner/recursion/50. Pow(x, n).md"
-    },
-    {
-      "basename": "25. K 个一组翻转链表",
-      "path": "coding/1-beginner/recursion/25. K 个一组翻转链表.md"
-    },
-    {
-      "basename": "Pasted image 20211223102130",
-      "path": "static/Pasted image 20211223102130.png"
-    },
-    {
-      "basename": "README",
       "path": "README.md"
     },
     {
-      "basename": "2022年计划",
-      "path": "log/2022年计划.md"
+      "basename": "51. N 皇后",
+      "path": "2. coding/51. N 皇后.md"
+    },
+    {
+      "basename": "index",
+      "path": "2. coding/index.md"
+    },
+    {
+      "basename": "index",
+      "path": "3. sd/FE/index.md"
+    },
+    {
+      "basename": "198.打家劫舍",
+      "path": "2. coding/2-training/198.打家劫舍.md"
+    },
+    {
+      "basename": "283. 移动零",
+      "path": "2. coding/1-beginner/1. sorting/283. 移动零.md"
+    },
+    {
+      "basename": "index",
+      "path": "2. coding/2-training/index.md"
+    },
+    {
+      "basename": "2109. 向字符串添加空格",
+      "path": "2. coding/2-training/2109. 向字符串添加空格.md"
+    },
+    {
+      "basename": "72. 编辑距离",
+      "path": "2. coding/1-beginner/dp/72. 编辑距离.md"
+    },
+    {
+      "basename": "1014.最佳观光组合",
+      "path": "2. coding/2-training/1014.最佳观光组合.md"
+    },
+    {
+      "basename": "221. 最大正方形",
+      "path": "2. coding/1-beginner/dp/221. 最大正方形.md"
+    },
+    {
+      "basename": "59. 螺旋矩阵 II",
+      "path": "2. coding/59. 螺旋矩阵 II.md"
     },
     {
       "basename": "leetcode 拷贝题目模板",
       "path": "temp/leetcode 拷贝题目模板.md"
-    },
-    {
-      "basename": "2021-12-25",
-      "path": "log/2021/2021-12-25.md"
     },
     {
       "basename": "59. 螺旋矩阵 II",
@@ -177,12 +69,8 @@
       "path": "coding/beginner/recursion/509. 斐波那契数.md"
     },
     {
-      "basename": "2021-12-22",
-      "path": "log/2021/2021-12-22.md"
-    },
-    {
       "basename": "chapter 6 - the memory hierarchy",
-      "path": "cs/《CSAPP》/chapter 6 - the memory hierarchy.md"
+      "path": "1. cs/《CSAPP》/chapter 6 - the memory hierarchy.md"
     },
     {
       "basename": "大部头读书笔记",
@@ -190,15 +78,7 @@
     },
     {
       "basename": "存储体系",
-      "path": "cs/存储体系.md"
-    },
-    {
-      "basename": "2021-12-20",
-      "path": "log/2021/2021-12-20.md"
-    },
-    {
-      "basename": "2021-12-19",
-      "path": "log/2021/2021-12-19.md"
+      "path": "1. cs/存储体系.md"
     }
   ],
   "omittedPaths": [],

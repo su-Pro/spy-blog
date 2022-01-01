@@ -1,33 +1,30 @@
 {
   "main": {
-    "id": "4a561b26e65b0de3",
+    "id": "2f3ee696a4aeba5e",
     "type": "split",
     "children": [
       {
-        "id": "bb8e96f5c79fe7ab",
+        "id": "6db266198f75c765",
         "type": "leaf",
-        "dimension": 83.257328990228,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "coding/README.md",
-            "mode": "preview",
-            "source": true
+            "file": "README.md",
+            "mode": "preview"
           }
         },
-        "group": "e1bd114d9d88a455"
+        "group": "7fe7d837d39d8f54"
       },
       {
-        "id": "ba525cdd2538b9a9",
+        "id": "fc6256f5f8f939fc",
         "type": "leaf",
-        "dimension": 16.742671009771986,
         "state": {
           "type": "outline",
           "state": {
-            "file": "coding/README.md"
+            "file": "README.md"
           }
         },
-        "group": "e1bd114d9d88a455"
+        "group": "7fe7d837d39d8f54"
       }
     ],
     "direction": "vertical"
@@ -72,7 +69,7 @@
             }
           },
           {
-            "id": "8d9f84cb8da04509",
+            "id": "b0cfeac06efdce25",
             "type": "leaf",
             "state": {
               "type": "recent-files",
@@ -83,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 194.99999809265137
+    "width": 351.49999809265137
   },
   "right": {
     "id": "c2caebd2760df946",
@@ -99,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "coding/README.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,37 +113,29 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "coding/README.md"
+                "file": "README.md"
               }
-            }
-          },
-          {
-            "id": "b558c8bea4f1598f",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 255.35166931152344,
     "collapsed": true
   },
-  "active": "bb8e96f5c79fe7ab",
+  "active": "6db266198f75c765",
   "lastOpenFiles": [
-    "coding/README.md",
-    "coding/1-beginner/binary-search/704. Binary Search.md",
+    "README.md",
+    "2. coding/51. N 皇后.md",
+    "2. coding/index.md",
+    "3. sd/FE/index.md",
+    "2. coding/2-training/198.打家劫舍.md",
+    "coding/2-training/213.打家劫舍 II.md",
+    "2. coding/1-beginner/1. sorting/283. 移动零.md",
+    "log/2022年计划.md",
     "coding/1-beginner/beginer - index.md",
-    "coding/1-beginner/0. 贪心/455. assign-cookies.md",
-    "coding/3-contest/第 273 场周赛.md",
-    "coding/1-beginner/dp/221. 最大正方形.md",
-    "coding/1-beginner/dp/53.最大子数组和.md",
-    "coding/1-beginner/dp/45.跳跃游戏 II.md",
-    "coding/1-beginner/dp/55.跳跃游戏.md",
-    "coding/1-beginner/dp/72. 编辑距离.md"
+    "2. coding/2-training/index.md"
   ]
 }

@@ -10,5 +10,6 @@
   "emacsyKeys": false,
   "readableLineLength": false,
   "legacyEditor": false,
-  "livePreview": false
+  "livePreview": false,
+  "foldHeading": true
 }
