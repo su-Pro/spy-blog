@@ -5,12 +5,52 @@
       "path": "README.md"
     },
     {
-      "basename": "51. N 皇后",
-      "path": "2. coding/51. N 皇后.md"
+      "basename": "index",
+      "path": "1. cs/《Problem solving with algorithms and Data Structures Using Python》/线性数据结构/index.md"
     },
     {
       "basename": "index",
       "path": "2. coding/index.md"
+    },
+    {
+      "basename": "内推模板",
+      "path": "temp/内推模板.md"
+    },
+    {
+      "basename": "DOM检查 ？react 解析器？开源工具？",
+      "path": "DOM检查 ？react 解析器？开源工具？.md"
+    },
+    {
+      "basename": "leetcode 拷贝题目模板",
+      "path": "temp/leetcode 拷贝题目模板.md"
+    },
+    {
+      "basename": "index",
+      "path": "1. cs/《Problem solving with algorithms and Data Structures Using Python》/index.md"
+    },
+    {
+      "basename": "操作系统层面的调用栈管理？",
+      "path": "操作系统层面的调用栈管理？.md"
+    },
+    {
+      "basename": "栈",
+      "path": "1. cs/《Problem solving with algorithms and Data Structures Using Python》/线性数据结构/栈.md"
+    },
+    {
+      "basename": "何为数据结构与算法？",
+      "path": "1. cs/《Problem solving with algorithms and Data Structures Using Python》/何为数据结构与算法？.md"
+    },
+    {
+      "basename": "浏览器历史管理",
+      "path": "浏览器历史管理.md"
+    },
+    {
+      "basename": "Pasted image 20220102214927",
+      "path": "static/Pasted image 20220102214927.png"
+    },
+    {
+      "basename": "51. N 皇后",
+      "path": "2. coding/51. N 皇后.md"
     },
     {
       "basename": "index",
@@ -47,10 +87,6 @@
     {
       "basename": "59. 螺旋矩阵 II",
       "path": "2. coding/59. 螺旋矩阵 II.md"
-    },
-    {
-      "basename": "leetcode 拷贝题目模板",
-      "path": "temp/leetcode 拷贝题目模板.md"
     },
     {
       "basename": "59. 螺旋矩阵 II",

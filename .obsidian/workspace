@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "6db266198f75c765",
+        "id": "2cf85588b3df5d0a",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -12,19 +12,7 @@
             "file": "README.md",
             "mode": "preview"
           }
-        },
-        "group": "7fe7d837d39d8f54"
-      },
-      {
-        "id": "fc6256f5f8f939fc",
-        "type": "leaf",
-        "state": {
-          "type": "outline",
-          "state": {
-            "file": "README.md"
-          }
-        },
-        "group": "7fe7d837d39d8f54"
+        }
       }
     ],
     "direction": "vertical"
@@ -80,7 +68,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 351.49999809265137
+    "width": 718.9999980926514
   },
   "right": {
     "id": "c2caebd2760df946",
@@ -125,17 +113,17 @@
     "width": 255.35166931152344,
     "collapsed": true
   },
-  "active": "6db266198f75c765",
+  "active": "2cf85588b3df5d0a",
   "lastOpenFiles": [
     "README.md",
-    "2. coding/51. N 皇后.md",
+    "1. cs/《Problem solving with algorithms and Data Structures Using Python》/线性数据结构/index.md",
     "2. coding/index.md",
-    "3. sd/FE/index.md",
-    "2. coding/2-training/198.打家劫舍.md",
-    "coding/2-training/213.打家劫舍 II.md",
-    "2. coding/1-beginner/1. sorting/283. 移动零.md",
-    "log/2022年计划.md",
-    "coding/1-beginner/beginer - index.md",
-    "2. coding/2-training/index.md"
+    "temp/内推模板.md",
+    "DOM检查 ？react 解析器？开源工具？.md",
+    "temp/leetcode 拷贝题目模板.md",
+    "1. cs/《Problem solving with algorithms and Data Structures Using Python》/index.md",
+    "操作系统层面的调用栈管理？.md",
+    "1. cs/《Problem solving with algorithms and Data Structures Using Python》/线性数据结构/栈.md",
+    "1. cs/《Problem solving with algorithms and Data Structures Using Python》/何为数据结构与算法？.md"
   ]
 }

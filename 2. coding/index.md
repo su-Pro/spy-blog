@@ -10,6 +10,8 @@
 |      |      |          |
 
 ### 1.3 string
+- [ ] [344. 反转字符串](https://leetcode-cn.com/problems/reverse-string/)
+- [ ] [557. 反转字符串中的单词 III](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/)
 
 | 题目 | 类型 | callback |
 | ---- | ---- | -------- |
@@ -171,7 +173,8 @@ Pasted image 20211223102130.png
 | 题目                                                                                                         | 类型     | callback    |
 | ------------------------------------------------------------------------------------------------------------ | -------- | ----------- |
 | [507. Perfect Number](https://leetcode-cn.com/problems/perfect-number/)                                      | #Math    | 完全平方数? |
-| [1360. Number of Days Between Two Dates](https://leetcode-cn.com/problems/number-of-days-between-two-dates/) | #Date #Math  ˇ|             |
+| [1360. Number of Days Between Two Dates](https://leetcode-cn.com/problems/number-of-days-between-two-dates/) | #Date #Math  |             |
+| [390. 消除游戏](https://leetcode-cn.com/problems/elimination-game/) |  #Math  |  等差数列 |
 
 ## 4. books
 ### 4.1《剑指offer》 & 《专项练习》
@@ -181,4 +184,4 @@ Pasted image 20211223102130.png
 - (三角形) [976. Largest Perimeter Triangle](https://leetcode-cn.com/problems/largest-perimeter-triangle/)
 - (Ants) [1503. Last Moment Before All Ants Fall Out of a Plank](https://leetcode-cn.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/)
 ### 4.3《编程之美》
-### 4.4 编程珠玑》
+### 4.4《编程珠玑》

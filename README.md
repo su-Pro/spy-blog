@@ -1,26 +1,35 @@
 # 1. 知识索引
 ## 1.1 专业
-### 1.1.1 CS
-***computer hardware***
-- I/O stand for
-- memory mountain
+### CS
 
-***operating system***
-- ...
+> 积累阶段，全部以读书笔记为准！
 
-***programming language***
-- javascript
-- python
-- scheme
+***体系***
+- 《CSAPP》
+- 《操作系统导论》
+- 《自顶向下》
 
-###  1.1.2 coding
-***SCIP***
-***type ***
-*[[2. coding/index |  show me the code ? ]]*
+***programming***
+- the little schemer
+- the little type
+- 《SCIP》
 
-### 1.1.3 software development
+***数据结构和算法***
+- [[1. cs/《Problem solving with algorithms and Data Structures Using Python》/index | 《Problem solving with algorithms and Data Structures Using Python》基础笔记 ]]
+- 邓公
+- 算法四
+
+***数学***
+
+***coding***
+- [[2. coding/index |talk is cheap show me the code]]
+
+### software development
 
 [[3. sd/FE/index]]
+- javascript
+- python
+- ts
 
 
 > ***MySQL***
